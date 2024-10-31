@@ -1,0 +1,52 @@
+*{
+    background: #FF8A00;
+}
+#navegador{
+    margin: 0px;  
+    background-color:hwb(22 7% 49%); 
+}
+.foto{
+    width: 100px;
+    height: 100px;
+}
+.icone{
+    width: 40px;
+    height: 40px;
+    margin-left:30px ;
+}
+.iconelupa{
+    width: 40px;
+    height: 40px;
+    margin-left: 990px;
+}
+.carrossel{
+    height: 613px;
+    background: linear-gradient(rgba(17,17,15,0.404), rgba(34, 30, 4, 0.685)), url(../fotos/pagina_inicial/comida.jpg);
+    background-size: cover;
+}
+.menu-categoria ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 60px;
+    padding: 50px;
+}
+li, a{
+    list-style: none;
+    text-decoration: none;
+}
+.menu-categoria li a {
+    text-decoration: none;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 20px 50px;
+    width: 30px;
+    background-color: #E3C00B;
+    color: black;
+}
+.foto{
+    width: 371px;
+    height: 311px;
+}
+
+
