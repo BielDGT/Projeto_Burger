@@ -30,7 +30,7 @@
 }
 #carrossel{
     height: 613px;
-    background: linear-gradient(rgba(17,17,15,0.404), rgba(34, 30, 4, 0.685)), url(./Fotos/comida.jpg);
+    background: linear-gradient(rgba(17,17,15,0.404), rgba(34, 30, 4, 0.685)), url(../fotos/pagina_inicial/comida.jpg);
     background-size: cover;
 }
 #filtro-categoria ul{
@@ -115,4 +115,5 @@ footer h2{
 }
 .footer-h2{
     background-color: transparent;
+}
 }
