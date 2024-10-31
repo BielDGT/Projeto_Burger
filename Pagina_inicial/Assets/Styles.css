@@ -1,3 +1,118 @@
-.logo{
-    width: 150px;
+*{
+    background: #FF8A00;
+}
+#navegador{
+    margin: 0px;  
+    background-color:hwb(22 7% 49%); 
+}
+.foto{
+    width: 100px;
+    height: 100px;
+}
+.icone{
+    width: 40px;
+    height: 40px;
+    margin-left:30px ;
+}
+.iconelupa{
+    width: 40px;
+    height: 40px;
+    margin-left: 990px;
+}
+#navegador ul{
+    display: flex;
+    align-items:center ;
+    justify-content:left;
+    border: 1px solid transparent;
+}
+#navegador li{
+    list-style: none;
+}
+#carrossel{
+    height: 613px;
+    background: linear-gradient(rgba(17,17,15,0.404), rgba(34, 30, 4, 0.685)), url(./Fotos/comida.jpg);
+    background-size: cover;
+}
+#filtro-categoria ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-top: 50px;
+}
+#filtro-categoria a{
+    background-color: transparent;
+    text-decoration: none;
+    color: black;
+    font-size:large;
+}
+
+#filtro-categoria li{
+    background-color: #E3C00B;
+    border-radius: 10px;
+    padding: 20px;
+    width: 110px;
+    text-align: center;
+}
+
+#filtro-categoria li:hover{
+    background-color: #D96523;
+    color: white;
+}
+
+.opcoes-comidas{
+    border: 2px solid black;
+    border-radius: 10px;
+    padding-top: 30px;
+    padding-bottom: 40px;
+    margin-bottom: 60px;
+    text-align: center;   
+}
+.opcoes-comidas h2{
+    background-color: transparent;
+}
+.opcoes-comidas a{
+    text-decoration: none;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #E3C00B;
+    color: black;
+}
+.opcoes-comidas a:hover{
+    color:black;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.container .opcoes-comidas:hover{
+    background: linear-gradient(rgba(17,17,15,0.404), rgba(34, 30, 4, 0.685));
+.icone-midia{
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+}
+footer{
+   background-color: #D96523;
+}
+.footer-elementos{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+   background-color: transparent;
+
+}
+footer h2{
+    margin-left: 500px;
+    color: white;
+    background-color: transparent;
+}
+.footer-h2{
+    background-color: transparent;
 }
