@@ -76,14 +76,14 @@ li, a{
     height: 250px;
 }
 /* A PARTIR DA AGORA COMEÇA AS LINHAS E COLUNAS DAS OPÇÕES DE COMIDA */
-.row{
+/* .row{
     flex-wrap: wrap;
     display: flex;
     align-items: center;
     margin-left: 64px;
     margin-right: 64px;
 
-}
+} */
 /* o caminho é a linha row onde dentro tem as divs que são as colunas, colocamos a borda e espaçamento da margem de 10 px  */
 .row>div{
     border: 2px solid black;
