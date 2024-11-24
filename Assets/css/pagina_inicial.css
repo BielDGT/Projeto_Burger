@@ -76,19 +76,19 @@ li, a{
     height: 250px;
 }
 /* A PARTIR DA AGORA COMEÇA AS LINHAS E COLUNAS DAS OPÇÕES DE COMIDA */
-/* .row{
+.row{
     flex-wrap: wrap;
     display: flex;
     align-items: center;
     margin-left: 64px;
     margin-right: 64px;
 
-} */
+}
 /* o caminho é a linha row onde dentro tem as divs que são as colunas, colocamos a borda e espaçamento da margem de 10 px  */
 .row>div{
     border: 2px solid black;
     border-radius: 10px;
-    margin: 10PX;
+    margin: 10px;
 }
 
 .comida{
@@ -104,13 +104,11 @@ li, a{
 .comida h3{
 margin: 0px 50px;
 }
-.comida li{
-    margin: 36px 65px;
-}
+
 .btn-vermais a{
     border: 1px solid transparent;
     border-radius: 10px;
-    margin: 20px;
+    margin: 0px;
     padding: 10px;
     background-color: #D96523;
     color: white;
@@ -118,7 +116,7 @@ margin: 0px 50px;
 /* botão ver mais alinhar para ficar mais no centro */
 ul.btn-vermais{
     margin: 30px 10px;
-    padding: 0px 22px;
+    padding: 0px 60px;
 }
 /* começa footer */
 footer div{
