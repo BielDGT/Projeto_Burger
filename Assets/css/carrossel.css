@@ -1,0 +1,8 @@
+.carrossel{
+    display: flex;
+    align-items: center;
+    /* justify-content: center;  */
+}
+.carrossel img{
+    background-size: cover;
+}
