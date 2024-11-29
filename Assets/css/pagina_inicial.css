@@ -75,8 +75,9 @@ li, a{
     flex-wrap: wrap;
     display: flex;
     align-items: center;
-    margin-left: 64px;
-    margin-right: 64px;
+    margin-left: 50px;
+    margin-right: 50px;
+    gap: 70px;
 
 }
 /* o caminho é a linha row onde dentro tem as divs que são as colunas, colocamos a borda e espaçamento da margem de 10 px  */
