@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+*{
+    background: #FF8A00;
+    font-family: "EB Garamond", serif;
+}
+
+.particao-usuario li{
+    list-style: none;
+}
+.particao-usuario a{
+    text-decoration: none;
+    border: 1px solid black;
+    color: black;
+    padding: 10px;
+    border-radius: 10px;
+}
+.particao-usuario{
+    align-items: center;
+}
+.icone_usuario{
+    width: 100px;
+    height: 100px;
+}

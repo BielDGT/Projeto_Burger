@@ -3,6 +3,7 @@
     align-items: center;
     /* justify-content: center;  */
 }
-.carrossel img{
+.foto_banner{
+    /* width: 100%; */
     background-size: cover;
 }
