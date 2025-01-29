@@ -7,9 +7,8 @@
     <link rel="stylesheet" href="./Assets/css/pagina_usuario.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">    
-    <link rel="stylesheet" href="./Assets/CSS/pagina_inicial.css">
     <link rel="stylesheet" href="./Assets/css/pagina_pesquisa.css"> 
-    <link rel="stylesheet" href="./Assets/css/carrossel.css">
+
 </head>
 <body>
     <header>
@@ -22,31 +21,30 @@
             </ul>
         </nav>
     </header>
-    <section id="usuario">
-        <main class="particao-usuario">
-            <ol>
-                <li><a href="#">Cliente</a></li>
-            </ol>
-            <img src="./Assets/Fotos/pagina_usuario/usuario.png" alt="a foto do icone de usuario" class="icone_usuario">
-            <ol>
-                <li><a href="#">Editar foto</a></li>
-            </ol>
-            <img src="./Assets/Fotos/pagina_usuario/tres_hamburgues_vertical.png" alt="">
-        </main>
-        <main class="form">
-            <form action="">
-                <input type="text" placeholder="nome"><br>
-                <input type="text" placeholder="email"><br>
-                <input type="text" placeholder="senha"><br>
-                <input type="text" placeholder="cpf"><br>
-                <input type="text" placeholder="endereço">
-            </form>
-        </main>
-        <main class="btn-edit">
-            <ol>
-                <li><a href="#">Editar</a></li>
-            </ol>
-        </main>
-    </section>
+    <main id="pagina_usuario_padrao">
+        <section class="row-pagina-usuario">
+            <div class="col-1">
+                <img src="./Assets/Fotos/pagina_usuario/usuario.png" alt="icone do usuário" class="foto-usuario">
+                <ol>
+                    <li>Cliente</li>
+                </ol>                
+                <form action="">
+                    <input type="text" class="formulario" placeholder="Nome">
+                    <input type="text" class="formulario" placeholder="Email">
+                    <input type="text" class="formulario" placeholder="Senha">
+                    <input type="text" class="formulario" placeholder="CPF">
+                    <input type="text" class="formulario" placeholder="Endereço">
+                </form>
+            </div>
+            <div class="col-2">
+                <ol>
+                    <li><a href="#">Editar Foto</a></li>
+                    <li><a href="#">Editar</a></li>
+                </ol>
+
+                <img src="./Assets/Fotos/pagina_usuario/hamburguer.png" alt="Um hamburguer com os ingredientes separados" class="foto-usuario-hamburguer-fileira">
+            </div>
+        </section>
+    </main>
 </body>
 </html>
