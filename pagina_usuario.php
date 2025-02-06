@@ -1,9 +1,6 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>usuario</title>
+<?php include'.' ?>
+
+
     <link rel="stylesheet" href="./Assets/css/pagina_usuario.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">    
@@ -11,16 +8,6 @@
 
 </head>
 <body>
-    <header>
-        <nav>
-            <ul class="menu-icone">
-                <li><a href="#"><i class="bi bi-search"></i></a></li>
-                <li><a href="#"><i class="bi bi-house"></i></a></li>
-                <li><a href="#"><i class="bi bi-cart"></i></a></li>
-                <li><a href="#"><i class="bi bi-person-circle"></i></a></li>
-            </ul>
-        </nav>
-    </header>
     <main id="pagina_usuario_padrao">
         <section class="row-pagina-usuario">
             <div class="col-1">
@@ -34,20 +21,7 @@
                     <input type="text" class="formulario" placeholder="Senha">
                     <input type="text" class="formulario" placeholder="CPF">
                     <input type="text" class="formulario" placeholder="Endereço">
-                </form>
-
-
-
-
-                
-            </div>
-            <div class="col-2">
-                <ol>
-                    <li><a href="#">Editar Foto</a></li>
-                    <li><a href="#">Editar</a></li>
-                </ol>
-
-                <img src="./Assets/Fotos/pagina_usuario/hamburguer.png" alt="Um hamburguer com os ingredientes separados" class="foto-usuario-hamburguer-fileira">
+                </form>    
             </div>
         </section>
     </main>
