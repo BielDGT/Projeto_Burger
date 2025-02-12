@@ -14,7 +14,6 @@
 $dsn = 'mysql:dbname=db_damaju;host=127.0.0.1';
 $user = 'root';
 $password = '';
-
 $banco_cliente = new PDO($dsn, $user, $password);
 
 $select = 'SELECT * FROM tb_clientes';
@@ -31,13 +30,19 @@ $resultado = $banco_cliente->query($select)->fetchAll();
                 <ol>
                     <li>Cliente</li>
                 </ol>
-                <form action="">
-                    <input type="text" class="formulario" placeholder="Nome">
-                    <input type="text" class="formulario" placeholder="Email">
-                    <input type="text" class="formulario" placeholder="Senha">
-                    <input type="text" class="formulario" placeholder="CPF">
-                    <input type="text" class="formulario" placeholder="Endereço">
+                <?php foreach ($resultado as $lista){?>
+
+                <form>
+                    <input type="text" class="formulario" placeholder="Nome" <?php echo $lista['nome'] ?> >
+                    <input type="text" class="formulario" placeholder="Email" <?php echo $lista['senha'] ?>>
+                    <input type="text" class="formulario" placeholder="Senha" <?php echo $lista['email'] ?>>
+                    <input type="text" class="formulario" placeholder="CPF" <?php echo $lista['cep'] ?>>
+                    <input type="text" class="formulario" placeholder="Endereço" <?php echo $lista['cpf'] ?>>
+                    <?php echo $lista['nome'] ?>
                 </form>
+
+                <?php }?>
+
             </div>
         </section>
     </main>
