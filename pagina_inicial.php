@@ -1,27 +1,5 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pagina Inicial</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">    
-    <link rel="stylesheet" href="./Assets/CSS/pagina_inicial.css">
-    <link rel="stylesheet" href="./Assets/css/pagina_pesquisa.css"> 
-    <link rel="stylesheet" href="./Assets/css/carrossel.css">
+<?php include'./includes/header.php' ?>
 
-</head>
-<body>
-    <header>
-        <nav>
-            <ul class="menu-icone">
-                <li><a href="#"><i class="bi bi-search"></i></a></li>
-                <li><a href="#"><i class="bi bi-house"></i></a></li>
-                <li><a href="#"><i class="bi bi-cart"></i></a></li>
-                <li><a href="#"><i class="bi bi-person-circle"></i></a></li>
-            </ul>
-        </nav>
-    </header>
     <section id="banner">
         <main class="carrossel-container">
             <div class="carrossel">
@@ -143,16 +121,6 @@
     <!-- AQUI TERMINA AS OPÇOES DE COMIDA COM O BOTÃO DE VERMAIS -->
 </body>
 <script src="./Assets/js/carrossel.js"></script>
-<footer>
-        <section class="footer-direitos">
-            <div>
-                <p>Projeto realizado para fins educacionais. Não reservamos nenhuma das imagens.</p>
-            </div>
-            <div>
-                <img src="./assets/fotos/instagram.png" alt="Instagram">
-                <img src="./assets/fotos/facebook.png" alt="Facebook">
-                <img src="./assets/fotos/google.png" alt="Google">
-            </div>
-        </section>
-    </footer>
+<?php include'./includes/footer.php' ?>
+
 </html>
