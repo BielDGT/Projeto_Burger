@@ -1,4 +1,4 @@
-#Lista das paginas do site
+#Lista das paginas do site<br><br>
 Página login -> página que o usuario vai fazer o login. Vai ter um formulario com campos tipo email e senha e dois botões de entrar e cadastrar e mais dois link para efetuar o login com a conta do facebook e instagram.
 <br>
 <br>
