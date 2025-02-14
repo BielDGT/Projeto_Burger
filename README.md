@@ -1,4 +1,4 @@
-<h1 align='center'>Lista das paginas do site</h1><br><br>
+<h1 align='center'>Lista dos componentes do projeto </h1><br><br>
 Página login -> página que o usuario vai fazer o login. Vai ter um formulario com campos tipo email e senha e dois botões de entrar e cadastrar e mais dois link para efetuar o login com a conta do facebook e instagram.
 <br>
 <br>
