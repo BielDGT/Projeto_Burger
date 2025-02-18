@@ -10,7 +10,7 @@
 
 </head>
 
-<section id="banner">
+<!-- <section id="banner">
     <main class="carrossel-container">
         <div class="carrossel">
             <img src="./Assets/Fotos/pagina_inicial/banner02.jpg" alt="" class="foto_banner">
@@ -19,7 +19,7 @@
         <button class="anterior" onclick="javascript:anteriorSlide()"><i class="bi bi-arrow-left-square-fill"></i></button>
         <button class="proximo" onclick="javascript:proximoSlide()"><i class="bi bi-arrow-right-square-fill"></i></button>
     </main>
-</section>
+</section> -->
 <!-- AQUI COMEÇA A OPÇÕES DE CATEGORIA DE SUPERMERCADO, VAREJO, MERCADO E IFOOD -->
 <section class="menu-categoria">
     <ul>
