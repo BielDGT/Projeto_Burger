@@ -20,16 +20,6 @@
         <button class="proximo" onclick="javascript:proximoSlide()"><i class="bi bi-arrow-right-square-fill"></i></button>
     </main>
 </section> -->
-<!-- AQUI COMEÇA A OPÇÕES DE CATEGORIA DE SUPERMERCADO, VAREJO, MERCADO E IFOOD -->
-<section class="menu-categoria">
-    <ul>
-        <li><a href="#">Restaurante</a></li>
-        <li><a href="#">Varejo</a></li>
-        <li><a href="#">Mercado</a></li>
-        <li><a href="#">IFood</a></li>
-    </ul>
-</section>
-<!-- AQUI TERMINA A PARTE DAS OPÇOES DE CATEGORIA DE SUPERMERCADO, VAREJO, MERCADO E IFOOD -->
 
 <!-- COMEÇA AS OPÇOES DAS COMIDAS COM O BOTÃO DE VERMAIS -->
 <section class="opcoes-comidas">
