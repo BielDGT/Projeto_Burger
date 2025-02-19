@@ -1,6 +1,10 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+<<<<<<< HEAD
+
+=======
+>>>>>>> 82a3b7a428a8b8c748e418de71d2e8a09c34df1a
 /*Header*/
 header nav{
-    padding: 10px 0;
     background-color: #FF8A00;
     display: flex;
     justify-content: space-around;

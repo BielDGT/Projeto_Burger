@@ -2,17 +2,6 @@
 
 <link rel="stylesheet" href="./assets/css/pagina_pesquisa.css">
 
-    <section id="menu">
-        <nav>
-            <ul class="menu-texto">
-                <li><a href="#">Restaurante</a></li>
-                <li><a href="#">Varejo</a></li>
-                <li><a href="#">Mercado</a></li>
-                <li><a href="#">IFood</a></li>
-            </ul>
-        </nav>
-    </section>
-
     <section id="principal">
         <div class="filtro">
             <h3>FILTRO</h3>
@@ -28,44 +17,44 @@
             </ol>
         </div>
 
-        <main class="produtos">
-            <div>
-                <figure>
-                    <img src="./assets/fotos/pagina_pesquisa/Rectangle 13.png" alt="hamburguer">
-                    <figcaption>Hamburguer de Carne</figcaption>
-                    <a href="#">VER MAIS</a>
-                 </figure>
-                 
-            </div>
-            <div>
-                <figure>
-                    <img src="./assets/fotos/pagina_pesquisa/Rectangle 14.png" alt="hamburguer">
-                    <figcaption>Hamburguer de Carne</figcaption>
-                    <a href="#">VER MAIS</a>
-                 </figure>
-                 
-            </div>
-            <div>
-                <figure>
-                    <img src="./assets/fotos/pagina_pesquisa/Rectangle 13.png" alt="hamburguer">
-                    <figcaption>Hamburguer de Carne</figcaption>
-                    <a href="#">VER MAIS</a>
-                 </figure>
-                 </div>
-            <div>
-                <figure>
-                    <img src="./assets/fotos/pagina_pesquisa/Rectangle 13.png" alt="hamburguer">
-                    <figcaption>Hamburguer de Carne</figcaption>
-                    <a href="#">VER MAIS</a>
-                 </figure>
-            </div>
-            <div>
-                <figure>
-                    <img src="./assets/fotos/pagina_pesquisa/Rectangle 13.png" alt="hamburguer">
-                    <figcaption>Hamburguer de Carne</figcaption>
-                    <a href="#">VER MAIS</a>
-                 </figure>
-            </div>
+            <main class="produtos">
+                <div>
+                    <figure>
+                        <img src="./assets/fotos/pagina_pesquisa/Rectangle 13.png" alt="hamburguer">
+                        <figcaption>Hamburguer de Carne</figcaption>
+                        <a href="#">VER MAIS</a>
+                    </figure>
+                    
+                </div>
+                <div>
+                    <figure>
+                        <img src="./assets/fotos/pagina_pesquisa/Rectangle 14.png" alt="hamburguer">
+                        <figcaption>Hamburguer de Carne</figcaption>
+                        <a href="#">VER MAIS</a>
+                    </figure>
+                    
+                </div>
+                <div>
+                    <figure>
+                        <img src="./assets/fotos/pagina_pesquisa/Rectangle 13.png" alt="hamburguer">
+                        <figcaption>Hamburguer de Carne</figcaption>
+                        <a href="#">VER MAIS</a>
+                    </figure>
+                    </div>
+                <div>
+                    <figure>
+                        <img src="./assets/fotos/pagina_pesquisa/Rectangle 13.png" alt="hamburguer">
+                        <figcaption>Hamburguer de Carne</figcaption>
+                        <a href="#">VER MAIS</a>
+                    </figure>
+                </div>
+                <div>
+                    <figure>
+                        <img src="./assets/fotos/pagina_pesquisa/Rectangle 13.png" alt="hamburguer">
+                        <figcaption>Hamburguer de Carne</figcaption>
+                        <a href="#">VER MAIS</a>
+                    </figure>
+                </div>
             <div>
                 <figure>
                     <img src="./assets/fotos/pagina_pesquisa/Rectangle 13.png" alt="hamburguer">
