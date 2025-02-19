@@ -1,31 +1,52 @@
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-
 <?php include './includes/header.php' ?>
 
+<link rel="stylesheet" href="./assets/css/pagina_pesquisa.css">
+<link rel="stylesheet" href="./assets/css/pagina_inicial.css">
 
-<link rel="stylesheet" href="./Assets/css/pagina_usuario.css">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-<link rel="stylesheet" href="./Assets/css/pagina_usuario.css">
 
 </head>
 
-<!-- <section id="banner">
-    <main class="carrossel-container">
-        <div class="carrossel">
-            <img src="./Assets/Fotos/pagina_inicial/banner02.jpg" alt="" class="foto_banner">
-            <img src="./Assets/Fotos/pagina_inicial/banner03.jpg" alt="" class="foto_banner">
+<section class="slide">
+    <div class="carrossel">
+        <input type="radio" name="radio-btn" id="radio1">
+        <input type="radio" name="radio-btn" id="radio2">
+        <input type="radio" name="radio-btn" id="radio3">
+        <input type="radio" name="radio-btn" id="radio4">
+        <!-- slide imagens -->
+        <div class="carrossel-imagem primeiro">
+            <img src="./Assets/Fotos/pagina_inicial/banner1.jpg" alt="">
         </div>
-        <button class="anterior" onclick="javascript:anteriorSlide()"><i class="bi bi-arrow-left-square-fill"></i></button>
-        <button class="proximo" onclick="javascript:proximoSlide()"><i class="bi bi-arrow-right-square-fill"></i></button>
-    </main>
-</section> -->
+        <div class="carrossel-imagem">
+            <img src="./Assets/Fotos/pagina_inicial/banner2.jpg" alt="">
+        </div>
+        <div class="carrossel-imagem">
+            <img src="./Assets/Fotos/pagina_inicial/banner2.jpg" alt="">
+        </div>
+        <div class="carrossel-imagem">
+            <img src="./Assets/Fotos/pagina_inicial/banner2.jpg" alt="">
+        </div>
+        <!-- navegação automatica -->
+        <div class="navegacao-automatica">
+            <div class="btn-auto1"></div>
+            <div class="btn-auto2"></div>
+            <div class="btn-auto3"></div>
+            <div class="btn-auto4"></div>
+        </div>
+
+        <div class="manual-navegacao">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+            <label for="radio4" class="manual-btn"></label>
+        </div>
+    </div>
+</section>
 
 <!-- COMEÇA AS OPÇOES DAS COMIDAS COM O BOTÃO DE VERMAIS -->
 <section class="opcoes-comidas">
     <main>
         <div class="row">
-            <div class="comida col-3">
+            <div class="coluna">
                 <figure>
                     <img src="./Assets/Fotos/pagina_inicial/pizza.jpg" alt="foto de uma pizza de pepperoni" class="foto">
                     <figcaption>
@@ -36,7 +57,7 @@
                     <li><a href="#">VER MAIS</a></li>
                 </ul>
             </div>
-            <div class="comida col-3">
+            <div class="coluna">
                 <figure>
                     <img src="./Assets/Fotos/pagina_inicial/pizza.jpg" alt="foto de uma pizza de pepperoni" class="foto">
                     <figcaption>
@@ -47,7 +68,7 @@
                     <li><a href="#">VER MAIS</a></li>
                 </ul>
             </div>
-            <div class="comida col-3">
+            <div class="coluna">
                 <figure>
                     <img src="./Assets/Fotos/pagina_inicial/pizza.jpg" alt="foto de uma pizza de pepperoni" class="foto">
                     <figcaption>
@@ -58,7 +79,7 @@
                     <li><a href="#">VER MAIS</a></li>
                 </ul>
             </div>
-            <div class="comida col-3">
+            <div class="coluna">
                 <figure>
                     <img src="./Assets/Fotos/pagina_inicial/pizza.jpg" alt="foto de uma pizza de pepperoni" class="foto">
                     <figcaption>
@@ -69,7 +90,7 @@
                     <li><a href="#">VER MAIS</a></li>
                 </ul>
             </div>
-            <div class="comida col-3">
+            <div class="ccoluna">
                 <figure>
                     <img src="./Assets/Fotos/pagina_inicial/pizza.jpg" alt="foto de uma pizza de pepperoni" class="foto">
                     <figcaption>
@@ -80,7 +101,7 @@
                     <li><a href="#">VER MAIS</a></li>
                 </ul>
             </div>
-            <div class="comida col-3">
+            <div class="coluna">
                 <figure>
                     <img src="./Assets/Fotos/pagina_inicial/pizza.jpg" alt="foto de uma pizza de pepperoni" class="foto">
                     <figcaption>
@@ -91,7 +112,7 @@
                     <li><a href="#">VER MAIS</a></li>
                 </ul>
             </div>
-            <div class="comida col-3">
+            <div class="coluna">
                 <figure>
                     <img src="./Assets/Fotos/pagina_inicial/pizza.jpg" alt="foto de uma pizza de pepperoni" class="foto">
                     <figcaption>
@@ -102,7 +123,7 @@
                     <li><a href="#">VER MAIS</a></li>
                 </ul>
             </div>
-            <div class="comida col-3">
+            <div class="coluna">
                 <figure>
                     <img src="./Assets/Fotos/pagina_inicial/pizza.jpg" alt="foto de uma pizza de pepperoni" class="foto">
                     <figcaption>
@@ -119,7 +140,7 @@
 </section>
 <!-- AQUI TERMINA AS OPÇOES DE COMIDA COM O BOTÃO DE VERMAIS -->
 </body>
-<script src="./Assets/js/carrossel.js"></script>
+
 <?php include './includes/footer.php' ?>
 
 </html>

@@ -16,7 +16,7 @@
         <nav>
             <a href="#" class="logo">
                 <img src="./assets/fotos/logo.png" alt="Logo" class="logo_img">
-                <h1>FoodFinder</h1>
+                <h1>Lanches DaMaJu</h1>
             </a>
             <ul class="menu-icone">
                 <li><a href="#"><i class="bi bi-search"></i></a></li>

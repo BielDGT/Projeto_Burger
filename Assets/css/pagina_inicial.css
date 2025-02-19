@@ -1,70 +1,47 @@
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 *{
-    background: #FF8A00;
     font-family: "EB Garamond", serif;
 }
-header nav{
-    padding: 10px 0;
-    background-color: #FF8A00;
+/* estilizando o carrossel */
+.slide{
+    margin: 0 auto;
+    width: 800px;
+    height: 400px;
+    overflow: hidden;
+}
+.carrossel{
+    width: 400%;
+    height: 400px;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-} 
+}
+.carrossel input{
+    /* ocultando os input */
+    display: none;
+}
 
-.logo{
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
+.carrossel-imagem{
+    width: 25%;
+    position: relative;
+}
+.carrossel-imagem img{
+    width: 800px;
+}
+/* estilizando os input */
+.manual-navegacao{
+    position:absolute;
+    width: 800px;
+    margin-top:-40px;
+    display: flex;
+    justify-content: center;
+}
+.manual-btn{
+    border: 2px solid white ;
+    padding: 5px;
+    border-radius: 10px;
     cursor: pointer;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;   
 }
 
-ul.menu, ul.menu-icone{
-    list-style: none;
-    display: flex;
-    gap: 10px;
-}
-
-.menu li a, .menu-icone li a{
-    text-decoration: none;
-    color: black;
-    padding: 10px;
-    border-radius: 10px;
-    
-}
-
-.menu li a:hover, .menu-icone li a:hover{
-    background-color: black;
-    color: #FF8A00;
-}
-#navegador{
-    margin: 0px;  
-    background-color:hwb(22 7% 49%); 
-}
-
-.menu-categoria ul{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 0px 122px;
-    padding: 50px;
-}
-li, a{
-    list-style: none;
-    text-decoration: none;
-}
-.menu-categoria li a {
-    text-decoration: none;
-    border: 1px solid black;
-    border-radius: 10px;
-    padding: 20px 50px;
-    width: 30px;
-    background-color: #E3C00B;
-    color: black;
-}
 /* O TAMANHO DAS FOTOS ONDE FICA AS COMIDAS COM O BOTÃO DE VER MAIS */
 .foto{  
     width: 250px;  
@@ -72,12 +49,11 @@ li, a{
 }
 /* A PARTIR DA AGORA COMEÇA AS LINHAS E COLUNAS DAS OPÇÕES DE COMIDA */
 .row{
-    flex-wrap: wrap;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     align-items: center;
-    margin-left: 50px;
-    margin-right: 50px;
-    gap: 70px;
+    margin: 0px 29px;
+    gap: 25px
 
 }
 /* o caminho é a linha row onde dentro tem as divs que são as colunas, colocamos a borda e espaçamento da margem de 10 px  */
@@ -85,6 +61,7 @@ li, a{
     border: 2px solid black;
     border-radius: 10px;
     margin: 10px;
+
 }
 
 .comida{
@@ -92,14 +69,16 @@ li, a{
     box-sizing: border-box;
 
 }
-.col-4{
-    flex: 0 0 8.33%;
-}
-/* TERMINA AS LINHAS E COLUNHAS DA OPÇÕES DE COMIDA */
 
-.comida h3{
-margin: 0px 50px;
+figure a{
+    padding:  10px;
+    border-radius: 15px;
+    background-color:#D96523;
+    color: white;
+    text-decoration: none;
+
 }
+
 
 .btn-vermais a{
     border: 1px solid transparent;
@@ -108,21 +87,11 @@ margin: 0px 50px;
     padding: 10px;
     background-color: #D96523;
     color: white;
+    text-decoration: none;
 }
 /* botão ver mais alinhar para ficar mais no centro */
 ul.btn-vermais{
     margin: 30px 10px;
     padding: 0px 60px;
+    list-style: none;
 }
-/* começa footer */
-footer div{
-    background-color: tomato;
-}
-footer section{
-    display: flex;
-    justify-content: space-around;
-    align-items: center; 
-    background-color: tomato;
-    
-}
-/* termina footer */
