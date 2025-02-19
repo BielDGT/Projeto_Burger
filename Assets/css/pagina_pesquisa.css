@@ -11,31 +11,6 @@
 }
 
 
-/*Navegação*/
-
-#menu{
-    background-color: #E3C00B;
-    height: 70px;
-    padding-top: 22px;
-}
-
-#menu .menu-texto{
-    list-style: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 100px;
-}
-
-.menu-texto li a {
-    text-decoration: none;
-    color: black;
-    padding: 10px;
-    border-radius: 10px;
-    background-color: tomato;
-    
-
-}
 
 /*Principal*/
 

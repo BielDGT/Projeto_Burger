@@ -1,0 +1,19 @@
+#destaque{
+    display: flex;
+    background-color: brown;
+    align-items: center;
+    gap: 10px;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.btn{
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 100px;
+    margin: 10px;
+}
