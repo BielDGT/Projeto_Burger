@@ -9,43 +9,7 @@
     font-weight: 500;
     font-style: normal;
 }
-/*Header*/
-header nav{
-    padding: 10px 0;
-    background-color: #FF8A00;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-} 
 
-.logo{
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-    cursor: pointer;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;   
-}
-
-ul.menu-icone{
-    list-style: none;
-    display: flex;
-    gap: 10px;
-}
-
-.menu-icone li a {
-    text-decoration: none;
-    color: black;
-    padding: 10px;
-    border-radius: 10px;
-    
-}
-
-.menu-icone li a:hover{
-    background-color: black;
-    color: #FF8A00;
-}
 
 /*Navegação*/
 
@@ -120,15 +84,3 @@ figure a{
 
 
 
-/*Footer*/
-
-footer{
-    background-color: #FF8A00;
-    padding: 10px;
-}
-footer section{
-    display: flex;
-    justify-content: space-around;
-    align-items: center; 
-
-}

@@ -1,0 +1,12 @@
+/*Footer*/
+
+footer{
+    background-color: #FF8A00;
+    padding: 10px;
+}
+footer section{
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+
+}

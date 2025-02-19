@@ -1,11 +1,11 @@
 <?php include './includes/header.php' ?>
 
-<link rel="stylesheet" href="./assets/css/pagina_pesquisa.css">
-<link rel="stylesheet" href="./assets/css/pagina_inicial.css">
 
+<link rel="stylesheet" href="./assets/css/pagina_inicial.css">
+<link rel="stylesheet" href="./Assets/css/footer.css">
 
 </head>
-
+<!-- Carrossel -->
 <section class="slide">
     <div class="carrossel">
         <input type="radio" name="radio-btn" id="radio1">
@@ -41,10 +41,9 @@
         </div>
     </div>
 </section>
-
+<!-- carrossel -->
 <!-- COMEÇA AS OPÇOES DAS COMIDAS COM O BOTÃO DE VERMAIS -->
 <section class="opcoes-comidas">
-    <main>
         <div class="row">
             <div class="coluna">
                 <figure>
@@ -134,9 +133,7 @@
                     <li><a href="#">VER MAIS</a></li>
                 </ul>
             </div>
-
         </div>
-    </main>
 </section>
 <!-- AQUI TERMINA AS OPÇOES DE COMIDA COM O BOTÃO DE VERMAIS -->
 </body>

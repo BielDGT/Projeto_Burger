@@ -48,6 +48,9 @@
     height: 250px;
 }
 /* A PARTIR DA AGORA COMEÇA AS LINHAS E COLUNAS DAS OPÇÕES DE COMIDA */
+.opcoes-comidas{
+    align-items: center;
+}
 .row{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;

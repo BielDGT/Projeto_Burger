@@ -1,4 +1,5 @@
 <footer>
+    
         <section class="footer-direitos">
             <div>
                 <p>Projeto realizado para fins educacionais. Não reservamos nenhuma das imagens.</p>
