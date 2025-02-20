@@ -1,6 +1,6 @@
 #destaque{
     display: flex;
-    background-color: brown;
+    background-color: #D96523;
     align-items: center;
     gap: 10px;
 }
