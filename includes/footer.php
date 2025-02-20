@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="./Assets/css/footer.css">
 
 <footer>
         <section class="footer-direitos">
