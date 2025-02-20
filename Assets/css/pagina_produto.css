@@ -2,7 +2,21 @@
     display: flex;
     background-color: #D96523;
     align-items: center;
-    gap: 10px;
+
+    gap: 20px;
+    border: 2px solid black;
+    border-radius: 20px;
+    margin: 30px;
+    
+}
+
+.imagem-principal{
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    border: 2px solid black;
+    border-radius: 100%;
+    margin: 10px;
 }
 
 .content{
@@ -11,9 +25,67 @@
     padding: 10px;
 }
 
+#destaque h2{
+    font-size: 3rem;
+    
+}
+
+#destaque p, span{
+    font-size: 1.5rem;
+    text-align: justify;
+}
+
 .btn{
     border: 2px solid black;
     border-radius: 10px;
     width: 100px;
     margin: 10px;
 }
+
+/* section cards */
+
+.container-cards{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.cards{
+    border: 2px solid black;
+    border-radius: 10px;
+    text-align: center;
+    
+}
+
+figure{
+    padding: 10px;
+}
+
+
+.img{
+    width: 300px;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+.cards a{
+    text-decoration: none;
+    text-transform: uppercase;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: tomato;
+    color: black;
+    padding: 5px;
+    transition: 1s ease;
+}
+
+.cards a:hover{
+    border: 2px solid tomato;
+    background-color: black;
+    color: tomato;
+    padding: 5px;
+}
+
