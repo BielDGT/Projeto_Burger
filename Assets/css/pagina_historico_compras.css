@@ -5,12 +5,14 @@
 body {
     background: linear-gradient(to bottom, #FF8A00, #E3C00B);
     height: 100vh; /* Garante que o gradiente ocupe toda a altura da página */
+    
 }
 #carrinho-de-compras{
     margin: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
+
 
 }
 .container-painel-carrinho{
@@ -19,6 +21,7 @@ body {
         padding: 0px 0px 25px 0px; /* Espaçamento interno */
         margin: 10px 10px 10px 10px; /* Espaçamento externo */
         border-radius: 10px; /* Bordas arredondadas */
+        
 
 }
 .row-container{

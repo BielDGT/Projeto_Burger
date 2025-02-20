@@ -8,7 +8,7 @@
             <div class="container-titulo">
                 <h2>
             CARRINHO DE COMPRAS
-        </h2>
+            </h2>
             </div>
         <div class="row-container">
             <div class="coluna1">
@@ -30,3 +30,4 @@
     </main>
 
     <?php include './includes/footer.php' ?>
+    

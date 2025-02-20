@@ -2,8 +2,8 @@
 
 
 <link rel="stylesheet" href="./Assets/css/pagina_inicial.css">
-<?php include './includes/header.php' ?>
 
+<?php include './includes/header.php' ?>
 <!-- Carrossel -->
 <section class="slide">
     <div class="carrossel">
