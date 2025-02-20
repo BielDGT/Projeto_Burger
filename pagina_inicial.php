@@ -1,9 +1,9 @@
-<?php include './includes/header.php' ?>
 
 
-<link rel="stylesheet" href="./assets/css/pagina_inicial.css">
+
+<link rel="stylesheet" href="./Assets/css/pagina_inicial.css">
 <link rel="stylesheet" href="./Assets/css/footer.css">
-
+<?php include './includes/header.php' ?>
 </head>
 <!-- Carrossel -->
 <section class="slide">

@@ -1,0 +1,81 @@
+body {
+    background: linear-gradient(to bottom, #FF8A00, #E3C00B);
+    height: 100vh; /* Garante que o gradiente ocupe toda a altura da página */
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#container-painel-carrinho{
+    text-align: center;
+    
+        border: 5px solid #D96523; /* Borda sólida de 3px com a cor amarela */
+        padding: 0px 0px 25px 0px; /* Espaçamento interno */
+        margin: 10px 10px 10px 10px; /* Espaçamento externo */
+        border-radius: 10px; /* Bordas arredondadas */
+    
+}
+.row-container{
+    
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+    /*background-color: tomato;*/
+    align-items: center;
+    gap: 10px;
+    padding: 25px;
+    
+}
+.container-titulo{
+    background-color: #D96523;
+}
+
+
+/*estilização titulo*/
+h2 {
+    font-size: 40px;
+    text-align: center;
+    color: white;
+    transition: color 0.3s ease, transform 0.3s ease;
+    margin-top: 0;
+}
+
+h2:hover {
+    
+    transform: scale(1.1); /* Aumenta ligeiramente o título */
+}
+/*estilização imagem*/
+.coluna1{
+
+}
+.coluna1, img{
+    height: 200px;
+    width: 250px;
+}
+
+/*estilização descrição*/
+.coluna2{
+    text-align: left;
+}
+/*estilização botao*/
+
+
+button{
+    width: 200px;
+    height: 60px;
+    border-radius: 10px;
+    color: white;
+    background-color: #D96523;
+    border: none;
+
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Sombra simples */
+    cursor: pointer;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+button:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3); /* A sombra fica mais intensa quando passa o mouse */
+
+}
+
