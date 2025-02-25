@@ -62,27 +62,10 @@
                     <a href="#">VER MAIS</a>
                  </figure>
             </div>
-            
-            
         </main>
-
-
     </section>
-
-    <footer>
-        <section>
-            <div>
-                <p>Projeto realizado para fins educacionais. Não reservamos nenhuma das imagens.</p>
-            </div>
-            <div>
-                <img src="./assets/fotos/instagram.png" alt="Instagram">
-                <img src="./assets/fotos/facebook.png" alt="Facebook">
-                <img src="./assets/fotos/google.png" alt="Google">
-            </div>
-        </section>
-    </footer>
+    <?php include './includes/footer.php' ?>
 
 
-</body>
 
 </html>

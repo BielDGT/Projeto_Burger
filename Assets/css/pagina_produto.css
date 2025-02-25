@@ -50,6 +50,7 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    padding-bottom:  30px   ;
     
 }
 
@@ -58,10 +59,12 @@
     border-radius: 10px;
     text-align: center;
     
+    
 }
 
 figure{
     padding: 10px;
+    
 }
 
 
@@ -74,18 +77,20 @@ figure{
 .cards a{
     text-decoration: none;
     text-transform: uppercase;
+    color: black;
+
+}
+
+.cards div{
+    width: 100px;
     border: 2px solid black;
     border-radius: 10px;
     background-color: tomato;
-    color: black;
     padding: 5px;
-    transition: 1s ease;
+    
 }
 
-.cards a:hover{
-    border: 2px solid tomato;
-    background-color: black;
-    color: tomato;
-    padding: 5px;
+.cards div:hover{
+    transform: scale(1.2);
 }
 

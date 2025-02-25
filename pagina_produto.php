@@ -25,7 +25,9 @@
                     <img src="./Assets/Fotos/pagina_produto/burger.jpg" alt="burger" class="img">
                     <figcaption>
                         <h4>Burger</h4>
+                        <div>
                         <a href="#">ver mais</a>
+                        </div>
                     </figcaption>
                 </figure>
             </div>
@@ -56,7 +58,6 @@
                     </figcaption>
                 </figure>
             </div>
-
         </div>
     </section>
 

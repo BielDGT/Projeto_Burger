@@ -1,13 +1,26 @@
 /*Footer*/
 
-    
-       
-#footer-container{
-    background-color: tomato;
-}
 .footer-row{
     display: flex;
+    align-items: center;
     justify-content: space-around;
-    margin-bottom: 10px;
-    background-color: blue;
+
+    background-color: tomato;
 }
+
+div ul.icon-redes{
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+
+div .icon-redes li a {
+    text-decoration: none;
+    color: black;
+    
+}
+
+.icon-redes li{
+    font-size: 40px;
+}
+

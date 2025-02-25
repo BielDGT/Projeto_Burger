@@ -2,10 +2,11 @@
 
 /*Header*/
 header nav{
-    background-color: #FF8A00;
+    background-color: tomato;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    padding: 10px;
 } 
 
 .logo{
@@ -17,6 +18,8 @@ header nav{
     justify-content: space-around;
     align-items: center;   
 }
+
+
 
 ul.menu-icone{
     list-style: none;
@@ -34,5 +37,9 @@ ul.menu-icone{
 
 .menu-icone li a:hover{
     background-color: black;
-    color: #FF8A00;
+    color: tomato;
+}
+
+.menu-icone li{
+    font-size: 20px;
 }
