@@ -6,9 +6,13 @@ body{
     grid-template-columns: 1fr;
 }
 .linha-btn{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    margin: 0px 350px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 90px;
 }
 /* .formulario{
     display: flex;
