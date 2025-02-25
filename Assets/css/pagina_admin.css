@@ -1,0 +1,66 @@
+body{
+    background-color: #F2A305;;
+}
+.row-pagina-usuario{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.linha-btn{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0px 350px;
+}
+/* .formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+} */
+.btn-editar a{
+    text-decoration: none;
+    border: 1px solid white;
+    color: white;
+    padding: 10px 30px;
+    border-radius: 15px;
+}
+.btn-editar a:hover{
+    background-color: #FF8A00;
+
+}
+.btn-editar li{
+    list-style: none;
+}
+.btn-cadastrar a{
+    text-decoration: none;
+    border: 1px solid white;
+    color: white;
+    padding: 10px 30px;
+    border-radius: 15px;
+}
+.btn-cadastrar a:hover{
+    background-color: #FF8A00;
+}
+.btn-cadastrar li{
+    list-style: none;
+}
+.btn-lista a{
+    text-decoration: none;
+    border: 1px solid white;
+    color: white;
+    padding: 10px 30px;
+    border-radius: 15px;
+}
+.btn-lista a:hover{
+    background-color: #FF8A00;
+}
+.btn-lista li{
+    list-style: none;
+}
+.foto-usuario{
+    margin: 20px 0px;
+}
+.formulario-campo{
+    margin-bottom: 20px;
+    width: 800;
+}
