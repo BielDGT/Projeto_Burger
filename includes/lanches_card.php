@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="../Assets/css/comidas_cards.css">
 
 <div class="coluna">
     <figure>

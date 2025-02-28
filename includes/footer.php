@@ -17,5 +17,5 @@
     </section>
 </footer>
 </body>
-
+<script src="./Assets/js/carrossel.js"></script>
 </html>
