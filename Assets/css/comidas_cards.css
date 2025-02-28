@@ -1,46 +1,21 @@
-.container-cards{
-    margin-top:90px;
-
-}
-.linha{
-    display: flex;
-    flex-wrap: wrap;
-    margin: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 90px;
-}
-.coluna{
-    border: 1px solid black;
-    margin: 10px;
-    padding: 30px;
-    border-radius: 20px;
-}
-.coluna a{
-    border: 1px solid black;
-    border-radius: 22px;
-    padding: 10px 30px ;
-}
-.coluna h3{
-    margin-top: 10px;
-    margin-bottom: 30px;
+.produtos div{
+    border: 2px solid black;
 }
 
-.linha a{
-    text-decoration: none;
+div figure{
+    text-align: center;
+    
 }
-.linha li{
-    list-style: none;
+
+div figcaption{
+    padding: 10px 0 20px 0;
 }
-.btn-vermais a{
-    margin-right: 15px;
-    background-color: #D96523;
+
+figure a{
+    padding:  10px;
+    border-radius: 15px;
+    background-color:#D96523;
     color: white;
-}
-/* ------------------------------- */
-/* foto */
-.foto{
-    width: 200px;
-    height: 200px;
+    text-decoration: none;
+
 }

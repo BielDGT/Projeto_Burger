@@ -1,13 +1,12 @@
+<link rel="stylesheet" href="./Assets/css/comidas_cards.css">
 
-<div class="coluna">
-    <figure>
-        <!-- se começa primeiro a tag  figure para prossegir com o figcapture  -->
-        <img src="../Assets/css/pagina_inicial/comida.jpg" alt="imagem da comida" class="foto-produto">
-        <figcaption>
-            <h3>Pizza de pepperoni</h3>
-            <ul class="btn-vermais">
-                <li><a href="#">VER MAIS</a></li>
-            </ul>
-        </figcaption>
-    </figure>
-</div>
+<?php foreach ($resultado as $linha) { ?>
+            <div>
+                <figure>
+                    <img src="./assets/Fotos/fotos_cards/hamburguer.png" alt="hamburguer">
+                    <figcaption><?php echo $linha['nome'] ?></figcaption>
+                    <a href="./pagina_produto.php?id=<?=$linha['id_produtos'] ?>">VER MAIS</a>
+                </figure>
+
+            </div>
+        <?php } ?>
