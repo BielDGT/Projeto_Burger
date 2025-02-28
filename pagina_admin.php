@@ -6,14 +6,14 @@
 </head>
 
 <?php
-$dsn = 'mysql:dbname=db_damaju;host=127.0.0.1';
-$user = 'root';
-$password = '';
-$banco_cliente = new PDO($dsn, $user, $password);
+// $dsn = 'mysql:dbname=db_damaju;host=127.0.0.1';
+// $user = 'root';
+// $password = '';
+// $banco_cliente = new PDO($dsn, $user, $password);
 
-$select = 'SELECT * FROM tb_clientes';
+// $select = 'SELECT * FROM tb_clientes';
 
-$resultado = $banco_cliente->query($select)->fetchAll();
+// $resultado = $banco_cliente->query($select)->fetchAll();
 
 ?>
 
@@ -37,26 +37,22 @@ $resultado = $banco_cliente->query($select)->fetchAll();
             </div>
             <div class="btn-lista">
                 <ol>
-                    <li><a href="#">Lista de Produtos</a></li>
+                    <li><a href="../Assets/pagina_lista_produtos.php">Lista de Produtos</a></li>
                 </ol>
             </div>
         </section>
         <section class="linha-formulario">
             <div class="formulario">
-                <?php foreach ($resultado as $lista) { ?>
                     <form>
-                        <input type="text" class="formulario-campo" placeholder="Nome" <?php echo $lista['nome'] ?>><br>
-                        <input type="text" class="formulario-campo" placeholder="Email" <?php echo $lista['senha'] ?>><br>
-                        <input type="text" class="formulario-campo" placeholder="Senha" <?php echo $lista['email'] ?>><br>
-                        <input type="text" class="formulario-campo" placeholder="CPF" <?php echo $lista['cep'] ?>><br>
-                        <input type="text" class="formulario-campo" placeholder="Endereço" <?php echo $lista['cpf'] ?>><br>
-                        <!-- <?php echo $lista['nome'] ?> -->
+                        <input type="text" class="formulario-campo" placeholder="Nome" ><br>
+                        <input type="text" class="formulario-campo" placeholder="Email" ><br>
+                        <input type="text" class="formulario-campo" placeholder="Senha" ><br>
+                        <input type="text" class="formulario-campo" placeholder="CPF" ><br>
+                        <input type="text" class="formulario-campo" placeholder="Endereço" ><br>
                     </form>
-                <?php } ?>
             </div>
         </section>
     </main>
 </body>
 <?php include './includes/footer.php' ?>
-
 </html>
