@@ -43,12 +43,8 @@
 </section>
 <!-- carrossel -->
 <!-- COMEÇA AS OPÇOES DAS COMIDAS COM O BOTÃO DE VERMAIS -->
-<section class="container-cards text-center">
-    <div class="linha">
-        <?php include './includes/lanches_card.php' ?>
-    </div>
-</section>
-<!-- AQUI TERMINA AS OPÇOES DE COMIDA COM O BOTÃO DE VERMAIS -->
+        <?php include './includes/lanches_lista.php' ?>
+<!--AQUI TERMINA AS OPÇOES DE COMIDA COM O BOTÃO DE VERMAIS -->
 </body>
 
 <?php include './includes/footer.php' ?>
