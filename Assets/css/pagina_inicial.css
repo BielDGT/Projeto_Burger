@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+
 *{
     font-family: "EB Garamond", serif;
     
@@ -43,61 +46,50 @@
     border-radius: 10px;
     cursor: pointer;
 }
-
-/* O TAMANHO DAS FOTOS ONDE FICA AS COMIDAS COM O BOTÃO DE VER MAIS */
-.foto{  
-    width: 250px;  
-    height: 250px;
-}
-/* A PARTIR DA AGORA COMEÇA AS LINHAS E COLUNAS DAS OPÇÕES DE COMIDA */
-.opcoes-comidas{
-    align-items: center;
-}
-.row{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    align-items: center;
-    margin: 0px 29px;
-    gap: 25px
+/* ----------------------------- */
+.container-cards{
+    margin-top:90px;
 
 }
-/* o caminho é a linha row onde dentro tem as divs que são as colunas, colocamos a borda e espaçamento da margem de 10 px  */
-.row>div{
-    border: 2px solid black;
-    border-radius: 10px;
+.linha{
+    display: flex;
+    flex-wrap: wrap;
     margin: 10px;
-    text-align: center;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 90px;
+}
+.coluna{
+    border: 1px solid black;
+    margin: 10px;
+    padding: 30px;
+    border-radius: 20px;
+}
+.coluna a{
+    border: 1px solid black;
+    border-radius: 22px;
+    padding: 10px 30px ;
+}
+.coluna h3{
+    margin-top: 10px;
+    margin-bottom: 30px;
 }
 
-.comida{
-    flex: 0;
-    box-sizing: border-box;
-
-}
-
-figure a{
-    padding:  10px;
-    border-radius: 15px;
-    background-color:#D96523;
-    color: white;
+.linha a{
     text-decoration: none;
-
 }
-
-
+.linha li{
+    list-style: none;
+}
 .btn-vermais a{
-    border: 1px solid transparent;
-    border-radius: 10px;
-    margin: 0px;
-    padding: 10px;
+    margin-right: 15px;
     background-color: #D96523;
     color: white;
-    text-decoration: none;
 }
-/* botão ver mais alinhar para ficar mais no centro */
-ul.btn-vermais{
-    margin: 30px 10px;
-    padding: 0px 60px;
-    list-style: none;
+/* ------------------------------- */
+/* foto */
+.foto{
+    width: 200px;
+    height: 200px;
 }

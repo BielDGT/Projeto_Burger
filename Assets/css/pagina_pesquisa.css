@@ -35,25 +35,10 @@
     margin: 10px;
     display: flex;
     flex-wrap: wrap;
-    gap: 100px;
+    gap: 30px;
 }
 
-div figure{
-    text-align: center;
-}
 
-div figcaption{
-    padding: 10px 0 20px 0;
-}
-
-figure a{
-    padding:  10px;
-    border-radius: 15px;
-    background-color:#D96523;
-    color: white;
-    text-decoration: none;
-
-}
 
 
 

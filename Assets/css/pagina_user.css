@@ -1,3 +1,6 @@
+body{
+    background-color: #F2A305;;
+}
 .formulario{
     display: flex;
     flex-direction: column;
@@ -20,5 +23,4 @@
 .formulario-campo{
     margin-bottom: 20px;
     width: 800;
-
 }

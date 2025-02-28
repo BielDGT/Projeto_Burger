@@ -13,22 +13,25 @@
     
     
     <link rel="stylesheet" href="./Assets/css/header.css">
+
     <link rel="stylesheet" href="./Assets/css/footer.css">
     <link rel="stylesheet" href="./Assets/css/pagina_lista_produtos.css">
 
+
+    <link rel="stylesheet" href="./Assets/css/footer.css">
 </head>
 
 <body>
     <header>
         <nav>
-            <a href="#" class="logo">
+            <a href="./pagina_inicial.php" class="logo">
                 <img src="./assets/fotos/logo.png" alt="Logo" class="logo_img">
                 <h1>Lanches DaMaJu</h1>
             </a>
             <ul class="menu-icone">
-                <li><a href="#"><i class="bi bi-search"></i></a></li>
-                <li><a href="#"><i class="bi bi-cart"></i></a></li>
-                <li><a href="#"><i class="bi bi-person-circle"></i></a></li>
+                <li><a href="./pagina_pesquisa.php"><i class="bi bi-search"></i></a></li>
+                <li><a href="./pagina_historico_compras.php"><i class="bi bi-cart"></i></a></li>
+                <li><a href="./pagina_usuario.php"><i class="bi bi-person-circle"></i></a></li>
             </ul>
         </nav>
     </header>

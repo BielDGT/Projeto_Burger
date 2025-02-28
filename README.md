@@ -1,7 +1,5 @@
 #Lista dos componentes do projeto
 
----
-
 - [x] Página login -> página que o usuario vai fazer o login. Vai ter um formulario com campos tipo email e senha e dois botões de entrar (se as informações forem validas encaminha para a pagina inicial)e cadastrar(direciona para Página Cadastro)e mais dois link para efetuar o login com a conta do facebook e instagram.
 <br>
 <br>
@@ -28,4 +26,4 @@ Footer padrão.
 <br><br>
 - [ ] Pagina cadastrar produto/ Pagina editar produtos -> header padrão, formulário com campos de nome do produto, descrição e valor. Em seguida, com checkbox (Hamburguer, Pizza, Bebidas, Doces, Msrmitas, Espetinhos  e massas) e botão de finalizar(direciona para Pagina Produto), footer padrão.
 <br><br>
-- [ ] Pagina listar produtos ->header padrão, barra de busca, espaço onde estará os registro dos produtos com foto, nome e ingredientes e dois botões de editar(encaminha para pagina de editar produtos) e excluir.
+ [ ] Pagina listar produtos ->header padrão, barra de busca, espaço onde estará os registro dos produtos com foto, nome e ingredientes e dois botões de editar(encaminha para pagina de editar produtos) e excluir.
