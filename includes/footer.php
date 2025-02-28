@@ -1,13 +1,21 @@
+<link rel="stylesheet" href="./Assets/css/footer.css">
 
 <footer>
-        <section class="footer-direitos">
+    <section class="footer-container">
+        <div class="footer-row">
             <div>
-                <p>Projeto realizado para fins educacionais. Não reservamos nenhuma das imagens.</p>
+                <p>© 2025. Este site foi desenvolvido com a turma de TI24. Não reservamos os direitos e os valores apresentados são meramente ilustrativos para fins didáticos.</p>
             </div>
             <div>
-                <img src="./assets/fotos/instagram.png" alt="Instagram">
-                <img src="./assets/fotos/facebook.png" alt="Facebook">
-                <img src="./assets/fotos/google.png" alt="Google">
+                <ul class="icon-redes">
+                    <li><a href="#"><i class="bi bi-instagram"></i></a></li>
+                    <li><a href="#"><i class="bi bi-facebook"></i></a></li>
+                    <li><a href="#"><i class="bi bi-google"></i></a></li>
+                </ul>
             </div>
-        </section>
-    </footer>
+        </div>
+    </section>
+</footer>
+</body>
+
+</html>

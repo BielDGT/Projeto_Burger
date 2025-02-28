@@ -5,6 +5,7 @@
 
 *{
     font-family: "EB Garamond", serif;
+    
 }
 /* estilizando o carrossel */
 .slide{
@@ -12,6 +13,7 @@
     width: 800px;
     height: 400px;
     overflow: hidden;
+
 }
 .carrossel{
     width: 400%;
