@@ -13,8 +13,10 @@
     
     
     <link rel="stylesheet" href="./Assets/css/header.css">
-    <link rel="stylesheet" href="./Assets/css/footer.css">
 
+    <link rel="stylesheet" href="../Assets/css/comidas_cards.css">
+
+    <link rel="stylesheet" href="./Assets/css/footer.css">
 </head>
 
 <body>
