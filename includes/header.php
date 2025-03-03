@@ -15,10 +15,10 @@
     <link rel="stylesheet" href="./Assets/css/header.css">
 
     <link rel="stylesheet" href="./Assets/css/footer.css">
-    <link rel="stylesheet" href="./Assets/css/pagina_lista_produtos.css">
+    
 
 
-    <link rel="stylesheet" href="./Assets/css/footer.css">
+    
 </head>
 
 <body>

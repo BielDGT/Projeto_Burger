@@ -1,6 +1,6 @@
 <?php include './includes/header.php' ?>
 
-
+<link rel="stylesheet" href="./Assets/css/pagina_lista_produtos.css">
 
 
 
@@ -16,21 +16,21 @@
     $resultado = $banco->query($select)->fetchAll();
 ?>
 
-<main class="">
-    <table class="tabela-produtos">
-        <div class="my-3 d-flex justify-content-end">
-            <a href="" class="btn btn-success">Cadastrar Novo Produto</a>
-        </div>
+<main class = "container-tabela">
+    
+        <h2>Lista de produtos</h2>
+    
+    <table>
         <tr>
-            <td> id </td>
-            <td> imagem </td>
-            <td> nome </td>
-            <td> Ação </td>
+            <th> Id </td>
+           
+            <th> Nome </td>
+            <th> Ação </td>
         </tr>
         <?php foreach ($resultado as $linha) { ?>
             <tr>
                 <td> <?= $linha['id_produtos'] ?> </td>
-                <td></td>
+                
                 <td> <?php echo $linha['nome'] ?> </td>
                 <td class="">
                     <a class="btn btn-primary" href="#">Abrir</a>
@@ -41,6 +41,6 @@
         <?php } ?>
     </table>
 </main>
-</body>
 
-</html>
+
+<?php include './includes/footer.php' ?>
