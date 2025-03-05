@@ -1,52 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
-
-
 *{
-    font-family: "EB Garamond", serif;
-    
+    font-family: "EB Garamond", serif;   
 }
-/* estilizando o carrossel */
-.slide{
-    margin: 0 auto;
-    width: 800px;
-    height: 400px;
-    overflow: hidden;
-
-}
-.carrossel{
-    width: 400%;
-    height: 400px;
-    display: flex;
-}
-.carrossel input{
-    /* ocultando os input */
-    display: none;
-}
-
-.carrossel-imagem{
-    width: 25%;
-    position: relative;
-}
-.carrossel-imagem img{
-    width: 800px;
-}
-/* estilizando os input */
-.manual-navegacao{
-    position:absolute;
-    width: 800px;
-    margin-top:-40px;
-    display: flex;
-    justify-content: center;
-}
-.manual-btn{
-    border: 2px solid white ;
-    padding: 5px;
-    border-radius: 10px;
-    cursor: pointer;
-}
-/* ----------------------------- */
 .container-cards{
     margin-top:90px;
 
@@ -90,6 +47,10 @@
 /* ------------------------------- */
 /* foto */
 .foto{
+    width: 200px;
+    height: 200px;
+}
+.foto-produto{
     width: 200px;
     height: 200px;
 }

@@ -1,12 +1,30 @@
-<link rel="stylesheet" href="./Assets/css/comidas_cards.css">
 
-<?php foreach ($resultado as $linha) { ?>
-            <div>
-                <figure>
-                    <img src="./assets/Fotos/fotos_cards/hamburguer.png" alt="hamburguer">
-                    <figcaption><?php echo $linha['nome'] ?></figcaption>
-                    <a href="./pagina_produto.php?id=<?=$linha['id_produtos'] ?>">VER MAIS</a>
-                </figure>
+<link rel="stylesheet" href="../Assets/css/comidas_cards.css">
 
-            </div>
-        <?php } ?>
+<?php
+
+$dsn = 'mysql:dbname=db_damaju;host=127.0.0.1';
+$user = 'root';
+$password = '';
+
+$banco = new PDO($dsn, $user, $password);
+
+$select = 'SELECT * FROM tb_produtos';
+
+$resultado = $banco->query($select)->fetchAll();
+
+?>
+ <?php foreach ($resultado as $linha) { ?>
+    <div class="coluna">
+    <figure>
+        <!-- se começa primeiro a tag  figure para prossegir com o figcapture  -->
+        <!-- <img src="./Assets/Fotos/pagina_inicial/<?php echo $linha ['Imagem']  ?>" alt="imagem da comida" > -->
+        <figcaption>
+            <h3><?php echo $linha ['nome']  ?></h3>
+            <ul class="btn-vermais">
+                <li><a href="#">VER MAIS</a></li>
+            </ul>
+        </figcaption>
+    </figure>
+</div>
+<?php } ?>
