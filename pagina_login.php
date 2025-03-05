@@ -39,7 +39,7 @@
                     </p>
                 </form>
 
-                <form class="form form-register">
+                <form class="form form-register" action="./cliente_cad.php" method="POST">
                     <h2 class="form-title">Cadastrar</h2>
                     <div class="form-social">
                         <a href="#" class="social-icon">
@@ -54,14 +54,14 @@
                     </div>
 
                     <div class="form-input-container">
-                        <input type="text" class="form-input" placeholder="Nome">
-                        <input type="email" class="form-input" placeholder="Email">
-                        <input type="password" class="form-input" placeholder="Senha">
-                        <input type="text" class="form-input" placeholder="CPF">
-                        <input type="date" class="form-input" placeholder="Nascimento">
-                    
+                            <input type="text" class="form-input" placeholder="Nome" name="nome">
+                            <input type="email" class="form-input" placeholder="Email" name="email">
+                            <input type="password" class="form-input" placeholder="Senha" name="senha">
+                            <input type="text" class="form-input" placeholder="CEP" name="cep">
+                            <input type="text" class="form-input" placeholder="CPF" name="cpf">
+                            <input type="date" class="form-input" placeholder="Nascimento" name="nasc">
+                            <input type="submit" class="form-button">
                     </div>
-                    <button type="button" class="form-button">Cadastrar</button>
                     <p class="mobile-text">
                         Já tem conta?
                         <a href="#" id="open-login-mobile">Login</a>
@@ -89,6 +89,6 @@
 
 </body>
 
-<script src="./Assets/js/pagina_login.js" ></script>
+<script src="./Assets/js/pagina_login.js"></script>
 
 </html>

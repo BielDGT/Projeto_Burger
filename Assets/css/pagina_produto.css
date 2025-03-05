@@ -32,7 +32,6 @@
 
 #destaque p, span{
     font-size: 1.5rem;
-    text-align: justify;
 }
 
 .btn{
@@ -94,3 +93,9 @@ figure{
     transform: scale(1.2);
 }
 
+.categ{
+    background-color: red;
+    text-align: center;
+    width: 200px;
+    border-radius: 10px;
+}
