@@ -1,3 +1,4 @@
+
 <link rel="stylesheet" href="../Assets/css/comidas_cards.css">
 
 <?php
@@ -27,5 +28,3 @@ $resultado = $banco->query($select)->fetchAll();
     </figure>
 </div>
 <?php } ?>
-
-
