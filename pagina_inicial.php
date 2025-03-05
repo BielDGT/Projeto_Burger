@@ -10,7 +10,7 @@
 <!-- carrossel -->
 
 <!-- cards lanches -->
- <?php include './includes/lanches_lista.php' ?>
+<?php include './includes/lanches_lista.php' ?>
 <!--              -->
 </body>
 <?php include './includes/footer.php' ?>
