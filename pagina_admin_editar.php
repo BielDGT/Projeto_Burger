@@ -27,7 +27,7 @@
         <section class="linha-btn">
             <div class="btn-editar">
                 <ol>
-                    <li><a href="./pagina_admin_editar.php">Editar</a></li>
+                    <li><a href="#">Editar</a></li>
                 </ol>
             </div>
             <div class="btn-cadastrar">
@@ -43,7 +43,7 @@
         </section>
         <section class="linha-formulario">
             <div class="formulario">
-                    <form>
+                    <form action="admin-editar.php" method="POST">
                         <input type="text" class="formulario-campo" placeholder="Nome" ><br>
                         <input type="text" class="formulario-campo" placeholder="Email" ><br>
                         <input type="text" class="formulario-campo" placeholder="Senha" ><br>
