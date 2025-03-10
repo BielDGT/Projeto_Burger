@@ -41,7 +41,14 @@
     margin: 10px;
 }
 
-/* section cards */
+.categ{
+    background-color: red;
+    text-align: center;
+    width: 200px;
+    border-radius: 10px;
+}
+
+/* section cards
 
 .container-cards{
     display: flex;
@@ -91,11 +98,4 @@ figure{
 
 .cards div:hover{
     transform: scale(1.2);
-}
-
-.categ{
-    background-color: red;
-    text-align: center;
-    width: 200px;
-    border-radius: 10px;
-}
+} */

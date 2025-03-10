@@ -17,7 +17,7 @@ $resultado = $banco->query($select)->fetchAll();
  <?php foreach ($resultado as $linha) { ?>
     <div class="coluna">
     <figure>
-        <img src="./assets/Fotos/fotos_cards/hamburguer.png" alt="hamburguer">
+        <img src="./Assets/Fotos/fotos_cards/<?php echo $linha['img'] ?>" alt="hamburguer">
 
         <figcaption>
             <h3><?php echo $linha ['nome']  ?></h3>

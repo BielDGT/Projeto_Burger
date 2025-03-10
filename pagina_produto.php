@@ -1,6 +1,7 @@
 <?php include './includes/header.php' ?>
 
     <link rel="stylesheet" href="./Assets/css/pagina_produto.css">
+    <link rel="stylesheet" href="./Assets/css/comidas_cards.css">
 
     <?php 
 
@@ -20,7 +21,7 @@ $dados = $banco->query($select)->fetch();
 
     <section id="destaque">
         <div class="local-imagem">
-            <img src="./Assets/Fotos/pagina_produto/burger.jpg" class="imagem-principal" alt="">
+            <img src="./Assets/Fotos/fotos_cards/<?php echo $dados['img'] ?>" class="imagem-principal" alt="foto">
         </div>
         <div class="content">
             <h2><?php echo $dados['nome'] ?></h2>
@@ -31,47 +32,31 @@ $dados = $banco->query($select)->fetch();
             <button class=" btn ">Comprar</button>
         </div>
     </section>
+    
     <section id="container recomendação">
         <div class="container-cards">
 
-            <div class="cards">
-                <figure>
-                    <img src="./Assets/Fotos/pagina_produto/burger.jpg" alt="burger" class="img">
-                    <figcaption>
-                        <h4>Burger</h4>
-                        <div>
-                        <a href="#">ver mais</a>
-                        </div>
-                    </figcaption>
-                </figure>
-            </div>
-            <div class="cards">
-                <figure>
-                    <img src="./Assets/Fotos/pagina_produto/burger.jpg" alt="burger" class="img">
-                    <figcaption>
-                        <h4>Burger</h4>
-                        <a href="#">ver mais</a>
-                    </figcaption>
-                </figure>
-            </div>
-            <div class="cards">
-                <figure>
-                    <img src="./Assets/Fotos/pagina_produto/burger.jpg" alt="burger" class="img">
-                    <figcaption>
-                        <h4>Burger</h4>
-                        <a href="#">ver mais</a>
-                    </figcaption>
-                </figure>
-            </div>
-            <div class="cards">
-                <figure>
-                    <img src="./Assets/Fotos/pagina_produto/burger.jpg" alt="burger" class="img">
-                    <figcaption>
-                        <h4>Burger</h4>
-                        <a href="#">ver mais</a>
-                    </figcaption>
-                </figure>
-            </div>
+        
+
+<?php
+
+$select = 'SELECT * FROM tb_produtos ORDER BY RAND() LIMIT 4';
+
+$resultado = $banco->query($select)->fetchAll();
+
+?>
+ <?php foreach ($resultado as $linha) { ?>
+    <div class="coluna">
+    <figure>
+        <img src="./Assets/Fotos/fotos_cards/<?php echo $linha['img'] ?>" alt="hamburguer">
+
+        <figcaption>
+            <h3><?php echo $linha ['nome']  ?></h3>
+            <a href="./pagina_produto.php?id=<?=$linha['id_produtos'] ?>">VER MAIS</a>
+        </figcaption>
+    </figure>
+</div>
+<?php } ?>
         </div>
     </section>
 
