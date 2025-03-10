@@ -1,7 +1,7 @@
 <link rel="stylesheet" href="../Assets/css/comidas_cards.css">
 
 <style>
-    img {
+    .foto{
         width: 200px;
         height: 200px;
     }
@@ -23,7 +23,7 @@ $resultado = $banco->query($select)->fetchAll();
     <div class="coluna">
         <figure>
             <!-- se começa primeiro a tag  figure para prossegir com o figcapture  -->
-            <img src="./Assets/Fotos/pagina_inicial/comida.jpg" alt="imagem da comida">
+            <img src="./Assets/Fotos/pagina_inicial/comida.jpg" alt="imagem da comida" class="foto">
             <figcaption>
                 <h3><?php echo $linha['nome']  ?></h3>
                 <ul class="btn-vermais">
