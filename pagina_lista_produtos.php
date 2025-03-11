@@ -4,6 +4,7 @@
 
 
 
+
 <?php
     $dsn = 'mysql:dbname=db_damaju;host=127.0.0.1';
     $user = 'root';
@@ -33,7 +34,7 @@
                 
                 <td> <?php echo $linha['nome'] ?> </td>
                 <td class="">
-                    <a class="btn btn-primary" href="#">Abrir</a>
+                    <a class="btn btn-primary" href="./pagina_ver_produto.php?id_produtos=<?= $linha['id_produtos']?>">Ver</a>
                     <a class="btn btn-warning" href="#">Editar</a>
                     <a class="btn btn-danger" href="#">Excluir</a>
                 </td>
@@ -43,4 +44,4 @@
 </main>
 
 
-<?php include './includes/footer.php' ?>
+<?php include './includes/footer.php'?>
