@@ -6,16 +6,16 @@
 <div class="container-cadastrar-editar">
 <h2>Cadastrar Produto</h2>
 
-<form action="">
-    <input type="text" name="nome" placeholder="Nome">
+<form action="./produto_cadastrar.php" method="POST">
+    <input type="text"  placeholder="Nome" name="nome">
 
-    <input type="text" name="descricao" placeholder="Descrição">
+    <input type="text"  placeholder="Descrição" name="descrição">
 <div class="linha">
-    <input type="text" name="categoria" placeholder="Categoria">
+    <input type="text"  placeholder="Categoria" name="categoria">
 
-    <input type="number" class="valor" placeholder="Valor">
+    <input type="text"  placeholder="Valor" name="valor">
 </div>
-    <input type="file" name="img" accept="image/*">
+    
 
     <button type="submit" class="btn btn-success">Enviar</button>
 </form>
