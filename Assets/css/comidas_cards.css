@@ -3,6 +3,7 @@
     flex-direction: column;
     justify-content: space-between;
     text-align: center;
+    background-color: white;
     
 }
 
@@ -12,6 +13,7 @@
     border: 2px solid black;
     padding: 20px;
     border-radius: 20px;
+    
 }
 
 .coluna img{
