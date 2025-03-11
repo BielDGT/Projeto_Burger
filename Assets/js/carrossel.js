@@ -1,11 +1,8 @@
-
-console.log("ola");
-
 let indexSlide = 0; 
 function showSlide(index){
-    const carrossel = document.querySelector('.carrossel_fotos')
+    const carrossel = document.querySelector('.carrossel')
     // queryselector quero selecionar
-    const totalSlides= document.querySelectorAll('.carrossel_fotos img').length
+    const totalSlides= document.querySelectorAll('.carrossel img').length
     // lenght conta quantos elementos tem 
 
     if (index >= totalSlides){
@@ -16,7 +13,7 @@ function showSlide(index){
         indexSlide = index
     }
     const offset = -indexSlide*100
-    carrossel_fotos.style.transform = `translateX(${offset}%)`
+    carrossel.style.transform = `translateX(${offset}%)`
 }
 
 function proximoSlide(){
@@ -32,5 +29,5 @@ function anteriorSlide(){
 setInterval(() => {
 // funçao anonima que so funciona para so aquilo e nada mais, pequena coisas
     proximoSlide()
-},2000)
+},4000)
 // setiternal -> ele executa a cada x tempo, pede para ser passado uma função para ele 

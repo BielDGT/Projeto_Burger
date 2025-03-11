@@ -1,14 +1,16 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 
-.slide{
+#banner{
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.slide img{
+
+#banner img{
     width: 100%;
-    height: 650px;
 }
-.carrossel{
+
+.carrossel-container{
     width: 100%;
     max-width: 1920px;
     border: 2px solid #cccccc;
@@ -18,13 +20,13 @@
     position: relative;
 }
 
-.carrossel_fotos {
+.carrossel {
     display: flex;
     transition: transform 1s ease-in-out;
     /* toda a vez que o transition encontrar o tramsform, que em 1 segundo vai fazer o ease-in-out -> tipo de transição */
 }
 
-.carrossel>button{
+.carrossel-container>button{
     /* o carrossel - container dentro tem varios buttoms */
     background-color: rgba(0,0, 0, 0.5);
     color: white;
@@ -36,12 +38,11 @@
     /* valor absoluto o comando que der recebe */
     top: 50%;
 }
-.carrossel>button.anterior{
+.carrossel-container>button.anterior{
     /* a div chamada carrossel-container tem button com o nome anterior e o left posiciona o item 10px para a esquerda */
     left: 10px;
 }
-.carrossel>button.proximo{
+.carrossel-container>button.proximo{
     /* a div chamada carrossel-container tem button com o nome proximo e o right posiciona o item 10px para a direita */
     right: 10px;
 }
-
