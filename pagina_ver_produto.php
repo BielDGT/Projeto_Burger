@@ -1,7 +1,7 @@
-
 <?php include './includes/header.php' ?>
+<link rel="stylesheet" href="./Assets/css/pagina_ver_produto.css">
 
-<?php 
+<?php
 
 $id_produtos = $_GET['id_produtos'];
 
@@ -17,30 +17,35 @@ $dados = $banco->query($select)->fetch();
 
 
 ?>
+
+<div class="container-ver-produto">
     
-    
-    <h2>Cadastro de Produto</h2>
-    <img src="./Assets/Fotos/pagina_produto/burger.jpg" alt="">
+    <img src="./Assets/Fotos/pagina_ver_produto/burguer-de-picanha.jpg" alt="" class="foto-produto">
 
     <form action="">
 
-        <label for="nome">Nome</label>
-        <input type="text" value="<?php echo $dados ['nome']?>" disabled >
-        
-        <label for="descrição">Descrição</label>
-        <input type="text" value="<?php echo $dados ['descrição']?>" disabled >
+        <div class="mb-1">
+            <label for="nome" class="form-label">Nome</label>
+            <input type="text" id="nome" class="form-control" value="<?php echo $dados['nome'] ?>" disabled>
+        </div>
 
+        <div class="mb-1">
+            <label for="descrição" class="form-label">Descrição</label>
+            <input type="text" id="descrição" class="form-control" value="<?php echo $dados['descrição'] ?>" disabled>
+        </div>
 
-        <div class="row mt-2">
+        <div class="linha mb-1">
+            <div class="mb-1">
+                <label for="categoria" class="form-label">Categoria</label>
+                <input type="text" id="categoria" class="form-control" value="<?php echo $dados['categoria'] ?>" disabled>
+            </div>
 
-        <label for="categoria">Categoria</label>
-        <input type="text" value="<?php echo $dados ['categoria']?>" disabled >
-
-        <label for="valor">Valor</label>
-        <input type="text" value="<?php echo $dados ['valor']?>" disabled >
+            <div class="mb-1">
+                <label for="valor" class="form-label">Valor</label>
+                <input type="text" id="valor" class="form-control" value="<?php echo $dados['valor'] ?>" disabled>
+            </div>
+        </div>
+    </form>
 </div>
 
-    </form>
-
-
-    <?php include './includes/footer.php'?>
+<?php include './includes/footer.php' ?>

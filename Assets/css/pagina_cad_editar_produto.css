@@ -1,0 +1,36 @@
+html,body{
+    height: 100%;
+    margin: 0;
+}
+body{
+    display: flex;
+    flex-direction: column;
+}
+.container-cadastrar-editar{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;/* Centraliza verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+}
+
+form{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+    
+}
+
+
+.linha{
+    display: flex;
+    justify-content: space-between
+}
+
+button {
+    width: 150px;
+    align-self: center; 
+}

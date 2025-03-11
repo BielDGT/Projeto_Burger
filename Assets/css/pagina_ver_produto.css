@@ -1,0 +1,38 @@
+
+html,body{
+    height: 100%;
+    margin: 0;
+}
+body{
+    display: flex;
+    flex-direction: column;
+}
+.container-ver-produto{
+    flex: 1;
+}
+.container-ver-produto{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+
+
+form{
+    width: 500px;
+}
+
+.foto-produto{
+    width: 300px;
+    height: 300;
+    border-radius: 50%;
+}
+
+.linha{
+    display: flex;
+    justify-content: space-between
+    
+}
