@@ -9,13 +9,14 @@
 <form action="./produto_cadastrar.php" method="POST">
     <input type="text"  placeholder="Nome" name="nome">
 
-    <input type="text"  placeholder="Descrição" name="descrição">
+    <input type="text"  placeholder="Descrição" name="descricao">
 <div class="linha">
     <input type="text"  placeholder="Categoria" name="categoria">
 
     <input type="text"  placeholder="Valor" name="valor">
 </div>
     
+<input type="file" name="img" accept="image/*"> 
 
     <button type="submit" class="btn btn-success">Enviar</button>
 </form>
