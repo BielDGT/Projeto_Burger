@@ -1,4 +1,3 @@
-
 <?php
 // echo '<h1>Aluno Editar</h1>';
 
@@ -22,16 +21,16 @@ $password = '';
 
 $banco = new PDO($dsn, $user, $password);
 
-$update = 'UPDATE tb_clientes set nome = :nome, senha = :senha, cep = :cep, cpf = :cpf, nascimento = :nascimento where id_Clientes = :id' ;
+$update = 'UPDATE tb_clientes set nome = :nome, senha = :senha, cep = :cep, cpf = :cpf, nascimento = :nascimento where id_Clientes = :id';
 
 
 $banco->prepare($update)->execute([
-    ':id'=> $editarId,
-    ':nome'=>$editarNome,
-    ':senha'=>$editarSenha,
-    ':cep'=>$editarCep,   
-    ':cpf'=>$editarCpf,
-    ':nascimento'=>$editarNascimento,
+    ':id' => $editarId,
+    ':nome' => $editarNome,
+    ':senha' => $editarSenha,
+    ':cep' => $editarCep,
+    ':cpf' => $editarCpf,
+    ':nascimento' => $editarNascimento,
 ]);
 ?>
 
