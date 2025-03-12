@@ -21,7 +21,7 @@
 
 #principal .filtro{
     max-height: 260px;
-    min-width: 175px;
+    min-width: 200px;
     border: 4px solid #D96523;
     border-radius:10px;
     padding: 10px;
@@ -29,9 +29,7 @@
 }
 
 #principal main.produtos{
-    border: 4px solid #D96523;
-    border-radius:10px;
-    padding: 20px 100px;
+
     margin: 10px;
     display: flex;
     flex-wrap: wrap;

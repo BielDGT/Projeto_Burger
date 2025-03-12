@@ -9,7 +9,7 @@
 
 .coluna figure{
     width: 300px;
-    height: 400px;
+    height: 420px;
     border: 2px solid black;
     padding: 20px;
     border-radius: 20px;
@@ -37,6 +37,13 @@
     color: white;
     text-decoration: none;
 
+}
+
+.coluna p{
+    color: black;
+    background-color: red;
+    border: 2px black solid;
+    border-radius: 10px;
 }
 
 
