@@ -9,7 +9,7 @@
 <form action="./produto_cadastrar.php" method="POST">
     <input type="text"  placeholder="Nome" name="nome">
 
-    <input type="text"  placeholder="Descrição" name="descrição">
+    <input type="text"  placeholder="Descrição" name="descricao">
 <div class="linha">
     <input type="text"  placeholder="Categoria" name="categoria">
 
