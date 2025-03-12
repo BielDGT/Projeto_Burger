@@ -24,7 +24,7 @@
 <body>
     <header>
         <nav>
-            <a href="./pagina_inicial.php" class="logo">
+            <a href="./index.php" class="logo">
                 <img src="./assets/fotos/logo.png" alt="Logo" class="logo_img">
                 <h1>Lanches DaMaJu</h1>
             </a>

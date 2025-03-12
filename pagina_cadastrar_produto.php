@@ -16,6 +16,7 @@
     <input type="text"  placeholder="Valor" name="valor">
 </div>
     
+<input type="file" name="img" accept="image/*"> 
 
     <button type="submit" class="btn btn-success">Enviar</button>
 </form>

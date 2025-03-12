@@ -6,6 +6,9 @@
 </head>
 
 <?php
+
+
+
 $dsn = 'mysql:dbname=db_damaju;host=127.0.0.1';
 $user = 'root';
 $password = '';
@@ -23,18 +26,15 @@ $resultado = $banco_cliente->query($select)->fetch();
             <div class="foto-usuario">
                 <img src="./Assets/Fotos/pagina_usuario/usuario.png" alt="icone do usuário" class="foto-usuario">
             </div>
-            <div class="btn-editar">
-                <ol>
-                    <li><a href="./pagina_usuario-editar.php?id_Clientes=<?php echo $resultado['id_Clientes'] ?>" hidden>Salvar</a></li>
-                </ol>
-            </div>
             <div class="formulario">
                 <form action="./usuario-editar.php" method="POST">
-                    <input type="text" class="formulario-campo" placeholder="Nome" value="<?php echo $resultado['nome'] ?>"><br>
-                    <input type="text" class="formulario-campo" placeholder="Email" value="<?php echo $resultado['email'] ?>"><br>
-                    <input type="text" class="formulario-campo" placeholder="Senha" value="<?php echo $resultado['senha'] ?>"><br>
-                    <input type="text" class="formulario-campo" placeholder="CPF" value="<?php echo $resultado['cpf'] ?>"><br>
-                    <input type="text" class="formulario-campo" placeholder="Endereço" value="<?php echo $resultado['cep'] ?>"><br>
+                <input type="hidden" class="formulario-campo" placeholder="id" name="id" value="<?php echo $_GET['id_Clientes'] ?>"><br>
+                    <input type="text" class="formulario-campo" placeholder="Nome" name="nome" value="<?php echo $resultado['nome'] ?>"><br>
+                    <input type="text" class="formulario-campo" placeholder="Email" name="email" value="<?php echo $resultado['email'] ?>"><br>
+                    <input type="text" class="formulario-campo" placeholder="Senha" name="senha" value="<?php echo $resultado['senha'] ?>"><br>
+                    <input type="text" class="formulario-campo" placeholder="CPF" name="cpf" value="<?php echo $resultado['cpf'] ?>"><br>
+                    <input type="text" class="formulario-campo" placeholder="Endereço" name="cep" value="<?php echo $resultado['cep'] ?>"><br>
+                    <input type="text" class="formulario-campo" placeholder="nascimento" name="nascimento" value="<?php echo $resultado['nascimento'] ?>"><br>
                     <input type="submit">
                 </form>
             </div>
@@ -44,5 +44,4 @@ $resultado = $banco_cliente->query($select)->fetch();
     </main>
 </body>
 <?php include './includes/footer.php' ?>
-
 </html>

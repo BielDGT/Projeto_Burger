@@ -35,8 +35,8 @@
                 <td> <?php echo $linha['nome'] ?> </td>
                 <td class="">
                     <a class="btn btn-primary" href="./pagina_ver_produto.php?id_produtos=<?= $linha['id_produtos']?>">Ver</a>
-                    <a class="btn btn-warning" href="#">Editar</a>
-                    <a class="btn btn-danger" href="#">Excluir</a>
+                    <a class="btn btn-warning" href="./pagina_editar_produto.php?id_produto_editar=<?= $linha['id_produtos']?>">Editar</a>
+                    <a class="btn btn-danger" href="./produto_deletar.php?id_produtos=<?= $linha['id_produtos']?>">Excluir</a>
                 </td>
             </tr>
         <?php } ?>
