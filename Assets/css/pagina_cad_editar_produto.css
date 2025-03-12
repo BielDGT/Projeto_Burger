@@ -13,21 +13,31 @@ body{
     width: 100%;
     align-items: center;/* Centraliza verticalmente */
     justify-content: center; /* Centraliza horizontalmente */
+
 }
 
 form{
     width: 500px;
+    height: 320px;
     display: flex;
     flex-direction: column;
     gap: 20px;
+    background-color: #FF7F50;
+    border: 3px solid #FF5733; 
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+
+
+}
+
+h2{
     
+    align-self: center;
     
 }
 
-
 .linha{
     display: flex;
-    justify-content: space-between
+    justify-content: space-around;
 }
 
 button {
@@ -35,3 +45,10 @@ button {
     align-self: center; 
 }
 
+.largura-definida{
+    width: 440px;
+    
+}
+input{
+    align-self: center;
+}

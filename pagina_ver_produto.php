@@ -20,7 +20,7 @@ $dados = $banco->query($select)->fetch();
 
 <div class="container-ver-produto">
     
-    <img src="./Assets/Fotos/pagina_ver_produto/burguer-de-picanha.jpg" alt="" class="foto-produto">
+    <img src="./Assets/Fotos/fotos_cards/<?php echo $dados['img']?>" alt="" class="foto-produto">
 
     <form action="">
 

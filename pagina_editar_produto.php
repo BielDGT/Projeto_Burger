@@ -19,16 +19,16 @@ $dados = $banco->query($select)->fetch();
 
 
 <div class="container-cadastrar-editar">
-<h2>Editar Produto</h2>
+
 
 <form action="./produto_editar.php" method="POST">
-
+<h2>Editar Produto</h2>
 <input type="hidden"  placeholder="Nome" name="id" value="<?php echo $id_produto_editar ?>">
 
-    <input type="text"  placeholder="Nome" name="nome" value="<?=$dados['nome']?>">
+    <input type="text" class="largura-definida" placeholder="Nome" name="nome" value="<?=$dados['nome']?>">
 
-    <input type="text"  placeholder="Descrição" name="descricao" value="<?=$dados['descrição']?>">
-<div class="linha">
+    <input type="text"  class="largura-definida" placeholder="Descrição" name="descricao" value="<?=$dados['descrição']?>">
+    <div class="linha">
     <input type="text"  placeholder="Categoria" name="categoria" value="<?=$dados['categoria']?>">
 
     <input type="text"  placeholder="Valor" name="valor" value="<?=$dados['valor']?>">
