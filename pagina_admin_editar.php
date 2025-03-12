@@ -43,8 +43,8 @@ $resultado = $banco_cliente->query($select)->fetch();
                     <input type="text" class="formulario-campo" placeholder="Nome" name="nome" value="<?php echo $resultado['nome'] ?>"><br>
                     <input type="text" class="formulario-campo" placeholder="Email" name="email" value="<?php echo $resultado['email'] ?>"><br>
                     <input type="text" class="formulario-campo" placeholder="Senha" name="senha" value="<?php echo $resultado['senha'] ?>"><br>
-                    <input type="text" class="formulario-campo" placeholder="CPF" name="cpf" value="<?php echo $resultado['cpf'] ?>"><br>
-                    <input type="text" class="formulario-campo" placeholder="Endereço" name="cep" value="<?php echo $resultado['cep'] ?>"><br>
+                    <input type="number" class="formulario-campo" placeholder="CPF" name="cpf" value="<?php echo $resultado['cpf'] ?>"><br>
+                    <input type="number" class="formulario-campo" placeholder="Endereço" name="cep" value="<?php echo $resultado['cep'] ?>"><br>
                     <input type="text" class="formulario-campo" placeholder="nascimento" name="nascimento" value="<?php echo $resultado['nascimento'] ?>"><br>
                     <input type="submit">
                 </form>
