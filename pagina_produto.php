@@ -1,3 +1,5 @@
+<?php session_start(); ?>
+
 <?php include './includes/header.php' ?>
 
 <link rel="stylesheet" href="./Assets/css/pagina_produto.css">
@@ -18,20 +20,22 @@ $select = "SELECT * FROM tb_produtos WHERE id_produtos =  $id";
 $dados = $banco->query($select)->fetch();
 
 ?>
+<form action="./pagina_historico_compras.php" method="POST">
+    <section id="destaque">
+        <div class="local-imagem">
+            <img src="./Assets/Fotos/fotos_cards/<?php echo $dados['img'] ?>" class="imagem-principal" alt="foto">
+        </div>
+        <div class="content">
+            <h2><?php echo $dados['nome'] ?></h2>
+            <p><?php echo $dados['descrição'] ?></p>
+            <span class="categ"><?php echo $dados['categoria'] ?></span>
+            <span>R$<?php echo $dados['valor'] ?></span>
+            <a class="btn" <?php $_SESSION['id'] ?> >Adicionar</a>
+            <button class=" btn ">Comprar</button>
+        </div>
+    </section>
+</form>
 
-<section id="destaque">
-    <div class="local-imagem">
-        <img src="./Assets/Fotos/fotos_cards/<?php echo $dados['img'] ?>" class="imagem-principal" alt="foto">
-    </div>
-    <div class="content">
-        <h2><?php echo $dados['nome'] ?></h2>
-        <p><?php echo $dados['descrição'] ?></p>
-        <span class="categ"><?php echo $dados['categoria'] ?></span>
-        <span>R$<?php echo $dados['valor'] ?></span>
-        <button class=" btn ">Adicionar</button>
-        <button class=" btn ">Comprar</button>
-    </div>
-</section>
 
 <section id="container recomendação">
 
