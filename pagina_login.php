@@ -10,12 +10,14 @@
 
 </head>
 
+
+
 <body>
-    <main>
+    <main class="login">
         <div class="login-container" id="login-container">
             <div class="form-container">
 
-                <form class="form form-login">
+                <form class="form form-login" action="#login" method="POST">
                     <h2 class="form-title">Entrar</h2>
                     <div class="form-social">
                         <a href="#" class="social-icon">
@@ -29,11 +31,11 @@
                         </a>
                     </div>
                     <div class="form-input-container">
-                        <input type="email" class="form-input" placeholder="Email">
-                        <input type="password" class="form-input" placeholder="Senha">
+                        <input type="text" class="form-input" placeholder="Usuario" name="usuario">
+                        <input type="password" class="form-input" placeholder="Senha" name="senha">
+                        <input type="submit" class="form-button" value="Entrar">
                     </div>
                     <a href="#" class="form-link">Esqueceu a senha?</a>
-                    <button type="button" class="form-button">Entrar</button>
                     <p class="mobile-text">Não tem conta?
                         <a href="#" id="open-register-mobile">Cadastre-se</a>
                     </p>
@@ -54,13 +56,16 @@
                     </div>
 
                     <div class="form-input-container">
-                            <input type="text" class="form-input" placeholder="Nome" name="nome">
-                            <input type="email" class="form-input" placeholder="Email" name="email">
-                            <input type="password" class="form-input" placeholder="Senha" name="senha">
-                            <input type="text" class="form-input" placeholder="CEP" name="cep">
-                            <input type="text" class="form-input" placeholder="CPF" name="cpf">
-                            <input type="date" class="form-input" placeholder="Nascimento" name="nasc">
-                            <input type="submit" class="form-button">
+                        <input type="text" class="form-input" placeholder="Usuario" name="user">
+                        <input type="password" class="form-input" placeholder="Senha" name="senha">
+
+                        <input type="text" class="form-input" placeholder="Nome" name="nome">
+                        <input type="email" class="form-input" placeholder="Email" name="email">
+                        <input type="text" class="form-input" placeholder="Telefone" name="tel">
+                        <input type="text" class="form-input" placeholder="CEP" name="cep">
+                        <input type="text" class="form-input" placeholder="CPF" name="cpf">
+                        <input type="date" class="form-input" placeholder="Nascimento" name="nasc">
+                        <input type="submit" class="form-button" value="Cadastrar">
                     </div>
                     <p class="mobile-text">
                         Já tem conta?
