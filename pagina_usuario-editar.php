@@ -14,7 +14,7 @@ $user = 'root';
 $password = '';
 $banco_cliente = new PDO($dsn, $user, $password);
 
-$select = 'SELECT * FROM tb_clientes WHERE id_Clientes=1';
+$select = "SELECT * FROM tb_pessoa INNER JOIN tb_usuario ON tb_pessoa.id = tb_usuario.id_pessoa WHERE tb_usuario.id_pessoa = 6";
 
 $resultado = $banco_cliente->query($select)->fetch();
 
@@ -28,13 +28,18 @@ $resultado = $banco_cliente->query($select)->fetch();
             </div>
             <div class="formulario">
                 <form action="./usuario-editar.php" method="POST">
-                <input type="hidden" class="formulario-campo" placeholder="id" name="id" value="<?php echo $_GET['id_Clientes'] ?>"><br>
+                <input type="hidden" class="formulario-campo" placeholder="id" name="id" value="<?php echo $_GET['id'] ?>"><br>
+                <input type="text" class="formulario-campo" placeholder="usuario" name="usuario" value="<?php echo $resultado['usuario'] ?>"><br>
+                <input type="text" class="formulario-campo" placeholder="Senha" name="senha" value="<?php echo $resultado['senha'] ?>"><br>
+
+
                     <input type="text" class="formulario-campo" placeholder="Nome" name="nome" value="<?php echo $resultado['nome'] ?>"><br>
                     <input type="text" class="formulario-campo" placeholder="Email" name="email" value="<?php echo $resultado['email'] ?>"><br>
-                    <input type="text" class="formulario-campo" placeholder="Senha" name="senha" value="<?php echo $resultado['senha'] ?>"><br>
                     <input type="text" class="formulario-campo" placeholder="CPF" name="cpf" value="<?php echo $resultado['cpf'] ?>"><br>
                     <input type="text" class="formulario-campo" placeholder="Endereço" name="cep" value="<?php echo $resultado['cep'] ?>"><br>
                     <input type="text" class="formulario-campo" placeholder="nascimento" name="nascimento" value="<?php echo $resultado['nascimento'] ?>"><br>
+                    <input type="text" class="formulario-campo" placeholder="telefone" name="tel" value="<?php echo $resultado['telefone'] ?>"><br>
+
                     <input type="submit">
                 </form>
             </div>

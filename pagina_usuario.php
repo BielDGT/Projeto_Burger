@@ -1,5 +1,20 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-<?php include './includes/header.php' ?>
+
+<?php
+include './includes/header.php';
+
+if($_SERVER['REQUEST_METHOD'] == 'GET' && !empty($_GET) && $_GET['sair'] == 'true') {
+    session_destroy();
+    header('location:index.php');
+}
+
+
+if (empty($_SESSION) && !isset($_SESSION['id_pessoa'])){
+    header('location:usuario-login.php');
+
+}
+
+?>
 <link rel="stylesheet" href="./Assets/css/pagina_user.css">
 <link rel="stylesheet" href="./Assets/css/footer.css">
 
@@ -11,7 +26,8 @@ $user = 'root';
 $password = '';
 $banco_cliente = new PDO($dsn, $user, $password);
 
-$select = 'SELECT * FROM tb_clientes WHERE id_Clientes=1';
+$select = "SELECT * FROM tb_pessoa INNER JOIN tb_usuario ON tb_pessoa.id = tb_usuario.id_pessoa WHERE tb_usuario.id_pessoa = {$_SESSION['id_pessoa']} " ;
+
 
 $resultado = $banco_cliente->query($select)->fetch();
 
@@ -25,18 +41,22 @@ $resultado = $banco_cliente->query($select)->fetch();
             </div>
             <div class="btn-editar">
                 <ol>
-                    <li><a href="./pagina_usuario-editar.php?id_Clientes=<?php echo $resultado['id_Clientes'] ?>">Editar</a></li>
-                    <li></li>
+                    <li><a href="./pagina_usuario-editar.php?id=<?php echo $resultado['id'] ?>">Editar</a></li>
+                    <br>
+                    <li> <a href="./pagina_usuario.php?sair=true " class="btn btn-roxo">Sair</a></li>
                 </ol>
             </div>
             <div class="formulario">
                 <form>
+                    <input type="text" class="formulario-campo" placeholder="usuario" value="<?php echo $resultado['usuario'] ?>" disabled><br>
+                    <input type="text" class="formulario-campo" placeholder="Senha" value="<?php echo $resultado['senha'] ?>" disabled><br>
+
                     <input type="text" class="formulario-campo" placeholder="Nome" value="<?php echo $resultado['nome'] ?>" disabled><br>
                     <input type="text" class="formulario-campo" placeholder="Email" value="<?php echo $resultado['email'] ?>" disabled><br>
-                    <input type="text" class="formulario-campo" placeholder="Senha" value="<?php echo $resultado['senha'] ?>" disabled><br>
                     <input type="text" class="formulario-campo" placeholder="CPF" value="<?php echo $resultado['cpf'] ?>" disabled><br>
                     <input type="text" class="formulario-campo" placeholder="Endereço" value="<?php echo $resultado['cep'] ?>" disabled><br>
                     <input type="text" class="formulario-campo" placeholder="nascimento" value="<?php echo $resultado['nascimento'] ?>" disabled><br>
+                    <input type="text" class="formulario-campo" placeholder="telefone" value="<?php echo $resultado['telefone'] ?>" disabled><br>
                 
                 </form>
             </div>
