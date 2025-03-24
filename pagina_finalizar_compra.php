@@ -70,7 +70,7 @@
         <img src="./Assets/Fotos/pagina_finalizar_compra/elo.png" alt="">
         </div>
 
-        <button>Finalizar compra</button>
+        <button class="btn btn-success">Finalizar compra</button>
         </div>
 
     

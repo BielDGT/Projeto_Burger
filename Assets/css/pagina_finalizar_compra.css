@@ -56,10 +56,21 @@ img{
     border: 2px solid #ccc;
     display: flex;
     
+    justify-content: space-between; 
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
+    
 }
+.linha-preco-total, span{
+    margin-right: 45%;
 
+}
+.linha-preco-total, strong{
+    padding-left:10px ;
+}
 
 .linha-formato-pagamento{
     display: flex;
     justify-content: space-around;
 }
+
+
