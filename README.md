@@ -1,6 +1,6 @@
-# Lista do que deve ser feito no projeto damaju
+# 📝 Lista do que deve ser feito no projeto damaju
 
-- #  [X]  1. Pagina login `usuario-login.php` 
+#  [X]  1. Pagina login `usuario-login.php` 
 
 página que o usuario vai fazer o login. Vai ter um formulario com campos tipo email e senha e dois botões de entrar (se as informações forem validas encaminha para a pagina inicial)e cadastrar(direciona para Página Cadastro)e mais dois link para efetuar o login com a conta do facebook e instagram.
 
