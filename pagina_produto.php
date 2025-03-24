@@ -20,7 +20,7 @@ $select = "SELECT * FROM tb_produtos WHERE id_produtos =  $id";
 $dados = $banco->query($select)->fetch();
 
 ?>
-<form action="./pagina_historico_compras.php" method="POST">
+<form action="./pagina_historico_compras.php" method="GET">
     <section id="destaque">
         <div class="local-imagem">
             <img src="./Assets/Fotos/fotos_cards/<?php echo $dados['img'] ?>" class="imagem-principal" alt="foto">
@@ -30,7 +30,7 @@ $dados = $banco->query($select)->fetch();
             <p><?php echo $dados['descrição'] ?></p>
             <span class="categ"><?php echo $dados['categoria'] ?></span>
             <span>R$<?php echo $dados['valor'] ?></span>
-            <a class="btn" <?php $_SESSION['id'] ?> >Adicionar</a>
+            <a class="btn" href="./pagina_historico_compras.php?id_produtos=<?php $dados['id_produtos'] ?>">Adicionar</a>
             <button class=" btn ">Comprar</button>
         </div>
     </section>
