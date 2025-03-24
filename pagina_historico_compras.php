@@ -13,7 +13,7 @@ $resultado = $banco->query($select)->fetchAll();
 
 <main>
     <section id="carrinho-de-compras">
-        <form action="" method="POST">
+        
             <div class="container-painel-carrinho">
                 <div class="container-titulo">
                     <h2>CARRINHO DE COMPRAS</h2>
@@ -35,11 +35,12 @@ $resultado = $banco->query($select)->fetchAll();
                     </div>
                 </div>
                 <div>
-                    <button>COMPRAR</button>
+                    <a href="./pagina_finalizar_compra.php">
+                        <button>COMPRAR</button>
+                    </a>
                 </div>
             </div>
-        </form>
-
+        
         </div>
 
 
