@@ -4,6 +4,7 @@
 <link rel="stylesheet" href="./assets/css/pagina_pesquisa.css">
 
 <section id="principal">
+    
     <div class="filtro">
         <h3>FILTRO</h3>
         <ol>
@@ -18,7 +19,7 @@
         </ol>
     </div>
 
-    <main class="produtos">
+    <main class="produtos"> 
         <?php
 
         $dsn = 'mysql:dbname=db_damaju;host=127.0.0.1';

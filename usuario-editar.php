@@ -51,6 +51,6 @@ $banco->prepare($update)->execute([
 
 echo '<script> 
         alert("Atualização realizada com Sucesso!!!")
-        window.location.replace("./pagina_usuario.php")
+        window.location.replace("./status.php")
         </script>';
 

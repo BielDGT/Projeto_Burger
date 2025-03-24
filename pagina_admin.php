@@ -2,15 +2,14 @@
 <?php
 
 
-if($_SERVER['REQUEST_METHOD'] == 'GET' && !empty($_GET) && $_GET['sair'] == 'true') {
+if ($_SERVER['REQUEST_METHOD'] == 'GET' && !empty($_GET) && $_GET['sair'] == 'true') {
     session_destroy();
     header('location:index.php');
 }
 
 
-if (empty($_SESSION) && !isset($_SESSION['id_pessoa'])){
+if (empty($_SESSION) && !isset($_SESSION['id_pessoa'])) {
     header('location:usuario-login.php');
-
 }
 
 ?>
@@ -42,12 +41,17 @@ $resultado = $banco_cliente->query($select)->fetch();
         <section class="linha-btn">
             <div class="btn-editar">
                 <ol>
+                    <li> <a href="./pagina_usuario.php?sair=true " class="btn btn-roxo">Sair</a></li>
+                </ol>
+            </div>
+            <div class="btn-editar">
+                <ol>
                     <li><a href="./pagina_usuario-editar.php?id=<?php echo $resultado['id_pessoa'] ?>">Editar</a></li>
                 </ol>
             </div>
             <div class="btn-cadastrar">
                 <ol>
-                <li><a href="./pagina_cadastrar_produto.php">Cadastrar Produto</a></li>
+                    <li><a href="./pagina_cadastrar_produto.php">Cadastrar Produto</a></li>
                 </ol>
             </div>
             <div class="btn-lista">
@@ -75,4 +79,5 @@ $resultado = $banco_cliente->query($select)->fetch();
     </main>
 </body>
 <?php include './includes/footer.php' ?>
+
 </html>

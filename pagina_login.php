@@ -31,11 +31,11 @@
                         </a>
                     </div>
                     <div class="form-input-container">
-                        <input type="text" class="form-input" placeholder="Usuario" name="usuario">
-                        <input type="password" class="form-input" placeholder="Senha" name="senha">
+                        <input type="text" class="form-input" placeholder="Usuario" name="usuario" autofocus required>
+                        <input type="password" class="form-input" placeholder="Senha" name="senha" autofocus required>
                         <input type="submit" class="form-button" value="Entrar">
                     </div>
-                    <a href="#" class="form-link">Esqueceu a senha?</a>
+                    <a href="./changePass.php" class="form-link">Esqueceu a senha?</a>
                     <p class="mobile-text">Não tem conta?
                         <a href="#" id="open-register-mobile">Cadastre-se</a>
                     </p>
@@ -56,15 +56,15 @@
                     </div>
 
                     <div class="form-input-container">
-                        <input type="text" class="form-input" placeholder="Usuario" name="user">
-                        <input type="password" class="form-input" placeholder="Senha" name="senha">
+                        <input type="text" class="form-input" placeholder="Usuario" name="user" autofocus required>
+                        <input type="password" class="form-input" placeholder="Senha" name="senha" autofocus required>
 
-                        <input type="text" class="form-input" placeholder="Nome" name="nome">
-                        <input type="email" class="form-input" placeholder="Email" name="email">
-                        <input type="text" class="form-input" placeholder="Telefone" name="tel">
-                        <input type="text" class="form-input" placeholder="CEP" name="cep">
-                        <input type="text" class="form-input" placeholder="CPF" name="cpf">
-                        <input type="date" class="form-input" placeholder="Nascimento" name="nasc">
+                        <input type="text" class="form-input" placeholder="Nome" name="nome" autofocus required>
+                        <input type="email" class="form-input" placeholder="Email" name="email" autofocus required>
+                        <input type="text" class="form-input" placeholder="Telefone" name="tel" autofocus required>
+                        <input type="text" class="form-input" placeholder="CEP" name="cep" autofocus required>
+                        <input type="text" class="form-input" placeholder="CPF" name="cpf" autofocus required>
+                        <input type="date" class="form-input" placeholder="Nascimento" name="nasc" autofocus required>
                         <input type="submit" class="form-button" value="Cadastrar">
                     </div>
                     <p class="mobile-text">
