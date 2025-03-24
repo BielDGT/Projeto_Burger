@@ -24,7 +24,7 @@ header padrão, menu simples das categorias, uma seção composto por opções d
 
 header padrão, seção carrinho de compra anexado produtos já selecionados pelo usuario, com botões de comprar e remover produto, e footer padrão.
 
- #  [X]  7. Pagina usuário `pagina_usuario.php`
+#  [X]  7. Pagina usuário `pagina_usuario.php`
 
 header padrão, seção das informação do usuário contendo foto e nome, botão de editar(encaminha para Pagina editar usuário) as informações, foto, campos com nome, email, senha, cpf e cep. Footer padrão.
 
@@ -33,19 +33,19 @@ header padrão, seção das informação do usuário contendo foto e nome, botã
 header padrão, seção das informação do usuário administrador contendo foto e nome, 3 botões de editar os dados(encaminha para Pagina editar administrador), cadastrar produto(conduz para Pagina cadastrar produto), e lista de produtos(guia Pagina listar produtos), e campos com nome, email, senha, cpf e endereço. 
 Footer padrão.
 
-##  [X] Pagina editar usuário/admin `pagina_usuario-editar.php`
+#  [X]  9. Pagina editar usuário/admin `pagina_usuario-editar.php`
 
 header padrao, campos com nome, email, senha, cpf e cep do usuario e um botao de confirmar apos o usuario terminar as alterações(encaminha para a Pagina usuário).
 
-#  [X] Pagina cadastrar produto `pagina_cadastrar_produto.php`
+#  [X]  0. Pagina cadastrar produto `pagina_cadastrar_produto.php`
 
 Pagina editar produtos -> header padrão, formulário com campos de nome do produto, descrição e valor. Em seguida, com checkbox (Hamburguer, Pizza, Bebidas, Doces, Msrmitas, Espetinhos  e massas) e botão de finalizar(direciona para Pagina Produto), footer padrão.
 
-#  [X] Pagina listar produtos `pagina_lista_produtos.php`
+#  [X]  11. Pagina listar produtos `pagina_lista_produtos.php`
 
 header padrão, barra de busca, espaço onde estará os registro dos produtos com foto, nome e ingredientes e dois botões de editar(encaminha para pagina de editar produtos) e excluir.
 
-# [X] Pagina editar produto `pagina_editar_produto.php`
+#  [X]  12. Pagina editar produto `pagina_editar_produto.php`
 
 header padrao, campos com nome, descrição, categoria, valor do produto junto com um input de escolher arquivo tipo imagem e um botao de enviar.
 
