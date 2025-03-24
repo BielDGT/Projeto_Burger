@@ -37,7 +37,7 @@ Footer padrão.
 
 header padrao, campos com nome, email, senha, cpf e cep do usuario e um botao de confirmar apos o usuario terminar as alterações(encaminha para a Pagina usuário).
 
-#  [X]  0. Pagina cadastrar produto `pagina_cadastrar_produto.php`
+#  [X]  10. Pagina cadastrar produto `pagina_cadastrar_produto.php`
 
 Pagina editar produtos -> header padrão, formulário com campos de nome do produto, descrição e valor. Em seguida, com checkbox (Hamburguer, Pizza, Bebidas, Doces, Msrmitas, Espetinhos  e massas) e botão de finalizar(direciona para Pagina Produto), footer padrão.
 
