@@ -1,12 +1,29 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 
+html,body{
+    height: 100%;
+    margin: 0;
+}
 
-
-body {
-    background: linear-gradient(to bottom, #FF8A00, #E3C00B);
-    height: 100vh; /* Garante que o gradiente ocupe toda a altura da página */
+body{
+    display: flex;
+    flex-direction: column;
     
 }
+main{
+    
+    flex: 1; 
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    gap: 50px;
+    
+}
+
+
 #carrinho-de-compras{
     margin: 0;
     display: flex;
@@ -19,11 +36,11 @@ body {
 }
 .container-painel-carrinho{
     text-align: center;
-        border: 5px solid #D96523; /* Borda sólida de 3px com a cor amarela */
+        border: 5px solid tomato; /* Borda sólida de 3px com a cor amarela */
         padding: 0px 0px 25px 0px; /* Espaçamento interno */
         margin: 10px 10px 10px 10px; /* Espaçamento externo */
         border-radius: 10px; /* Bordas arredondadas */
-        height: 640px;
+        height: 500px;
         
         
 
@@ -40,7 +57,7 @@ body {
     
 }
 .container-titulo{
-    background-color: #D96523;
+    background-color: tomato;
 }
 
 
@@ -77,7 +94,7 @@ button{
     height: 60px;
     border-radius: 10px;
     color: white;
-    background-color: #D96523;
+    background-color: tomato;
     border: none;
 
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Sombra simples */
