@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 24/03/2025 às 12:27
+-- Tempo de geração: 24/03/2025 às 15:45
 -- Versão do servidor: 10.4.32-MariaDB
 -- Versão do PHP: 8.0.30
 
@@ -42,7 +42,7 @@ CREATE TABLE `tb_pessoa` (
 --
 
 INSERT INTO `tb_pessoa` (`id`, `nome`, `email`, `nascimento`, `cpf`, `telefone`, `cep`) VALUES
-(1, 'Harry Potter', '', '0000-00-00', '12345678901', '11987654321', ''),
+(1, 'Harry Potter', 'harrypotter@gmail.com', '0000-00-00', '12345678901', '11987654321', 'Hogwarts'),
 (2, 'Luke Skywalker', '', '0000-00-00', '23456789012', '11223344556', ''),
 (3, 'Frodo Baggins', '', '0000-00-00', '34567890123', '11911223344', ''),
 (4, 'Indiana Jones', '', '0000-00-00', '45678901234', '11334455667', ''),
