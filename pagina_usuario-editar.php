@@ -7,6 +7,7 @@
 
 <?php
 
+$id=$_GET['id'];
 
 
 $dsn = 'mysql:dbname=db_damaju;host=127.0.0.1';
@@ -14,7 +15,7 @@ $user = 'root';
 $password = '';
 $banco_cliente = new PDO($dsn, $user, $password);
 
-$select = "SELECT * FROM tb_pessoa INNER JOIN tb_usuario ON tb_pessoa.id = tb_usuario.id_pessoa WHERE tb_usuario.id_pessoa = 6";
+$select = "SELECT * FROM tb_pessoa INNER JOIN tb_usuario ON tb_pessoa.id = tb_usuario.id_pessoa WHERE tb_usuario.id_pessoa = $id";
 
 $resultado = $banco_cliente->query($select)->fetch();
 
@@ -28,9 +29,9 @@ $resultado = $banco_cliente->query($select)->fetch();
             </div>
             <div class="formulario">
                 <form action="./usuario-editar.php" method="POST">
-                <input type="hidden" class="formulario-campo" placeholder="id" name="id" value="<?php echo $_GET['id'] ?>"><br>
-                <input type="text" class="formulario-campo" placeholder="usuario" name="usuario" value="<?php echo $resultado['usuario'] ?>"><br>
-                <input type="text" class="formulario-campo" placeholder="Senha" name="senha" value="<?php echo $resultado['senha'] ?>"><br>
+                    <input type="hidden" class="formulario-campo" placeholder="id" name="id" value="<?php echo $resultado['id'] ?>"><br>
+                    <input type="text" class="formulario-campo" placeholder="usuario" name="usuario" value="<?php echo $resultado['usuario'] ?>"><br>
+                    <input type="text" class="formulario-campo" placeholder="Senha" name="senha" value="<?php echo $resultado['senha'] ?>"><br>
 
 
                     <input type="text" class="formulario-campo" placeholder="Nome" name="nome" value="<?php echo $resultado['nome'] ?>"><br>
