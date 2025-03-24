@@ -45,7 +45,7 @@ Pagina editar produtos -> header padrão, formulário com campos de nome do prod
 
 header padrão, barra de busca, espaço onde estará os registro dos produtos com foto, nome e ingredientes e dois botões de editar(encaminha para pagina de editar produtos) e excluir.
 
-[X]  12. Pagina editar produto `pagina_editar_produto.php`
+#  [X]  12. Pagina editar produto `pagina_editar_produto.php`
 
 header padrao, campos com nome, descrição, categoria, valor do produto junto com um input de escolher arquivo tipo imagem e um botao de enviar.
 
