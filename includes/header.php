@@ -32,7 +32,7 @@
             <ul class="menu-icone">
                 <li><a href="./pagina_pesquisa.php"><i class="bi bi-search"></i></a></li>
                 <li><a href="./pagina_historico_compras.php"><i class="bi bi-cart"></i></a></li>
-                <li><a href="./pagina_usuario.php"><i class="bi bi-person-circle"></i></a></li>
+                <li><a href="./status.php"><i class="bi bi-person-circle"></i></a></li>
             </ul>
         </nav>
     </header>

@@ -1,5 +1,20 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-<?php include './includes/header.php' ?>
+<?php
+
+
+if($_SERVER['REQUEST_METHOD'] == 'GET' && !empty($_GET) && $_GET['sair'] == 'true') {
+    session_destroy();
+    header('location:index.php');
+}
+
+
+if (empty($_SESSION) && !isset($_SESSION['id_pessoa'])){
+    header('location:usuario-login.php');
+
+}
+
+?>
+
 <link rel="stylesheet" href="./Assets/css/pagina_admin.css">
 <link rel="stylesheet" href="./Assets/css/footer.css">
 
@@ -11,7 +26,7 @@ $user = 'root';
 $password = '';
 $banco_cliente = new PDO($dsn, $user, $password);
 
-$select = "SELECT * FROM tb_pessoa INNER JOIN tb_usuario ON tb_pessoa.id = tb_usuario.id_pessoa WHERE tb_usuario.id_pessoa = 6";
+$select = "SELECT * FROM tb_pessoa INNER JOIN tb_usuario ON tb_pessoa.id = tb_usuario.id_pessoa WHERE tb_usuario.id_pessoa = {$_SESSION['id_pessoa']}";
 
 $resultado = $banco_cliente->query($select)->fetch();
 
@@ -27,7 +42,7 @@ $resultado = $banco_cliente->query($select)->fetch();
         <section class="linha-btn">
             <div class="btn-editar">
                 <ol>
-                    <li><a href="./pagina_usuario-editar.php?id=<?php echo $resultado['id'] ?>">Editar</a></li>
+                    <li><a href="./pagina_usuario-editar.php?id=<?php echo $resultado['id_pessoa'] ?>">Editar</a></li>
                 </ol>
             </div>
             <div class="btn-cadastrar">
