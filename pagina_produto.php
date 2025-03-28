@@ -1,4 +1,4 @@
-<?php session_start(); ?>
+
 
 <?php include './includes/header.php' ?>
 
@@ -15,9 +15,9 @@ $password = '';
 
 $banco = new PDO($dsn, $user, $password);
 
-$select = "SELECT * FROM tb_produtos WHERE id_produtos =  $id";
+$script = "SELECT * FROM tb_produtos WHERE id_produtos =  $id";
 
-$dados = $banco->query($select)->fetch();
+$dados = $banco->query($script)->fetch();
 
 ?>
 <form action="./pagina_historico_compras.php" method="GET">
@@ -30,7 +30,7 @@ $dados = $banco->query($select)->fetch();
             <p><?php echo $dados['descrição'] ?></p>
             <span class="categ"><?php echo $dados['categoria'] ?></span>
             <span>R$<?php echo $dados['valor'] ?></span>
-            <a class="btn" href="./pagina_historico_compras.php?id_produtos=<?php $dados['id_produtos'] ?>">Adicionar</a>
+            <a class="btn" href="./pagina_historico_compras.php?id_produtos=<?php echo $dados['id_produtos'] ?>">Adicionar</a>
             <button class=" btn ">Comprar</button>
         </div>
     </section>
