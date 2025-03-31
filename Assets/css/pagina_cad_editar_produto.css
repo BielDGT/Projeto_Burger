@@ -18,7 +18,7 @@ body{
 
 form{
     width: 500px;
-    height: 320px;
+    height: 420px;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -49,6 +49,6 @@ button {
     width: 440px;
     
 }
-input{
+input, textarea{
     align-self: center;
 }

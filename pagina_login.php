@@ -1,18 +1,5 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<link rel="stylesheet" href="./Assets/css/login.css">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-
-    <link rel="stylesheet" href="./Assets/css/login.css">
-
-</head>
-
-
-
-<body>
     <main class="login">
         <div class="login-container" id="login-container">
             <div class="form-container">
@@ -30,9 +17,15 @@
                             <i class="bi bi-linkedin"></i>
                         </a>
                     </div>
+                    <br>
                     <div class="form-input-container">
-                        <input type="text" class="form-input" placeholder="Usuario" name="usuario" autofocus required>
-                        <input type="password" class="form-input" placeholder="Senha" name="senha" autofocus required>
+                        <input type="text" class="form-input" placeholder="Usuario" name="usuario" required
+                        id="usuario" minlength="3" maxlength="100" onblur="verificarUsuarioLogin()">
+                        <span id="mensagem-erro-usuario-login"></span>
+
+                        <input type="password" class="form-input" placeholder="Senha" name="senha" id="senha-login" onblur="validaSenhaLogin()" required>
+                        <span id="erro-senha-loginz "></span>
+
                         <input type="submit" class="form-button" value="Entrar">
                     </div>
                     <a href="./changePass.php" class="form-link">Esqueceu a senha?</a>
@@ -54,18 +47,42 @@
                             <i class="bi bi-linkedin"></i>
                         </a>
                     </div>
-
+                    <br>
                     <div class="form-input-container">
-                        <input type="text" class="form-input" placeholder="Usuario" name="user" autofocus required>
-                        <input type="password" class="form-input" placeholder="Senha" name="senha" autofocus required>
+                        <input type="text" class="form-input" placeholder="Usuario" name="user" 
+                        id="user" minlength="3" maxlength="100" onblur="verificarUsuario()" required>
+                        <span id="mensagem-erro-usuario"></span> 
 
-                        <input type="text" class="form-input" placeholder="Nome" name="nome" autofocus required>
-                        <input type="email" class="form-input" placeholder="Email" name="email" autofocus required>
-                        <input type="text" class="form-input" placeholder="Telefone" name="tel" autofocus required>
-                        <input type="text" class="form-input" placeholder="CEP" name="cep" autofocus required>
-                        <input type="text" class="form-input" placeholder="CPF" name="cpf" autofocus required>
-                        <input type="date" class="form-input" placeholder="Nascimento" name="nasc" autofocus required>
-                        <input type="submit" class="form-button" value="Cadastrar">
+                        <input type="password" class="form-input" placeholder="Senha" name="senha" id="senha" onblur="validaSenha()" required>
+                        <span id="erro-senha"></span>
+
+                        <input type="password" class="form-input" placeholder="confirmar senha" name="confirmar_senha" id="confirmar_senha" onblur="confirmarSenha()" required>
+                        <span id="mensagem-erro-confirmar-senha"></span>
+
+                        <input type="text" class="form-input" placeholder="Nome" name="nome" 
+                        id="nome" minlength="3" maxlength="100" onblur="verificarNome()" required>
+                        <span id="mensagem-erro-nome"></span>
+
+                        <input type="email" class="form-input" placeholder="Email" name="email" 
+                        id="email" onblur="verificarEmail()" required>
+                        <span id="mensagem-erro-email"></span>
+
+                        <input type="text" class="form-input" placeholder="Telefone" name="tel" id="telefone"
+                        oninput="aplicarMascaraTelefone(event)" onblur="validatelefone()" required maxlength="14">
+                        <span id="mensagem-erro-telefone"></span>
+
+                        <input type="text" class="form-input" placeholder="CEP" name="cep" required
+                        id="cep" onblur="validacep()" oninput="aplicarMascaraCEP(event)" maxlength="9">
+                        <span id="mensagem-cep"></span>
+
+                        <input type="text" class="form-input" placeholder="CPF" name="cpf" required
+                        id="cpf" onblur="validacpf()" oninput="aplicarMascaraCPF(event)" maxlength="14">
+                        <span id="mensagem-cpf"></span>
+
+                        <input type="date" class="form-input" placeholder="Nascimento" name="nasc" id="nasc" onblur="validanasc()" required>
+                        <span id="mensagem-nasc"></span>
+
+                        <input type="submit" class="form-button" value="Cadastrar" onclick="return validarFormulario()">
                     </div>
                     <p class="mobile-text">
                         Já tem conta?
@@ -95,5 +112,6 @@
 </body>
 
 <script src="./Assets/js/pagina_login.js"></script>
+<script src="./Assets/js/validacao.js"></script>
 
 </html>
