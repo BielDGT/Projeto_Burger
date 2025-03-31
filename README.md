@@ -151,4 +151,51 @@ header padrao, campos com nome, descrição, categoria, valor do produto junto c
 
 
 
-
+# Documentação Csharp Damaju
+ 
+# 1. Tela login
+ 
+ 
+Campo "Usuário": O usuário deve inserir seu nome de usuário registrado no sistema.
+ 
+Campo "Senha": O usuário deve inserir a senha associada ao seu nome de usuário.
+ 
+Botão "Limpar": Limpa os campos de usuário e senha.
+ 
+Botão "Mostrar Senha": Permite visualizar a senha inserida.
+ 
+Botão "Entrar": Se as informações fornecidas nos campos estiverem corretas, o usuário será direcionado para a tela do menu principal
+ 
+# 2. Tela menu principal
+ 
+botão "Cadastro de Produto": O usuário será direcionado para a tela de Cadastro de produto.
+ 
+botão "Gerenciamento": O usuário será direcionado para a tela de Gerenciamento.
+ 
+botão "Fechar": Fecha a tela e volta para a tela de login.
+ 
+# 3. Tela cadastro de produto
+ 
+Campo "Nome Produto": Campo para o usuario inserir o nome do produto.
+ 
+Campo "Valor": Campo para o usuario inserir o valor do produto.
+ 
+Menu suspenso "Categoria": aqui o usuario vai escolher o tipo de produto.
+ 
+Campo "Descrição": Campo para o usuario inserir a descrição do produto.
+ 
+Botão "Cadastrar": vai registrar todas as informações dos campos e menu suspenso no banco de dados.
+ 
+Botão "Fechar": vai fechar a tela e voltar para a tela menu principal.
+ 
+# 4. Tela gerenciamento
+ 
+Botão "Clientes": Exibe todos os clientes registrados no banco de dados no DataGridView (DGV).
+ 
+Botão "Remover Cliente": Exclui o cliente selecionado do banco de dados.
+ 
+Botão "Produto": Exibe todos os produtos registrados no banco de dados no DataGridView (DGV).
+ 
+Botão "Remover Produto": Exclui o produto selecionado do banco de dados.
+ 
+Botão "Fechar": vai fechar a tela e voltar para a tela menu principal.
