@@ -2,7 +2,12 @@
 
 #  [X]  1. Pagina login `usuario-login.php` 
 
-página que o usuario vai fazer o login. Vai ter um formulario com campos tipo email e senha e dois botões de entrar (se as informações forem validas encaminha para a pagina inicial)e cadastrar(direciona para Página Cadastro)e mais dois link para efetuar o login com a conta do facebook e instagram.
+página que o usuario vai fazer o login. 
+- **um formulario com campos tipo email e senha** 
+- **botão de entrar (se as informações forem validas encaminha para a pagina inicial)**
+- **botão de cadastrar(direciona para Página Cadastro)** 
+- **dois link para efetuar o login com a conta do facebook e instagram.**
+- **link de esquecer senha que direciona para pagina chagepass**
 # ✅ Validação 
 
 ### Usuario
@@ -20,11 +25,13 @@ página que o usuario vai fazer o login. Vai ter um formulario com campos tipo e
 - obrigatório letra maiúscula
 - obrigatório caractere especial
 
-
+### Esqueci senha
+- **validar o usuario e senha já existente com o banco para realizar a troca de senha** 
 
 #  [X]  2. Pagina Cadastro `...` 
 
- página que o usuário vai efetuar o cadastro do site. Um formulario com 4 campos para nome, email, senha e confirmar senha, um botão para cadastrar as informações inseridas nos campos.
+ página que o usuário vai efetuar o cadastro do site. 
+ - **Um formulario com 4 campos para nome, email, senha e confirmar senha, um botão para cadastrar as informações inseridas nos campos.**
 
 # ✅ Validação 
 
@@ -171,7 +178,10 @@ página que o usuario vai fazer o login. Vai ter um formulario com campos tipo e
 
 #  [X]  12. Pagina editar produto `pagina_editar_produto.php`
 
-header padrao, campos com nome, descrição, categoria, valor do produto junto com um input de escolher arquivo tipo imagem e um botao de enviar.
+- **header padrao** 
+- **campos com nome, descrição, categoria, valor do produto** 
+- **escolher arquivo tipo imagem** 
+- **botao de enviar.**
 
 
 
