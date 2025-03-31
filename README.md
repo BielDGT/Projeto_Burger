@@ -83,7 +83,7 @@ página que o usuario vai fazer o login. Vai ter um formulario com campos tipo e
 
   Composto por um header com um menu de navegação, com 3 botões de pesquisa, home (direciona para pagina inicial), carrinho de compras(encaminha para pagina Pagina Carrinho de compra) e pagina do usuario (guia para pagina usuario), banner com carrossel, cards dos produtos, footer com redes sociais.
 
-  <img src='(image.png)'>
+  <img src='(Assets/Fotos/fotos_readme/logo.png)'>
 
 #  [X]  4. Pagina produto `pagina_produto.php` 
 
