@@ -80,8 +80,11 @@ página que o usuario vai fazer o login. Vai ter um formulario com campos tipo e
 - **campo obrigatório**
 
 #  [X]  3. Pagina Inicial `index.php` 
-
-  Composto por um header com um menu de navegação, com 3 botões: pesquisa(encaminha para pagina pesquisa), home que é a logo no (direciona para pagina inicial), carrinho de compras(encaminha para pagina Carrinho de compra) e pagina do usuario (guia para pagina usuario ou administrador, depende do usuario que for loga ), banner com carrossel, cards dos produtos que tem o botão VER MAIS que encaminha para pagina do produto, footer (que tem botões do instagram, facebook, e gmail)
+### HEADER
+- **um menu de navegação, com 3 botões: pesquisa(encaminha para pagina pesquisa), home que é a logo no (direciona para pagina inicial), carrinho de compras(encaminha para pagina Carrinho de compra) e pagina do usuario (guia para pagina usuario ou administrador, depende do usuario que for loga )** 
+- **banner com carrossel** 
+- **cards dos produtos que tem o botão VER MAIS que encaminha para pagina do produto** 
+- **footer (que tem botões do instagram, facebook, e gmail)**
 
 #  [X]  4. Pagina produto `pagina_produto.php` 
 
