@@ -91,53 +91,53 @@ página que o usuario vai fazer o login. Vai ter um formulario com campos tipo e
 - **foto de destaque do produto junto com a descrição dele** 
 - **valor** 
 - **botão de quantidade de vezes que deseja comprar o produto**
-- **2 botões de adicionar ao carrinho(direciona para Pagina Carrinho de compra) e comprar(Direciona para pagina finalizar compra)** -**Seguido de uma seção de cards representando recomendações de outros produtos** 
--**footer**
+- **2 botões de adicionar ao carrinho(direciona para Pagina Carrinho de compra) e comprar(Direciona para pagina finalizar compra)** - **Seguido de uma seção de cards representando recomendações de outros produtos** 
+- **footer**
 
 #  [X]  5. Pagina pesquisa `pagina_pesquisa.php`
 
 - **header padrão** 
 - **seção composto por opções de filtragem com checkbox(Hamburguer, Pizza, Bebida, Marmitas e todos)** 
 - **seção dos produtos pesquisados contido por cards com descrição básica e botão de ver mais(encaminha para pagina do produto).** 
--**footer padrão.** 
+- **footer padrão.** 
 
 #  [X]  6. Pagina carrinho `pagina_historico_compras.php`
 
--**header padrão** 
--**seção carrinho de compra anexado produtos já selecionados pelo usuario botões de comprar e remover produto** 
--**footer padrão.**
+- **header padrão** 
+- **seção carrinho de compra anexado produtos já selecionados pelo usuario botões de comprar e remover produto** 
+- **footer padrão.**
 
 #  [X]  7. Pagina usuário `pagina_usuario.php`
 
--**header padrão** 
--**seção das informação do usuário contendo foto,nome, email, senha, cpf e cep**
--**botão de editar(encaminha para Pagina editar usuário)** 
--**botão de sair para que direciona para pagina login**
--**footer**
+- **header padrão** 
+- **seção das informação do usuário contendo foto,nome, email, senha, cpf e cep**
+- **botão de editar(encaminha para Pagina editar usuário)** 
+- **botão de sair para que direciona para pagina login**
+- **footer**
 
 #  [X]  8. Pagina admin `pagina_admin.php`
 
--**header padrão** 
--**seção das informação do usuário administrador contendo nome, email, senha, cpf e endereço** 
--**botão de editar(encaminha para Pagina editar administrador)**
--**botão de cadastrar produto(conduz para Pagina cadastrar produto)** 
--**botão de lista de produtos(guia Pagina listar produtos)** 
--**botão de sair que direciona para a pagina de login**
--**Footer padrão**
+- **header padrão** 
+- **seção das informação do usuário administrador contendo nome, email, senha, cpf e endereço** 
+- **botão de editar(encaminha para Pagina editar administrador)**
+- **botão de cadastrar produto(conduz para Pagina cadastrar produto)** 
+- **botão de lista de produtos(guia Pagina listar produtos)** 
+- **botão de sair que direciona para a pagina de login**
+- **Footer padrão**
 
 #  [X]  9. Pagina editar usuário/admin `pagina_usuario-editar.php`
 
--**header padrao** 
--**campos com nome, email, senha, cpf e cep do usuario** 
--**botao de enviar apos o usuario terminar as alterações(encaminha para a Pagina status).**
+- **header padrao** 
+- **campos com nome, email, senha, cpf e cep do usuario** 
+- **botao de enviar apos o usuario terminar as alterações(encaminha para a Pagina status).**
 
 #  [X]  10. Pagina cadastrar produto `pagina_cadastrar_produto.php`
 
--**header padrão**
--**formulário com campos de nome do produto, descrição e valor**
--**campo categoria (Hamburguer, Pizza, Bebidas, Doces, Msrmitas, Espetinhos  e massas)** 
--**botão de enviar(direciona para Pagina Produto)** 
--**footer padrão.**
+- **header padrão**
+- **formulário com campos de nome do produto, descrição e valor**
+- **campo categoria (Hamburguer, Pizza, Bebidas, Doces, Msrmitas, Espetinhos  e massas)** 
+- **botão de enviar(direciona para Pagina Produto)** 
+- **footer padrão.**
 
 # ✅ Validação 
 
@@ -164,9 +164,10 @@ página que o usuario vai fazer o login. Vai ter um formulario com campos tipo e
 
 #  [X]  11. Pagina listar produtos `pagina_lista_produtos.php`
 
--**header padrão-** 
--**cards onde estará os registro dos produtos com foto, nome** 
--**botão de editar(encaminha para pagina de editar produtos) excluir.
+- **header padrão-** 
+- **cards onde estará os registro dos produtos com foto, nome** 
+- **botão de editar(encaminha para pagina de editar produtos)**
+- **botão de excluir.**
 
 #  [X]  12. Pagina editar produto `pagina_editar_produto.php`
 
