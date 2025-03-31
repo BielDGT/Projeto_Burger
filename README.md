@@ -3,6 +3,39 @@
 #  [X]  1. Pagina login `usuario-login.php` 
 
 página que o usuario vai fazer o login. Vai ter um formulario com campos tipo email e senha e dois botões de entrar (se as informações forem validas encaminha para a pagina inicial)e cadastrar(direciona para Página Cadastro)e mais dois link para efetuar o login com a conta do facebook e instagram.
+# ✅ Validação 
+
+# Pagina usuario login 
+### Usuario
+- **mínimo 5 caracteres**
+    - Mensagem de erro
+- **máximo 60 caracteres**
+    - mensagem de erro
+- **campo obrigatório**
+
+### Senha
+- **mínimo 8 caracteres**
+- **máximo 60 caracteres**
+- **campo obrigatório**
+- obrigatório números
+- obrigatório letra maiúscula
+- obrigatório caractere especial
+
+# Pagina usuario cadastrar
+### Usuario
+- **mínimo 5 caracteres**
+    - Mensagem de erro
+- **máximo 60 caracteres**
+    - mensagem de erro
+- **campo obrigatório**
+
+### Senha
+- **mínimo 8 caracteres**
+- **máximo 60 caracteres**
+- **campo obrigatório**
+- obrigatório números
+- obrigatório letra maiúscula
+- obrigatório caractere especial
 
 #  [X]  2. Pagina Cadastro `...` 
 
@@ -50,6 +83,60 @@ header padrão, barra de busca, espaço onde estará os registro dos produtos co
 header padrao, campos com nome, descrição, categoria, valor do produto junto com um input de escolher arquivo tipo imagem e um botao de enviar.
 
 
+### Nome
+- **mínimo 5 caracteres**
+    - Mensagem de erro
+- **máximo 60 caracteres**
+    - mensagem de erro
+- **campo obrigatório**
+- **campo obrigatório apenas letras**
 
+### E-mail
+- **tem que ter @**
+- não pode e-mail repetido
+- **campo obrigatório**
+- **mínimo 5 caracteres**
+- **máximo 100 caracteres**
 
+### Telefone
+- **campo obrigatório numeroa**
+- **mascara de 14 caracteres (xx)xxxxx-xxxx**
+- **campo obrigatório**
+
+### CEP
+- **minimo 8 caracteres**
+- **numero de 0 a 9**
+- **mascara de 9 caracteres xxxxx-xxx**
+- **dois grupos, 5 digitos no primeiro grupo e 3 digitos no segundo grupo**
+- **campo obrigatório**
+
+### CPF
+- **minimo 11 digitos**
+- **mascara de 14 caracteres xxx.xxx.xxx-xx**
+- **campo obrigatório**
+
+### Nascimento
+- **não pode ser um ano do futuro**
+- **campo obrigatório**
+
+# Pagina cadastrar produto
+### Campo Nome
+- **mínimo 5 caracteres**
+    - Mensagem de erro
+- **máximo 60 caracteres**
+    - mensagem de erro
+- **campo obrigatório**
+- **campo obrigatório apenas letras**
+
+### Campo Descrição
+- **campo obrigatório**
+- **mínimo 5 caracteres**
+    - Mensagem de erro
+
+### Campo Categoria
+- **campo obrigatório**
+### campo valor
+- **campo obrigatório**
+- **apenas numeros**
+- **mascara XX,XX**
 
