@@ -5,7 +5,6 @@
 página que o usuario vai fazer o login. Vai ter um formulario com campos tipo email e senha e dois botões de entrar (se as informações forem validas encaminha para a pagina inicial)e cadastrar(direciona para Página Cadastro)e mais dois link para efetuar o login com a conta do facebook e instagram.
 # ✅ Validação 
 
-# Pagina usuario login 
 ### Usuario
 - **mínimo 5 caracteres**
     - Mensagem de erro
@@ -29,7 +28,6 @@ página que o usuario vai fazer o login. Vai ter um formulario com campos tipo e
 
 # ✅ Validação 
 
-# Pagina usuario cadastrar
 ### Usuario
 - **mínimo 5 caracteres**
     - Mensagem de erro
