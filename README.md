@@ -1,6 +1,6 @@
-# 📝 Lista do que deve ser feito no projeto damaju
+# 📝 Documentação do site Damaju
 
-#  [X]  1. Pagina login `usuario-login.php` 
+# [x]  1. Pagina login `usuario-login.php` 
 
 página que o usuario vai fazer o login. 
 - **um formulario com campos tipo email e senha** 
@@ -28,7 +28,7 @@ página que o usuario vai fazer o login.
 ### Esqueci senha
 - **validar o usuario e senha já existente com o banco para realizar a troca de senha** 
 
-#  [X]  2. Pagina Cadastro `...` 
+#  2. Pagina Cadastro `...` 
 
  página que o usuário vai efetuar o cadastro do site. 
  - **Um formulario com 4 campos para nome, email, senha e confirmar senha, um botão para cadastrar as informações inseridas nos campos.**
@@ -86,13 +86,13 @@ página que o usuario vai fazer o login.
 - **não pode ser um ano do futuro**
 - **campo obrigatório**
 
-#  [X]  3. Pagina Inicial `index.php` 
+#  3. Pagina Inicial `index.php` 
 - **HEADER -> um menu de navegação, com 3 botões: pesquisa(encaminha para pagina pesquisa), home que é a logo no (direciona para pagina inicial), carrinho de compras(encaminha para pagina Carrinho de compra) e pagina do usuario (guia para pagina usuario ou administrador, depende do usuario que for loga )** 
 - **banner com carrossel** 
 - **cards dos produtos que tem o botão VER MAIS que encaminha para pagina do produto** 
 - **FOOTER-> (que tem botões do instagram, facebook, e gmail)**
 
-#  [X]  4. Pagina produto `pagina_produto.php` 
+#   4. Pagina produto `pagina_produto.php` 
 
 -**header** 
 - **foto de destaque do produto junto com a descrição dele** 
@@ -101,7 +101,7 @@ página que o usuario vai fazer o login.
 - **2 botões de adicionar ao carrinho(direciona para Pagina Carrinho de compra) e comprar(Direciona para pagina finalizar compra)** - **Seguido de uma seção de cards representando recomendações de outros produtos** 
 - **footer**
 
-#  [X]  5. Pagina pesquisa `pagina_pesquisa.php`
+# [X]  5. Pagina pesquisa `pagina_pesquisa.php`
 
 - **header padrão** 
 - **seção composto por opções de filtragem com checkbox(Hamburguer, Pizza, Bebida, Marmitas e todos)** 
