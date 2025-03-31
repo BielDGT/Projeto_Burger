@@ -13,6 +13,11 @@ $select = "SELECT * FROM tb_produtos WHERE id_produtos = $id";
 $resultado = $banco->query($select)->fetch();
 ?>
 
+<?php
+// Inicia a sessão
+session_start();
+?>
+
 <main>
     <section id="carrinho-de-compras">
 
@@ -20,7 +25,6 @@ $resultado = $banco->query($select)->fetch();
             <tr class="container-titulo">
                 <td>CARRINHO DE COMPRAS</td>
             </tr>
-
             <tr class="row-container">
                 <td>
                 <?php $resultado['id_produtos'] ?>
@@ -29,7 +33,6 @@ $resultado = $banco->query($select)->fetch();
                     <img src="./Assets/Fotos/fotos_cards/<?php echo $resultado['img'] ?>" class="imagem-principal" alt="foto do produto">
                 </td>
                 <td class="coluna2">
-                    
                     <h3><?php echo $resultado['nome'] ?></h3>
                     <p><?php echo $resultado['descrição'] ?></p>
                 </td>

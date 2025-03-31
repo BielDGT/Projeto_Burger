@@ -1,5 +1,3 @@
-
-
 <?php include './includes/header.php' ?>
 
 <link rel="stylesheet" href="./Assets/css/pagina_produto.css">
@@ -30,7 +28,9 @@ $dados = $banco->query($script)->fetch();
             <p><?php echo $dados['descrição'] ?></p>
             <span class="categ"><?php echo $dados['categoria'] ?></span>
             <span>R$<?php echo $dados['valor'] ?></span>
-            <a class="btn" href="./pagina_historico_compras.php?id_produtos=<?php echo $dados['id_produtos'] ?>">Adicionar</a>
+            <form action="./conexão.php" method="GET">
+                <a class="btn" href="./pagina_historico_compras.php?id_produtos=<?php echo $dados['id_produtos'] ?>">Adicionar</a>
+            </form>
             <a href="./pagina_finalizar_compra.php" class=" btn ">Comprar</a>
         </div>
     </section>
@@ -55,6 +55,8 @@ $dados = $banco->query($script)->fetch();
 
                     <figcaption>
                         <h3><?php echo $linha['nome']  ?></h3>
+                        <button onclick="adicionarAoCarrinho('Produto 1', 30)">Adicionar ao Carrinho</button>
+
                         <a href="./pagina_produto.php?id=<?= $linha['id_produtos'] ?>">VER MAIS</a>
                     </figcaption>
                 </figure>
