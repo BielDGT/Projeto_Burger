@@ -1,6 +1,6 @@
 # 📝 Documentação do site Damaju
 
-# [x]  1. Pagina login `usuario-login.php` 
+# [X]  1. Pagina login `usuario-login.php` 
 
 página que o usuario vai fazer o login. 
 - **um formulario com campos tipo email e senha** 
