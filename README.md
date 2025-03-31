@@ -21,6 +21,14 @@ página que o usuario vai fazer o login. Vai ter um formulario com campos tipo e
 - obrigatório letra maiúscula
 - obrigatório caractere especial
 
+
+
+#  [X]  2. Pagina Cadastro `...` 
+
+ página que o usuário vai efetuar o cadastro do site. Um formulario com 4 campos para nome, email, senha e confirmar senha, um botão para cadastrar as informações inseridas nos campos.
+
+# ✅ Validação 
+
 # Pagina usuario cadastrar
 ### Usuario
 - **mínimo 5 caracteres**
@@ -36,10 +44,6 @@ página que o usuario vai fazer o login. Vai ter um formulario com campos tipo e
 - obrigatório números
 - obrigatório letra maiúscula
 - obrigatório caractere especial
-
-#  [X]  2. Pagina Cadastro `...` 
-
- página que o usuário vai efetuar o cadastro do site. Um formulario com 4 campos para nome, email, senha e confirmar senha, um botão para cadastrar as informações inseridas nos campos.
 
 #  [X]  3. Pagina Inicial `index.php` 
 
@@ -74,14 +78,7 @@ header padrao, campos com nome, email, senha, cpf e cep do usuario e um botao de
 
 Pagina editar produtos -> header padrão, formulário com campos de nome do produto, descrição e valor. Em seguida, com checkbox (Hamburguer, Pizza, Bebidas, Doces, Msrmitas, Espetinhos  e massas) e botão de finalizar(direciona para Pagina Produto), footer padrão.
 
-#  [X]  11. Pagina listar produtos `pagina_lista_produtos.php`
-
-header padrão, barra de busca, espaço onde estará os registro dos produtos com foto, nome e ingredientes e dois botões de editar(encaminha para pagina de editar produtos) e excluir.
-
-#  [X]  12. Pagina editar produto `pagina_editar_produto.php`
-
-header padrao, campos com nome, descrição, categoria, valor do produto junto com um input de escolher arquivo tipo imagem e um botao de enviar.
-
+# ✅ Validação 
 
 ### Nome
 - **mínimo 5 caracteres**
@@ -139,4 +136,15 @@ header padrao, campos com nome, descrição, categoria, valor do produto junto c
 - **campo obrigatório**
 - **apenas numeros**
 - **mascara XX,XX**
+
+#  [X]  11. Pagina listar produtos `pagina_lista_produtos.php`
+
+header padrão, barra de busca, espaço onde estará os registro dos produtos com foto, nome e ingredientes e dois botões de editar(encaminha para pagina de editar produtos) e excluir.
+
+#  [X]  12. Pagina editar produto `pagina_editar_produto.php`
+
+header padrao, campos com nome, descrição, categoria, valor do produto junto com um input de escolher arquivo tipo imagem e um botao de enviar.
+
+
+
 
