@@ -26,11 +26,15 @@
         <div class="row mt-2">
             <div class="col">
                 <label for="usuario">Usuario</label>
-                <input type="text" name="usuario" class="form-control" required>
+                <input type="text" name="usuario" class="form-control" required
+                    id="usuario" minlength="3" maxlength="100" onblur="verificarUsuarioLogin()">
+                <span id="mensagem-erro-usuario-login"></span>
             </div>
             <div class="col">
                 <label for="cpf">CPF</label>
-                <input type="text" name="cpf" class="form-control" required maxlength="14">
+                <input type="text" name="cpf" class="form-control" required
+                    id="cpf" onblur="validacpf()" oninput="aplicarMascaraCPF(event)" maxlength="14">
+                <span id="mensagem-cpf"></span>
             </div>
         </div>
         <br>
@@ -40,3 +44,5 @@
     <a class="btn btn-primary" href="./usuario-login.php">Voltar</a>
 
 </main>
+
+<script src="./Assets/js/validacao.js"></script>

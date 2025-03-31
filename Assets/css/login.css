@@ -19,9 +19,8 @@ a{
 
 
 
-
 main {
-    height: 100vh;
+    margin: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -31,8 +30,8 @@ main {
 
 .login-container{
     position: relative;
-    height: 580px;
-    width: 768px;
+    height: 1000px;
+    width: 968px;
     border-radius: 12px;
     box-shadow: 0 5px 20px #A0A0A0;
     overflow: hidden;
@@ -67,7 +66,7 @@ main {
     width: 50%;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     background-color: #FFF;
     padding: 10px;
@@ -75,7 +74,7 @@ main {
 
 .form-register{
     transform: translateX(-100%);
-    z-index: -1;
+    z-index: -1;    
     opacity: 0;
 }
 
