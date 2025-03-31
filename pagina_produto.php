@@ -31,7 +31,7 @@ $dados = $banco->query($script)->fetch();
             <span class="categ"><?php echo $dados['categoria'] ?></span>
             <span>R$<?php echo $dados['valor'] ?></span>
             <a class="btn" href="./pagina_historico_compras.php?id_produtos=<?php echo $dados['id_produtos'] ?>">Adicionar</a>
-            <button class=" btn ">Comprar</button>
+            <a href="./pagina_finalizar_compra.php" class=" btn ">Comprar</a>
         </div>
     </section>
 </form>
