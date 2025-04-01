@@ -56,6 +56,9 @@ $dados = $banco->query($script)->fetch();
                     <figcaption>
                         <h3><?php echo $linha['nome']  ?></h3>
                         <button onclick="adicionarAoCarrinho('Produto 1', 30)">Adicionar ao Carrinho</button>
+                        <br>
+                        <br>
+                        
 
                         <a href="./pagina_produto.php?id=<?= $linha['id_produtos'] ?>">VER MAIS</a>
                     </figcaption>
