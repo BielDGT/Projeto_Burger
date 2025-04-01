@@ -238,13 +238,13 @@ function confirmarSenha() {
     if (confirmarSenha !== senha) {
         confirmarSenhaError.textContent = "As senhas não coincidem.";
         confirmarSenhaError.style.color = "red";
-        document.getElementById("confirmar_senha").focus();
+
         return false;
             
     } else if(confirmarSenha === "") {
         confirmarSenhaError.textContent = "Preencha o campo";
         confirmarSenhaError.style.color = "red";
-        document.getElementById("confirmar_senha").focus();
+
         return false;
     } else {    
         confirmarSenhaError.textContent = "OK";

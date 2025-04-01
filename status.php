@@ -6,6 +6,6 @@ if (empty($_SESSION) && !isset($_SESSION['status'])){
 
 }else if ($_SESSION['status'] == "admin"){
     include './pagina_admin.php';
-}else if ($_SESSION['status'] == "comum"){
+}else if ($_SESSION['status'] == ""){
     include './pagina_usuario.php';
 }
