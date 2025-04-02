@@ -41,7 +41,7 @@ $resultado = $banco_cliente->query($select)->fetch();
             </div>
             <div class="btn-editar">
                 <ol>
-                    <li> <a href="./pagina_usuario.php?sair=true " class="btn btn-roxo">Sair</a></li>
+                    <li><a href="./status.php?sair=true " class="btn btn-roxo">Sair</a></li>
                 </ol>
             </div>
             <div class="btn-editar">

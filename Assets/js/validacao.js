@@ -79,19 +79,16 @@ function verificarUsuario() {
     if (nome.length < 5) {
         nomeError.textContent = "Nome deve ter no mínimo 5 caracteres.";
         nomeError.style.color = "red";
-        document.getElementById("user").focus();
         return false;
 
     } else if (nome.length > 60) {
         nomeError.textContent = "Nome deve ter no máximo 60 caracteres.";
         nomeError.style.color = "red";
-        document.getElementById("user").focus();
         return false;
 
     } else if(nome === "") {
         nomeError.textContent = "O campo nome não pode estar vazio!";
         nomeError.style.color = "red";
-        document.getElementById("user").focus();
         return false;
 
     } else {
@@ -109,19 +106,16 @@ function verificarNome() {
     if (nome.length < 5) {
         nomeError.textContent = "Nome deve ter no mínimo 5 caracteres.";
         nomeError.style.color = "red";
-        document.getElementById("nome").focus();
         return false;
 
     } else if (nome.length > 60) {
         nomeError.textContent = "Nome deve ter no máximo 60 caracteres.";
         nomeError.style.color = "red";
-        document.getElementById("nome").focus();
         return false;
 
     } else if(nome === "") {
         nomeError.textContent = "O campo nome não pode estar vazio!";
         nomeError.style.color = "red";
-        document.getElementById("nome").focus();
         return false;
        
     } else {
@@ -141,23 +135,19 @@ function verificarEmail() {
     if (nome === "") {
         emailError.textContent = "E-mail é obrigatório.";
         emailError.style.color = "red";
-        document.getElementById("email").focus();
         return false;
     } else if (email.length > 100) {
         emailError.textContent = "E-mail deve ter no máximo 100 caracteres.";
         emailError.style.color = "red";
-        document.getElementById("email").focus();
         return false;
     } else if (email.length < 5) {
         emailError.textContent = "E-mail deve ter no mínimo 5 caracteres.";
         emailError.style.color = "red";
-        document.getElementById("email").focus();
         return false;
     }
-     else if (!emailPattern.test(email)) {
+    else if (!emailPattern.test(email)) {
         emailError.textContent = "E-mail inválido.";
         emailError.style.color = "red";
-        document.getElementById("email").focus();
         return false;
     } else {
         emailError.textContent = "OK";
@@ -178,37 +168,31 @@ function validaSenha() {
     if (senha === "") {
         SenhaError.textContent = "Senha não pode ser vazia";
         SenhaError.style.color = "red";
-        document.getElementById("senha").focus();
         return false;
 
     }else if (senha.length > 60) {
         SenhaError.textContent = "Senha não pode ser maior que 60 digitos";
         SenhaError.style.color = "red";
-        document.getElementById("senha").focus();
         return false;
 
     }else if (senha.length < 8) {
         SenhaError.textContent = "Senha não pode ser menor que 8 digitos";
         SenhaError.style.color = "red";
-        document.getElementById("senha").focus();
         return false;
 
     }else if (!regexMaiusculo.test(senha)) {
         SenhaError.textContent = "Senha tem que ter Letras Maiúsculas";
         SenhaError.style.color = "red";
-        document.getElementById("senha").focus();
         return false;
     
     }else if (!regexEspecial.test(senha)) {
         SenhaError.textContent = "Senha tem que ter Caracter Especial";
         SenhaError.style.color = "red";
-        document.getElementById("senha").focus();
         return false;
 
     }else if (!regexNumero.test(senha)) {
         SenhaError.textContent = "Senha tem que ter números";
         SenhaError.style.color = "red";
-        document.getElementById("senha").focus();
         return false;
 
     }else{
@@ -275,7 +259,6 @@ function validatelefone() {
     if (telefone.length !== 14) {
         mensagemErroTelefone.textContent = 'Telefone inválido! Certifique-se de que o número tenha o formato correto (XX) XXXXX-XXXX.';
         mensagemErroTelefone.style.color = 'red';
-        document.getElementById("telefone").focus();
         return false;
     } else {    
         mensagemErroTelefone.textContent = "OK";
@@ -314,19 +297,16 @@ function validacpf() {
     if (cpf === "") {
         mensagemErroCpf.textContent = "CPF é obrigatório.";
         mensagemErroCpf.style.color = "red";
-        document.getElementById("cpf").focus();
         return false;
     } else if (!cpfPattern.test(cpf)) {
         mensagemErroCpf.textContent = "CPF inválido. Use o formato XXX.XXX.XXX-XX.";
         mensagemErroCpf.style.color = "red";
-        document.getElementById("cpf").focus();
         return false;
     } else {
         // Função para validar CPF
         if (!validarCPF(cpf)) {
             mensagemErroCpf.textContent = "CPF inválido.";
             mensagemErroCpf.style.color = "red";
-            document.getElementById("cpf").focus();
             return false;
         } else {
             mensagemErroCpf.textContent = "OK";
@@ -394,12 +374,10 @@ function validacep() {
     if (cep === "") {
         mensagemErroCep.textContent = "CEP é obrigatório.";
         mensagemErroCep.style.color = "red";
-        document.getElementById("cep").focus();
         return false;
     } else if (!cepPattern.test(cep)) {
         mensagemErroCep.textContent = "CEP inválido. Use o formato XXXXX-XXX.";
         mensagemErroCep.style.color = "red";
-        document.getElementById("cep").focus();
         return false;
     } else {
         mensagemErroCep.textContent = "OK";
@@ -418,7 +396,6 @@ function validanasc() {
     if (nasc === "") {
         mensagemNasc.textContent = "A data de nascimento é obrigatória.";
         mensagemNasc.style.color = "red";
-        document.getElementById("nasc").focus();
         return;
     }
 
@@ -430,7 +407,6 @@ function validanasc() {
     if (dataNasc > dataAtual) {
         mensagemNasc.textContent = "A data de nascimento Invalida.";
         mensagemNasc.style.color = "red";
-        document.getElementById("nasc").focus();
         return false;
     } else {
         // Se a data de nascimento for válida
@@ -502,8 +478,3 @@ function validarFormulario() {
     // Se tudo estiver correto, o formulário será enviado
     return true;
 }
-
-
-
-
-   

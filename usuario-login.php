@@ -29,7 +29,7 @@ if ($_SERVER["REQUEST_METHOD"] == 'POST' && !empty($_POST)) {
         $_SESSION['id_pessoa']      = $dadosUsuario['id'];
         $_SESSION['status']      = $result['status'];
 
-        header('location:status.php');
+        header('location:index.php');
     } else {
         echo '<script> 
         alert("Usuario ou Senha Invalido")
