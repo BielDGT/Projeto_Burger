@@ -40,7 +40,7 @@ main{
         padding: 0px 0px 25px 0px; /* Espaçamento interno */
         margin: 10px 10px 10px 10px; /* Espaçamento externo */
         border-radius: 10px; /* Bordas arredondadas */
-        height: 500px;
+        height: 400px;
         
         
 
@@ -58,12 +58,13 @@ main{
 }
 .container-titulo{
     background-color: tomato;
+
 }
 
 
 /*estilização titulo*/
 h2 {
-    font-size: 40px;
+    font-size: 30px;
     text-align: center;
     color: white;
     transition: color 0.3s ease, transform 0.3s ease;
