@@ -21,3 +21,5 @@ $box->execute([
     ':id_produto' => $id_produto_carrinho,
     ':id_pessoa' => $id_pessoa_carrinho
 ]);
+
+header("location:pagina_produto.php?id= {$id_produto_carrinho}");
