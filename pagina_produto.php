@@ -28,9 +28,9 @@ $dados = $banco->query($script)->fetch();
             <p><?php echo $dados['descrição'] ?></p>
             <span class="categ"><?php echo $dados['categoria'] ?></span>
             <span>R$<?php echo $dados['valor'] ?></span>
-            <form action="./conexão.php" method="GET">
-                <a class="btn" href="./pagina_historico_compras.php?id_produtos=<?php echo $dados['id_produtos'] ?>">Adicionar</a>
-            </form>
+            
+            <a class="btn" href="./adicionar_carrinho.php?id_produtos=<?= $dados['id_produtos'] ?>">Adicionar</a>
+            
             <a href="./pagina_finalizar_compra.php" class=" btn ">Comprar</a>
         </div>
     </section>
