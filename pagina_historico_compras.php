@@ -63,11 +63,8 @@ $resultado->execute();
                 <?php } ?>
 
                 <td>
-                    <a href="./pagina_finalizar_compra.php">
-                        <button>COMPRAR</button>
-                    </a>
+                        <a href="./pagina_finalizar_compra.php">COMPRAR</a>
                 </td>
-                
             </table>
         </form>
 

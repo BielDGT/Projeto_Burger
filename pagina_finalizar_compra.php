@@ -1,14 +1,41 @@
 <?php
 include './includes/header.php';
-require './classe/banco.php';
 
-$id = $_GET['id'];
-
-$conexaoBanco = new cards();
-$dados = $conexaoBanco->conexaoBanco();
-
-
+$dsn = 'mysql:dbname=db_damaju;host=127.0.0.1';
+ 
+$user = 'root';
+ 
+$password = '';
+ 
+$banco = new PDO($dsn, $user, $password);
+ 
+$id_pessoa_imprimir = $_SESSION['id_pessoa'];
+ 
+$script = 'SELECT
+tb_pessoa.nome,
+tb_produtos.nome,
+tb_produtos.descrição,
+tb_produtos.img,
+tb_carrinho.quantidade
+FROM tb_carrinho  
+INNER JOIN tb_pessoa ON tb_pessoa.id = tb_carrinho.id_pessoa
+INNER JOIN tb_produtos ON tb_produtos.id_produtos = tb_carrinho.id_produto
+WHERE tb_carrinho.id_pessoa = ' . $id_pessoa_imprimir;
+ 
+ 
+ 
+// 'SELECT tb_pessoa.*, tb_produtos.*, tb_carrinho.*
+// FROM tb_carrinho
+// INNER JOIN tb_pessoa ON tb_pessoa.id = tb_carrinho.id_pessoa
+// INNER JOIN tb_produtos ON tb_produtos.id_produtos = tb_carrinho.id_produto
+// WHERE tb_carrinho.id_pessoa = ' . $id_pessoa_imprimir;
+ 
+ 
+$resultado = $banco->prepare($script);
+ 
+$resultado->execute();
 ?>
+
 <link rel="stylesheet" href="./Assets/css/pagina_finalizar_compra.css">
 
 
@@ -39,16 +66,16 @@ $dados = $conexaoBanco->conexaoBanco();
             <tbody>
                 <tr>
                     <td>
-                        <?php echo $dados['id'] ?>
+                        <?php echo $resultado['id'] ?>
                     </td>
                     <td>
-                        <?php echo $dados['img'] ?>
+                        <?php echo $resultado['img'] ?>
                     </td>
                     <td>
-                        <?php echo $dados['nome'] ?>
+                        <?php echo $resultado['nome'] ?>
                     </td>
                     <td>
-                        <?php echo $dados['valor'] ?>
+                        <?php echo $resultado['valor'] ?>
                     </td>
                     <td>
                         2x
