@@ -21,10 +21,6 @@ $resultado = $banco->query($select)->fetchAll();
 
                     <figcaption>
                         <h3><?php echo $linha['nome']  ?></h3>
-                        <!-- <button onclick="adicionarAoCarrinho('Produto 1', 30)">Adicionar ao Carrinho</button> -->
-                        <br>
-                        <br>
-
                         <p><?php echo $linha['categoria'] ?></p>
                         <button onclick="adicionarAoCarrinho('Produto 1', 30)">Adicionar ao Carrinho</button>
                         <br><br>
@@ -32,5 +28,6 @@ $resultado = $banco->query($select)->fetchAll();
                         <a href="./pagina_produto.php?id=<?= $linha['id_produtos'] ?>">VER MAIS</a>
                     </figcaption>
                 </figure>
+            </div>
             </div>
 <?php } ?>
