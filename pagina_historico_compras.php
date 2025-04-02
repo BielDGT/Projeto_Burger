@@ -11,7 +11,7 @@ $banco = new PDO($dsn, $user, $password);
 $id_pessoa_imprimir = $_SESSION['id_pessoa'];
  
 $script = 'SELECT
-tb_pessoa.nome,
+tb_carrinho.id,
 tb_produtos.nome,
 tb_produtos.descrição,
 tb_produtos.img,
@@ -57,7 +57,7 @@ $resultado->execute();
                         <p><?= $linha['descrição']?></p>
                     </td>
                     <td class="coluna3">
-                        <a href="#"><button>REMOVER</button></a>
+                        <a href="./remover_carrinho.php?id_remover=<?= $linha['id']?>"><button>REMOVER</button></a>
                     </td>
                 </tr>
                 <?php } ?>
