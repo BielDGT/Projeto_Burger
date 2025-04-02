@@ -1,4 +1,4 @@
-    
+
 
 <?php
 
@@ -6,7 +6,7 @@ $nomeform = $_POST['nome'];
 $descform = $_POST['descricao'];
 $categoriaform = $_POST['categoria'];
 $valorform = $_POST['valor'];
-$imgForm = $_POST['userfile'];
+$imgForm = $_POST['imagem'];
 
 $dsn = 'mysql:dbname=db_damaju;host=127.0.0.1';
 $user = 'root';
