@@ -5,19 +5,16 @@ function verificarUsuarioLogin() {
     if (nome.length < 5) {
         nomeError.textContent = "Nome deve ter no mínimo 5 caracteres.";
         nomeError.style.color = "red";
-        document.getElementById("usuario").focus();
         return false;
 
     } else if (nome.length > 60) {
         nomeError.textContent = "Nome deve ter no máximo 60 caracteres.";
         nomeError.style.color = "red";
-        document.getElementById("usuario").focus();
         return false;
 
     } else if(nome === "") {
         nomeError.textContent = "O campo nome não pode estar vazio!";
         nomeError.style.color = "red";
-        document.getElementById("usuario").focus();
         return false;
 
     } else {
@@ -39,37 +36,31 @@ function validaSenhaLogin() {
     if (senha === "") {
         SenhaError.textContent = "Senha não pode ser vazia";
         SenhaError.style.color = "red";
-        document.getElementById("senha-login").focus();
         return false;
 
     }else if (senha.length > 60) {
         SenhaError.textContent = "Senha não pode ser maior que 60 digitos";
         SenhaError.style.color = "red";
-        document.getElementById("senha-login").focus();
         return false;
 
     }else if (senha.length < 8) {
         SenhaError.textContent = "Senha não pode ser menor que 8 digitos";
         SenhaError.style.color = "red";
-        document.getElementById("senha-login").focus();
         return false;
 
     }else if (!regexMaiusculo.test(senha)) {
         SenhaError.textContent = "Senha tem que ter Letras Maiúsculas";
         SenhaError.style.color = "red";
-        document.getElementById("senha-login").focus();
         return false;
     
     }else if (!regexEspecial.test(senha)) {
         SenhaError.textContent = "Senha tem que ter Caracter Especial";
         SenhaError.style.color = "red";
-        document.getElementById("senha-login").focus();
         return false;
 
     }else if (!regexNumero.test(senha)) {
         SenhaError.textContent = "Senha tem que ter números";
         SenhaError.style.color = "red";
-        document.getElementById("senha-login").focus();
         return false;
 
     }else{

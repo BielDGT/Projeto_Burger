@@ -52,5 +52,5 @@ $box->execute([
 
 echo '<script> 
 alert("Usuario Cadastrado com Sucesso!!!")
-window.location.replace("index.php")
+window.location.replace("usuario-login.php")
 </script>';
