@@ -6,7 +6,7 @@
 <div class="container-cadastrar-editar">
 
 
-    <form action="./produto_cadastrar.php" method="POST">
+    <form enctype="multipart/form-data" action="./produto_cadastrar.php" method="POST">
         <h2>Cadastrar Produto</h2>
         <input type="text" class="largura-definida" placeholder="Nome" name="nome">
 
@@ -20,8 +20,10 @@
                 <option value="Guarnição">Guarnição</option>
                 <option value="Sanduiche">Sanduiche</option>
             </select>
-
-            <input type="text" placeholder="Valor" name="valor">
+            <div>
+                <label for="valor">R$</label>
+                <input type="text" placeholder="Valor" name="valor">
+            </div>
         </div>
 
         <input type="file" name="imagem" accept="image/*">
