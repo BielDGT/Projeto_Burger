@@ -1,15 +1,14 @@
 .coluna{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     text-align: center;
-    background-color: white;
-    
+    background-color: #f2f2f2;
+
 }
 
 .coluna figure{
     width: 300px;
-    height: 420px;
+    height: 480px;
     border: 2px solid black;
     padding: 20px;
     border-radius: 20px;

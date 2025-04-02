@@ -31,20 +31,10 @@
         $select = 'SELECT * FROM tb_produtos';
 
         $resultado = $banco->query($select)->fetchAll();
-
+        
+        include './includes/lanches_card.php';
         ?>
-        <?php foreach ($resultado as $linha) { ?>
-            <div class="coluna" data-categoria="<?php echo $linha['categoria']; ?>">
-                <figure>
-                    <img src="./Assets/Fotos/fotos_cards/<?php echo $linha['img'] ?>" alt="<?php echo $linha['nome']; ?>">
-                    <figcaption>
-                        <h3><?php echo $linha['nome'] ?></h3>
-                        <p><?php echo $linha['categoria'] ?></p>
-                        <a href="./pagina_produto.php?id=<?= $linha['id_produtos'] ?>">VER MAIS</a>
-                    </figcaption>
-                </figure>
-            </div>
-        <?php } ?>
+        
     </main>
 </section>
 
