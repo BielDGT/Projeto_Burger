@@ -37,9 +37,8 @@ $dados = $banco->query($script)->fetch();
             <input type="hidden" name="descrição" value="<?php echo $dados['descrição'] ?>">
             <input type="hidden" name="categoria" value="<?php echo $dados['categoria'] ?>">
             <input type="hidden" name="valor" value="<?php echo $dados['valor'] ?>">
-
-
             <button class="btn">Adicionar</button>
+            <input type="number" id="quantidade" name="quantidade" value="1" min="1" max="10" <?php  $dados['quantidade'] ?>>
         </form>
     </div>
 </section>

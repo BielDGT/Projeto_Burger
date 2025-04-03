@@ -10,10 +10,7 @@ if (isset($_POST['id_produtos'])) {
         unset($_SESSION['cart'][$id_produto]); // Remove o item do carrinho
     }
 
-    // Se o carrinho ficar vazio, remove a variável de sessão
-    if (empty($_SESSION['cart'])) {
-        unset($_SESSION['cart']); // Remove a variável de sessão do carrinho
-    }
+    
 }
 
 // Redireciona de volta para a página do carrinho

@@ -17,7 +17,7 @@ if (isset($_POST['id_produtos'])) {
         'descricao' => $_POST['descrição'],
         'categoria' => $_POST['categoria'],
         'valor' => $_POST['valor'],
-        'quantidade' => ($_SESSION['cart'][$id]['quantidade'] ?? 0) + 1
+        'quantidade' => $_POST['quantidade']
     ];
 }
 

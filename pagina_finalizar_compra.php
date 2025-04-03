@@ -2,10 +2,24 @@
 include './includes/header.php';
 ?>
 
+
 <link rel="stylesheet" href="./Assets/css/pagina_finalizar_compra.css">
 
+<!-- <?php
 
+        $id = $_POST['id_produtos'];
 
+        $dsn = 'mysql:dbname=db_damaju;host=127.0.0.1';
+        $user = 'root';
+        $password = '';
+
+        $banco = new PDO($dsn, $user, $password);
+
+        $script = "SELECT * FROM tb_produtos WHERE id_produtos =  $id";
+
+        $dados = $banco->query($script)->fetch();
+
+        ?> -->
 <main>
     <div>
         <h3>Carrinho</h3>
@@ -13,6 +27,7 @@ include './includes/header.php';
         <table>
             <thead>
                 <tr>
+
                     <th>
                         foto
                     </th>
@@ -31,24 +46,31 @@ include './includes/header.php';
                 </tr>
             </thead>
             <tbody>
-                    <tr>
-                        <td>
-                            <img src="./Assets/Fotos/fotos_cards/" class="imagem-principal" alt="foto do produto">
-                        </td>
-                        <td>
+                <tr>
+
+                    <?php $dados['id_produtos'] ?>
+
+                    <td>
+                        <img src="./Assets/Fotos/<?= ('fotos_cards/' . $dados['img']) ?>" alt="foto" class="foto ">
+                    </td>
+                    <td>
+                    <?php
+                    session_start();
+                    $_SESSION['nome'] = $dados['nome'];
+                    ?>
                         
-                        </td>
-                        <td>
-                        
-                        </td>
-                        <td>
-                            2x
-                        </td>
-                        <td>
-                            50,00
-                        </td>
-                    </tr>
-                
+                    </td>
+                    <td>
+                        <?php echo $dados['valor'] ?>
+                    </td>
+                    <td>
+                        2x
+                    </td>
+                    <td>
+                        50,00
+                    </td>
+                </tr>
+
             </tbody>
 
         </table>
