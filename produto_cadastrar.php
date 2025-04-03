@@ -68,5 +68,5 @@ try {
 } catch (PDOException $e) {
     // If there’s an error with the database, catch and display the error
     echo 'Error: ' . $e->getMessage();
-}
-?>
+}   
+

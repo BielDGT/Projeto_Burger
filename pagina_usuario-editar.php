@@ -24,11 +24,23 @@ $resultado = $banco_cliente->query($select)->fetch();
 <body>
     <main id="container-pagina-usuario" class="text-center">
         <section class="row-pagina-usuario" class="text-center">
-            <div class="foto-usuario">
-                <img src="./Assets/Fotos/pagina_usuario/usuario.png" alt="icone do usuário" class="foto-usuario">
-            </div>
+
+
             <div class="formulario">
-                <form action="./usuario-editar.php" method="POST">
+                <form action="./usuario-editar.php" method="POST" enctype="multipart/form-data">
+
+                    <input id="img-input" type="file" name="img" accept="image/*">
+
+                    <div class="foto-usuario">
+                <img id="preview" src="./Assets/Fotos/fotos_usuarios/<?php 
+                    // Verifica se o campo 'img' não está vazio
+                    if (!empty($resultado['img'])) {
+                        echo $resultado['img']; // Exibe a imagem do usuário se existir
+                    } else {
+                        echo 'usuario.png'; // Caso contrário, exibe a imagem padrão
+                    }
+                ?>" alt="icone do usuário" class="foto-usuario">
+            </div>
                     <input type="hidden" class="formulario-campo" placeholder="id" name="id" value="<?php echo $resultado['id'] ?>"><br>
                     <input type="text" class="formulario-campo" placeholder="usuario" name="usuario" value="<?php echo $resultado['usuario'] ?>"><br>
                     <input type="text" class="formulario-campo" placeholder="Senha" name="senha" value="<?php echo $resultado['senha'] ?>"><br>
@@ -50,4 +62,6 @@ $resultado = $banco_cliente->query($select)->fetch();
     </main>
 </body>
 <?php include './includes/footer.php' ?>
+
+<script src="./Assets/js/upImg.js"></script>
 </html>

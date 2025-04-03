@@ -35,8 +35,17 @@ $resultado = $banco_cliente->query($select)->fetch();
     <main id="container-pagina-usuario" class="text-center">
         <section class="row-pagina-usuario" class="text-center">
             <div class="foto-usuario">
-                <img src="./Assets/Fotos/pagina_usuario/usuario.png" alt="icone do usuário" class="foto-usuario">
+                <img src="./Assets/Fotos/fotos_usuarios/<?php 
+                    // Verifica se o campo 'img' não está vazio
+                    if (!empty($resultado['img'])) {
+                        echo $resultado['img']; // Exibe a imagem do usuário se existir
+                    } else {
+                        echo 'usuario.png'; // Caso contrário, exibe a imagem padrão
+                    }
+                ?>" 
+                alt="icone do usuário" class="foto-usuario">
             </div>
+
         </section>
         <section class="linha-btn">
             <div class="btn-editar">
