@@ -1,20 +1,21 @@
 <?php
+session_start(); // Inicia a sessão
 
-$id_remover_carrinho = $_GET['id_remover'];
+// Verifica se recebeu o ID via POST
+if (isset($_POST['id_produtos'])) {
+    $id_produto = $_POST['id_produtos'];
 
-$dsn = 'mysql:dbname=db_damaju;host=127.0.0.1';
+    // Verifica se o item existe no carrinho antes de remover
+    if (isset($_SESSION['cart'][$id_produto])) {
+        unset($_SESSION['cart'][$id_produto]); // Remove o item do carrinho
+    }
 
-$user = 'root';
+    // Se o carrinho ficar vazio, remove a variável de sessão
+    if (empty($_SESSION['cart'])) {
+        unset($_SESSION['cart']); // Remove a variável de sessão do carrinho
+    }
+}
 
-$password = '';
-
-$banco = new PDO($dsn, $user, $password);
-
-
-$remover = 'DELETE FROM tb_carrinho WHERE id  =  :id';
-
-$resultado_remover_carrinho = $banco->prepare($remover);
-
-$resultado_remover_carrinho->execute([
-    ':id'=>$id_remover_carrinho,
-])
+// Redireciona de volta para a página do carrinho
+header("Location: pagina_historico_compras.php");
+exit(); //serve para nenhum outro codigo php seja executado para o redirecionamento de volta para a pagina historico(carrinho)

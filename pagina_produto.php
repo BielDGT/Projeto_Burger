@@ -18,23 +18,32 @@ $script = "SELECT * FROM tb_produtos WHERE id_produtos =  $id";
 $dados = $banco->query($script)->fetch();
 
 ?>
-<form action="./pagina_historico_compras.php" method="GET">
-    <section id="destaque">
-        <div class="local-imagem">
-            <img src="./Assets/Fotos/fotos_cards/<?php echo $dados['img'] ?>" class="imagem-principal" alt="foto">
-        </div>
-        <div class="content">
-            <h2><?php echo $dados['nome'] ?></h2>
-            <p><?php echo $dados['descrição'] ?></p>
-            <span class="categ"><?php echo $dados['categoria'] ?></span>
-            <span>R$<?php echo $dados['valor'] ?></span>
-            
-            <a class="btn" href="./adicionar_carrinho.php?id_produtos=<?= $dados['id_produtos'] ?>">Adicionar</a>
-            
-            <a href="./pagina_finalizar_compra.php" class=" btn ">Comprar</a>
-        </div>
-    </section>
-</form>
+
+<section id="destaque">
+    <div class="local-imagem">
+        <img src="./Assets/Fotos/fotos_cards/<?php echo $dados['img'] ?>" class="imagem-principal" alt="foto">
+    </div>
+    <div class="content">
+        <h2><?php echo $dados['nome'] ?></h2>
+        <p><?php echo $dados['descrição'] ?></p>
+        <span class="categ"><?php echo $dados['categoria'] ?></span>
+        <span>R$<?php echo $dados['valor'] ?></span>
+
+        <!-- Formulário para adicionar ao carrinho -->
+        <form action="adicionar_carrinho.php" method="post">
+            <input type="hidden" name="id_produtos" value="<?php echo $dados['id_produtos'] ?>">
+            <input type="hidden" name="img" value="<?php echo $dados['img'] ?>">
+            <input type="hidden" name="nome" value="<?php echo $dados['nome'] ?>">
+            <input type="hidden" name="descrição" value="<?php echo $dados['descrição'] ?>">
+            <input type="hidden" name="categoria" value="<?php echo $dados['categoria'] ?>">
+            <input type="hidden" name="valor" value="<?php echo $dados['valor'] ?>">
+
+
+            <button class="btn">Adicionar</button>
+        </form>
+    </div>
+</section>
+
 
 
 <section id="container recomendação">

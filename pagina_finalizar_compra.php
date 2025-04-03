@@ -1,40 +1,5 @@
 <?php
 include './includes/header.php';
-
-$dsn = 'mysql:dbname=db_damaju;host=127.0.0.1';
-
-$user = 'root';
-
-$password = '';
-
-$banco = new PDO($dsn, $user, $password);
-
-$id_pessoa_imprimir = $_SESSION['id_pessoa'];
-
-$script = 'SELECT
-tb_pessoa.nome,
-tb_produtos.nome,
-tb_produtos.descrição,
-tb_produtos.img,
-tb_carrinho.quantidade,
-tb_produtos.valor
-FROM tb_carrinho  
-INNER JOIN tb_pessoa ON tb_pessoa.id = tb_carrinho.id_pessoa
-INNER JOIN tb_produtos ON tb_produtos.id_produtos = tb_carrinho.id_produto
-WHERE tb_carrinho.id_pessoa = ' . $id_pessoa_imprimir;
-
-
-
-// 'SELECT tb_pessoa.*, tb_produtos.*, tb_carrinho.*
-// FROM tb_carrinho
-// INNER JOIN tb_pessoa ON tb_pessoa.id = tb_carrinho.id_pessoa
-// INNER JOIN tb_produtos ON tb_produtos.id_produtos = tb_carrinho.id_produto
-// WHERE tb_carrinho.id_pessoa = ' . $id_pessoa_imprimir;
-
-
-$resultado = $banco->prepare($script);
-
-$resultado->execute();
 ?>
 
 <link rel="stylesheet" href="./Assets/css/pagina_finalizar_compra.css">
@@ -66,16 +31,15 @@ $resultado->execute();
                 </tr>
             </thead>
             <tbody>
-                <?php foreach ($resultado as $linha) { ?>
                     <tr>
                         <td>
-                            <img src="./Assets/Fotos/fotos_cards/<?php echo $linha['img'] ?>" class="imagem-principal" alt="foto do produto">
+                            <img src="./Assets/Fotos/fotos_cards/" class="imagem-principal" alt="foto do produto">
                         </td>
                         <td>
-                        <?= $linha['nome'] ?>
+                        
                         </td>
                         <td>
-                        <?= $linha['valor'] ?>
+                        
                         </td>
                         <td>
                             2x
@@ -84,7 +48,7 @@ $resultado->execute();
                             50,00
                         </td>
                     </tr>
-                <?php } ?>
+                
             </tbody>
 
         </table>

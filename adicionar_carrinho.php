@@ -1,25 +1,26 @@
-<?php session_start();
+<?php
+session_start();
 
-$dsn = 'mysql:dbname=db_damaju;host=127.0.0.1';
+// Inicializa o carrinho se não existir
+if (!isset($_SESSION['cart'])) {
+    $_SESSION['cart'] = [];
+}
 
-$user = 'root';
+// Verifica se os dados do produto foram enviados
+if (isset($_POST['id_produtos'])) {
+    $id = $_POST['id_produtos'];
 
-$password = '';
+    // Adiciona ao carrinho
+    $_SESSION['cart'][$id] = [
+        'nome' => $_POST['nome'],
+        'img'=>$_POST['img'],
+        'descricao' => $_POST['descrição'],
+        'categoria' => $_POST['categoria'],
+        'valor' => $_POST['valor'],
+        'quantidade' => ($_SESSION['cart'][$id]['quantidade'] ?? 0) + 1
+    ];
+}
 
-$banco = new PDO($dsn, $user, $password);
-
-$id_pessoa_carrinho = $_SESSION['id_pessoa'];
-
-$id_produto_carrinho = $_GET['id_produtos'];
-
-
-$script = "INSERT INTO tb_carrinho (id_produto, id_pessoa) VALUES (:id_produto, :id_pessoa)";
-
-$box = $banco->prepare($script);
-
-$box->execute([
-    ':id_produto' => $id_produto_carrinho,
-    ':id_pessoa' => $id_pessoa_carrinho
-]);
-
-header("location:pagina_produto.php?id= {$id_produto_carrinho}");
+// Redireciona de volta para a página principal
+header("Location: index.php");
+exit();
