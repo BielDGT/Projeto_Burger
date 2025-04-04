@@ -12,7 +12,7 @@
 
             <?php
             // Verifica se o carrinho não está vazio
-            if (!empty($_SESSION['cart'])) {
+            if (!empty($_SESSION['cart']) && isset($_SESSION['cart'])) {
             ?>
                 <?php foreach ($_SESSION['cart'] as $id => $item) { ?>
                     <tr class="row-container">

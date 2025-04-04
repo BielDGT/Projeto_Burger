@@ -36,7 +36,8 @@ $resultado = $banco_cliente->query($select)->fetch();
 <body>
     <main id="container-pagina-usuario" class="text-center">
         <section class="row-pagina-usuario" class="text-center">
-            <div class="foto-usuario">
+
+            <div class="foto_usuario">
                 <img src="./Assets/Fotos/fotos_usuarios/<?php 
                     // Verifica se o campo 'img' não está vazio
                     if (!empty($resultado['img'])) {

@@ -31,7 +31,7 @@ $resultado = $banco_cliente->query($select)->fetch();
 
                     <input id="img-input" type="file" name="img" accept="image/*">
 
-                    <div class="foto-usuario">
+                    <div class="foto_usuario">
                 <img id="preview" src="./Assets/Fotos/fotos_usuarios/<?php 
                     // Verifica se o campo 'img' não está vazio
                     if (!empty($resultado['img'])) {
