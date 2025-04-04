@@ -12,7 +12,6 @@ $resultado = $banco->query($select)->fetchAll();
 
 ?>
 <?php foreach ($resultado as $linha) { ?>
-            <div class="coluna">
 
             <div class="coluna" data-categoria="<?php echo $linha['categoria']; ?>">
 
@@ -28,5 +27,5 @@ $resultado = $banco->query($select)->fetchAll();
                     </figcaption>
                 </figure>
             </div>
-            </div>
+            
 <?php } ?>
