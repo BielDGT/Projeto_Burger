@@ -32,7 +32,6 @@
                             <form action="remover_carrinho.php" method="post">
                                 <input type="hidden" name="id_produtos" value="<?= $id ?>">
                                 <button type="submit">REMOVER</button>
-
                             </form>
                         </td>
                     </tr>
@@ -67,18 +66,11 @@
                 <button id="enviar" type="submit">Enviar Pedido </button>
                 <?php header('location:usuario-login.php'); ?>
                 <?php } else { ?>
-
                         <button id="enviar" type="submit">Enviar Pedido </button>
-                        
-                <script src="./Assets/js/mensagem.js"></script>
                 <?php } ?>
-                
             </td>
         </table>
-
         </div>
-
-
     </section>
 
 </main>

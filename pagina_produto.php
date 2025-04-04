@@ -30,16 +30,16 @@ $dados = $banco->query($script)->fetch();
         <span>R$<?php echo $dados['valor'] ?></span>
 
         <!-- Formulário para adicionar ao carrinho -->
-        <form action="adicionar_carrinho.php" method="post">
-            <input type="hidden" name="id_produtos" value="<?php echo $dados['id_produtos'] ?>">
-            <input type="hidden" name="img" value="<?php echo $dados['img'] ?>">
-            <input type="hidden" name="nome" value="<?php echo $dados['nome'] ?>">
-            <input type="hidden" name="descrição" value="<?php echo $dados['descrição'] ?>">
-            <input type="hidden" name="categoria" value="<?php echo $dados['categoria'] ?>">
-            <input type="hidden" name="valor" value="<?php echo $dados['valor'] ?>">
-            <button class="btn">Adicionar</button>
-            <input type="number" id="quantidade" name="quantidade" value="1" min="1" max="10" <?php  $dados['quantidade'] ?>>
-        </form>
+            <form action="adicionar_carrinho.php" method="post">
+                <input type="hidden" name="id_produtos" value="<?php echo $dados['id_produtos'] ?>">
+                <input type="hidden" name="img" value="<?php echo $dados['img'] ?>">
+                <input type="hidden" name="nome" value="<?php echo $dados['nome'] ?>">
+                <input type="hidden" name="descrição" value="<?php echo $dados['descrição'] ?>">
+                <input type="hidden" name="categoria" value="<?php echo $dados['categoria'] ?>">
+                <input type="hidden" name="valor" value="<?php echo $dados['valor'] ?>">
+                <button class="btn">Adicionar</button>
+                <input type="number" id="quantidade" name="quantidade" value="1" min="1" max="10" <?php $dados['quantidade'] ?>>
+            </form>
     </div>
 </section>
 
@@ -57,7 +57,7 @@ $dados = $banco->query($script)->fetch();
 
         include './includes/lanches_card.php';
         ?>
-        
+
     </div>
 </section>
 

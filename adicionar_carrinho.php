@@ -1,6 +1,5 @@
 <?php
 session_start();
-
 // Inicializa o carrinho se não existir
 if (!isset($_SESSION['cart'])) {
     $_SESSION['cart'] = [];

@@ -7,9 +7,10 @@ document.getElementById('enviar').addEventListener('click', function() {
     setTimeout(function() {
         mensagemPedido.classList.add('hidden'); //colocando tempo de 5 segundoa
     }, 5000);
-
-    $_SESSION['cart'] = [];
+    
 });
 
-
-
+function enviar(){
+    
+    unset($_SESSION['cart'][$id_produto]);
+}
