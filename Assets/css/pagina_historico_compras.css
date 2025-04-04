@@ -109,3 +109,16 @@ button:hover{
 
 }
 
+/* estilização da mensagem quando apertar o botão de envio */
+
+.hidden {
+    display: none;
+}
+#mensagem {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 5px;
+
+}

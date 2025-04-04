@@ -6,14 +6,13 @@
 
 <link rel="stylesheet" href="./Assets/css/pagina_historico_compras.css">
 <style>
-    H2{
+    H2 {
         color: black;
     }
 </STYLE>
 
 <main>
     <section id="carrinho-de-compras">
-
         <table class="container-painel-carrinho">
             <tr class="container-titulo">
                 <td>
@@ -28,7 +27,7 @@
                 <?php foreach ($_SESSION['cart'] as $id => $item) { ?>
                     <tr class="row-container">
                         <td>
-                            <img src="./Assets/Fotos/fotos_cards/<?php echo $item['img']?>" alt="foto da comida">
+                            <img src="./Assets/Fotos/fotos_cards/<?php echo $item['img'] ?>" alt="foto da comida">
                         </td>
                         <td>
                             <?= $item['nome']; ?>
@@ -55,31 +54,31 @@
             <?php } ?>
             <tr>
                 <td class="fonte">
-                    <h2>TOTAL: 
+                    <h2>TOTAL:
                         <?php
                         $total = 0;
-                        foreach ($_SESSION['cart'] as $item){
+                        foreach ($_SESSION['cart'] as $item) {
                             $total += $item['valor'] * $item['quantidade'];
                         }
-                        echo"R$" . number_format($total,2,',',',');
-                        
+                        echo "R$" . number_format($total, 2, ',', ',');
+
                         ?>
                     </h2>
                 </td>
             </tr>
 
             <td>
-                <input type="submit">
-                <!-- <a href="./pagina_finalizar_compra.php?id=<?php echo $item['id_produtos'] ?>">Comprar</a> -->
+                <button id="enviar" type="submit">Enviar Pedido </button>
             </td>
         </table>
-
-
+        <div id="mensagem" class="hidden">
+            <h3 class="text-center">Seu pedido está a caminho!</h3>
+        </div>
         </div>
 
 
     </section>
 
 </main>
-
+<script src="./Assets/js/mensagem.js"></script>
 <?php include './includes/footer.php' ?>
