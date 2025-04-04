@@ -1,16 +1,6 @@
-<?php include './includes/header.php';
-
-
-
-?>
+<?php include './includes/header.php';?>
 
 <link rel="stylesheet" href="./Assets/css/pagina_historico_compras.css">
-<style>
-    H2 {
-        color: black;
-    }
-</STYLE>
-
 <main>
     <section id="carrinho-de-compras">
         <table class="container-painel-carrinho">
@@ -57,7 +47,7 @@
             <?php } ?>
             <tr>
                 <td class="fonte">
-                    <h2>TOTAL:
+                    <h2 class="total">TOTAL:
                         <?php
                         $total = 0;
                         foreach ($_SESSION['cart'] as $item) {
