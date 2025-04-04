@@ -63,7 +63,16 @@
             </tr>
 
             <td>
+                <?php if(empty($_SESSION['usuario']) && !isset($_SESSION['usuario']['status'])) { ?>
                 <button id="enviar" type="submit">Enviar Pedido </button>
+                <?php header('location:usuario-login.php'); ?>
+                <?php } else { ?>
+
+                        <button id="enviar" type="submit">Enviar Pedido </button>
+                        
+                <script src="./Assets/js/mensagem.js"></script>
+                <?php } ?>
+                
             </td>
         </table>
 

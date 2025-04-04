@@ -55,24 +55,9 @@ $dados = $banco->query($script)->fetch();
 
         $resultado = $banco->query($select)->fetchAll();
 
+        include './includes/lanches_card.php';
         ?>
-        <?php foreach ($resultado as $linha) { ?>
-            <div class="coluna">
-                <figure>
-                    <img src="./Assets/Fotos/fotos_cards/<?php echo $linha['img'] ?>" alt="hamburguer">
-
-                    <figcaption>
-                        <h3><?php echo $linha['nome']  ?></h3>
-                        <button onclick="adicionarAoCarrinho('Produto 1', 30)">Adicionar ao Carrinho</button>
-                        <br>
-                        <br>
-                        
-
-                        <a href="./pagina_produto.php?id=<?= $linha['id_produtos'] ?>">VER MAIS</a>
-                    </figcaption>
-                </figure>
-            </div>
-        <?php } ?>
+        
     </div>
 </section>
 
