@@ -48,6 +48,9 @@
                     </tr>
                 <?php } // Fecha o foreach corretamente 
                 ?>
+                <div id="mensagem" class="hidden">
+                    <h3 class="text-center">Seu pedido está a caminho!</h3>
+                </div>
             <?php } else { ?>
                 <!-- Mensagem exibida caso o carrinho esteja vazio -->
                 <p>Seu carrinho está vazio.</p>
@@ -71,9 +74,7 @@
                 <button id="enviar" type="submit">Enviar Pedido </button>
             </td>
         </table>
-        <div id="mensagem" class="hidden">
-            <h3 class="text-center">Seu pedido está a caminho!</h3>
-        </div>
+
         </div>
 
 
