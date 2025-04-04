@@ -26,8 +26,8 @@ if ($_SERVER["REQUEST_METHOD"] == 'POST' && !empty($_POST)) {
 
         session_start();
 
-        $_SESSION['id_pessoa']      = $dadosUsuario['id'];
-        $_SESSION['status']      = $result['status'];
+        $_SESSION['usuario']['id_pessoa']      = $dadosUsuario['id'];
+        $_SESSION['usuario']['status']         = $result['status'];
 
         header('location:index.php');
     } else {
