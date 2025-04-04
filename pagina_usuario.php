@@ -26,7 +26,7 @@ $user = 'root';
 $password = '';
 $banco_cliente = new PDO($dsn, $user, $password);
 
-$select = "SELECT * FROM tb_pessoa INNER JOIN tb_usuario ON tb_pessoa.id = tb_usuario.id_pessoa WHERE tb_usuario.id_pessoa = {$_SESSION['id_pessoa']} " ;
+$select = "SELECT * FROM tb_pessoa INNER JOIN tb_usuario ON tb_pessoa.id = tb_usuario.id_pessoa WHERE tb_usuario.id_pessoa = {$_SESSION['usuario']['id_pessoa']} " ;
 
 
 $resultado = $banco_cliente->query($select)->fetch();

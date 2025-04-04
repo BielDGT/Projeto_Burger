@@ -41,9 +41,11 @@
                 <div id="mensagem" class="hidden">
                     <h3 class="text-center">Seu pedido está a caminho!</h3>
                 </div>
-            <?php } else { ?>
+            <?php } else if (empty($_SESSION['cart']) && !isset($_SESSION['cart'])){ ?>
+                <?php $_SESSION['cart'] = []; ?>
                 <!-- Mensagem exibida caso o carrinho esteja vazio -->
                 <p>Seu carrinho está vazio.</p>
+                
             <?php } ?>
             <tr>
                 <td class="fonte">
