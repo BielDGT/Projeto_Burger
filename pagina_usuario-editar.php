@@ -29,7 +29,7 @@ $resultado = $banco_cliente->query($select)->fetch();
             <div class="formulario">
                 <form action="./usuario-editar.php" method="POST" enctype="multipart/form-data">
 
-                    <input id="img-input" type="file" name="img" accept="image/*">
+                    <input id="img-input" type="file" name="img" accept="image/*" value="<?php echo $resultado['img'] ?>" required>
 
                     <div class="foto_usuario">
                 <img id="preview" src="./Assets/Fotos/fotos_usuarios/<?php 
@@ -50,7 +50,7 @@ $resultado = $banco_cliente->query($select)->fetch();
                     <input type="text" class="formulario-campo" placeholder="Email" name="email" value="<?php echo $resultado['email'] ?>"><br>
                     <input type="text" class="formulario-campo" placeholder="CPF" name="cpf" value="<?php echo $resultado['cpf'] ?>"><br>
                     <input type="text" class="formulario-campo" placeholder="Endereço" name="cep" value="<?php echo $resultado['cep'] ?>"><br>
-                    <input type="text" class="formulario-campo" placeholder="nascimento" name="nascimento" value="<?php echo $resultado['nascimento'] ?>"><br>
+                    <input type="date" class="formulario-campo" placeholder="nascimento" name="nascimento" value="<?php echo $resultado['nascimento'] ?>"><br>
                     <input type="text" class="formulario-campo" placeholder="telefone" name="tel" value="<?php echo $resultado['telefone'] ?>"><br>
 
                     <input type="submit">

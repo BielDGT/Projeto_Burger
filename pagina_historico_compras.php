@@ -17,7 +17,7 @@
                 <?php foreach ($_SESSION['cart'] as $id => $item) { ?>
                     <tr class="row-container">
                         <td>
-                            <img src="./Assets/Fotos/fotos_cards/<?php echo $item['img'] ?>" alt="foto da comida">
+                            <img src="./Assets/Fotos/fotos_cards/<?php echo $item['img'] ?>" alt="foto da comida" width="300px" height="300px">
                         </td>
                         <td>
                             <?= $item['nome']; ?>
