@@ -6,13 +6,13 @@ $descform = $_POST['descricao'];
 $categoriaform = $_POST['categoria'];
 $valorform = $_POST['valor'];
 
-$dsn = 'mysql:dbname=db_damaju;host=127.0.0.1';
-$user = 'root';
-$password = '';
+require './classe/banco.php';
+
+$filmes = new Banco();
+$banco = $filmes-> conexaoBanco();
 
 try {
     // Create a PDO connection
-    $banco = new PDO($dsn, $user, $password);
     $banco->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION); // Enable error mode
     
     // Prepare the SQL query (without the 'img' field at this point)

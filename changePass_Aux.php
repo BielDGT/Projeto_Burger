@@ -6,11 +6,10 @@ echo '<h1> Aux change pass.php </h1>';
     $cpf = $_POST['cpf'];
  
  
-    $dsn = 'mysql:dbname=db_damaju;host=127.0.0.1';
-    $user = 'root';
-    $password = '';
+    require './classe/banco.php';
 
-    $banco = new PDO($dsn, $user, $password);
+    $filmes = new Banco();
+    $banco = $filmes-> conexaoBanco();
 
     $queryUsuarioSenha = 'SELECT tb_usuario.usuario, tb_pessoa.cpf FROM tb_pessoa INNER JOIN tb_usuario ON tb_pessoa.id = tb_usuario.id_pessoa 
     WHERE tb_usuario.usuario = "' . $usuario . ' "AND tb_pessoa.cpf = "' . $cpf .'"';

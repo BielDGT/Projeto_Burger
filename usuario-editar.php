@@ -12,13 +12,13 @@ $editarCpf = $_POST['cpf'];
 $editarNascimento = $_POST['nascimento'];
 $editarTel = $_POST['tel'];
 
-$dsn = 'mysql:dbname=db_damaju;host=127.0.0.1';
-$user = 'root';
-$password = '';
+require './classe/banco.php';
+
+$filmes = new Banco();
+$banco = $filmes-> conexaoBanco();
 
 try {
 
-$banco = new PDO($dsn, $user, $password);
 
 $update = 'UPDATE tb_usuario set usuario = :usuario, senha = :senha where id_pessoa = :id';
 

@@ -5,11 +5,10 @@ echo '<h1> Update senha </h1>';
 echo '<pre>';
 var_dump($_POST);
 
-$dsn = 'mysql:dbname=db_damaju;host=127.0.0.1';
-$user = 'root';
-$password = '';
+require './classe/banco.php';
 
-$banco = new PDO($dsn, $user, $password);
+$filmes = new Banco();
+$banco = $filmes-> conexaoBanco();
 
 $usuario = $_POST['usuario'];
 $newPass = $_POST ['newPass'];

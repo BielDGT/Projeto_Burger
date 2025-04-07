@@ -7,11 +7,10 @@
 
 $id = $_GET['id'];
 
-$dsn = 'mysql:dbname=db_damaju;host=127.0.0.1';
-$user = 'root';
-$password = '';
+require './classe/banco.php';
 
-$banco = new PDO($dsn, $user, $password);
+$filmes = new Banco();
+$banco = $filmes-> conexaoBanco();
 
 $script = "SELECT * FROM tb_produtos WHERE id_produtos =  $id";
 

@@ -21,15 +21,15 @@ if (empty($_SESSION) && !isset($_SESSION['id_pessoa'])){
 </head>
 
 <?php
-$dsn = 'mysql:dbname=db_damaju;host=127.0.0.1';
-$user = 'root';
-$password = '';
-$banco_cliente = new PDO($dsn, $user, $password);
+    require './classe/banco.php';
 
+    $filmes = new Banco();
+    $banco = $filmes-> conexaoBanco();
+    
 $select = "SELECT * FROM tb_pessoa INNER JOIN tb_usuario ON tb_pessoa.id = tb_usuario.id_pessoa WHERE tb_usuario.id_pessoa = {$_SESSION['usuario']['id_pessoa']} " ;
 
 
-$resultado = $banco_cliente->query($select)->fetch();
+$resultado = $banco->query($select)->fetch();
 
 ?>
 

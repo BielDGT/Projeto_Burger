@@ -8,11 +8,10 @@ if ($_SERVER["REQUEST_METHOD"] == 'POST' && !empty($_POST)) {
     $usuarioForm = $_POST['usuario'];
     $senhaForm = $_POST['senha'];
 
-    $dsn = 'mysql:dbname=db_damaju;host=127.0.0.1';
-    $user = 'root';
-    $password = '';
+    require './classe/banco.php';
 
-    $banco = new PDO($dsn, $user, $password);
+    $filmes = new Banco();
+    $banco = $filmes-> conexaoBanco();
 
     $script = "SELECT * FROM tb_usuario WHERE usuario = '{$usuarioForm}' AND senha = '{$senhaForm}'";
 
