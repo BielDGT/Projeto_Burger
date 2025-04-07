@@ -6,18 +6,7 @@
 
                 <form class="form form-login" action="#login" method="POST">
                     <h2 class="form-title">Entrar</h2>
-                    <div class="form-social">
-                        <a href="#" class="social-icon">
-                            <i class="bi bi-facebook"></i>
-                        </a>
-                        <a href="#" class="social-icon">
-                            <i class="bi bi-google"></i>
-                        </a>
-                        <a href="#" class="social-icon">
-                            <i class="bi bi-linkedin"></i>
-                        </a>
-                    </div>
-                    <br>
+                    
                     <div class="form-input-container">
                         <input type="text" class="form-input" placeholder="Usuario" name="usuario" required
                         id="usuario" minlength="3" maxlength="100" onblur="verificarUsuarioLogin()">
@@ -36,18 +25,7 @@
 
                 <form class="form form-register" action="./cliente_cad.php" method="POST">
                     <h2 class="form-title">Cadastrar</h2>
-                    <div class="form-social">
-                        <a href="#" class="social-icon">
-                            <i class="bi bi-facebook"></i>
-                        </a>
-                        <a href="#" class="social-icon">
-                            <i class="bi bi-google"></i>
-                        </a>
-                        <a href="#" class="social-icon">
-                            <i class="bi bi-linkedin"></i>
-                        </a>
-                    </div>
-                    <br>
+                    
                     <div class="form-input-container">
                         <input type="text" class="form-input" placeholder="Usuario" name="user" 
                         id="user" minlength="3" maxlength="100" onblur="verificarUsuario()" required>
