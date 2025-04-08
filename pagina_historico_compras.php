@@ -1,6 +1,6 @@
 <?php include './includes/header.php';?>
 
-<link rel="stylesheet" href="./Assets/css/pagina_historico_compras.css">
+<link rel="stylesheet" href="./assets/css/pagina_historico_compras.css">
 <main>
     <section id="carrinho-de-compras">
         <table class="container-painel-carrinho">
@@ -17,7 +17,7 @@
                 <?php foreach ($_SESSION['cart'] as $id => $item) { ?>
                     <tr class="row-container">
                         <td>
-                            <img src="./Assets/Fotos/fotos_cards/<?php echo $item['img'] ?>" alt="foto da comida" width="300px" height="300px">
+                            <img src="./assets/fotos/fotos_cards/<?php echo $item['img'] ?>" alt="foto da comida" width="300px" height="300px">
                         </td>
                         <td>
                             <?= $item['nome']; ?>
@@ -74,5 +74,5 @@
     </section>
 
 </main>
-<script src="./Assets/js/mensagem.js"></script>
+<script src="./assets/js/mensagem.js"></script>
 <?php include './includes/footer.php' ?>

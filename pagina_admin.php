@@ -14,8 +14,8 @@ if (empty($_SESSION) && !isset($_SESSION['id_pessoa'])) {
 
 ?>
 
-<link rel="stylesheet" href="./Assets/css/pagina_admin.css">
-<link rel="stylesheet" href="./Assets/css/footer.css">
+<link rel="stylesheet" href="./assets/css/pagina_admin.css">
+<link rel="stylesheet" href="./assets/css/footer.css">
 
 </head>
 
@@ -35,7 +35,7 @@ $resultado = $banco->query($select)->fetch();
     <main id="container-pagina-usuario" class="text-center">
         <section class="row-pagina-usuario" class="text-center">
             <div class="foto_usuario">
-                <img src="./Assets/Fotos/fotos_usuarios/<?php 
+                <img src="./assets/fotos/fotos_usuarios/<?php 
                     // Verifica se o campo 'img' não está vazio
                     if (!empty($resultado['img'])) {
                         echo $resultado['img']; // Exibe a imagem do usuário se existir

@@ -45,4 +45,4 @@
 
 </main>
 
-<script src="./Assets/js/validacao.js"></script>
+<script src="./assets/js/validacao.js"></script>

@@ -33,7 +33,7 @@ try {
     if (isset($_FILES['imagem']) && $_FILES['imagem']['error'] == UPLOAD_ERR_OK) {
         // Define the allowed file extensions
         $allowed_extensions = ['jpg', 'jpeg', 'png', 'gif'];
-        $upload_dir = './Assets/Fotos/fotos_cards/';
+        $upload_dir = './assets/fotos/fotos_cards/';
         $uploadfile = $upload_dir . basename($_FILES['imagem']['name']);
 
         // Check file extension

@@ -1,6 +1,6 @@
 <?php include './includes/header.php' ?>
 
-<link rel="stylesheet" href="./Assets/css/comidas_cards.css">
+<link rel="stylesheet" href="./assets/css/comidas_cards.css">
 <link rel="stylesheet" href="./assets/css/pagina_pesquisa.css">
 
 <section id="principal">
@@ -39,6 +39,6 @@ $banco = $filmes-> conexaoBanco();
 
 <?php include './includes/footer.php' ?>
 
-<script src="./Assets/js/filtro_pesquisa.js"></script>
+<script src="./assets/js/filtro_pesquisa.js"></script>
 
 </html>

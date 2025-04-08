@@ -3,7 +3,7 @@
 
 <?php include './includes/header.php' ?>
 
-<link rel="stylesheet" href="./Assets/css/pagina_lista_produtos.css">
+<link rel="stylesheet" href="./assets/css/pagina_lista_produtos.css">
 
 
 <?php

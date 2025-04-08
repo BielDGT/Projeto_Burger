@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="./Assets/css/pagina_cad_editar_produto.css">
+<link rel="stylesheet" href="./assets/css/pagina_cad_editar_produto.css">
 <?php include './includes/header.php' ?>
 
 
@@ -28,7 +28,7 @@
 
         <input id="img-input" type="file" name="imagem" accept="image/*" onchange="previewImage(event)" required>
 <div id="img-container">
-    <img id="preview" src="./Assets/Fotos/fotos_cards/produto.png" alt="Pré-visualização da imagem" class="foto_produto" />
+    <img id="preview" src="./assets/fotos/fotos_cards/produto.png" alt="Pré-visualização da imagem" class="foto_produto" />
 </div>
 
         <button type="submit" class="btn btn-success">Enviar</button>
@@ -42,4 +42,4 @@
 
 <?php include './includes/footer.php' ?>
 
-<script src="./Assets/js/upImg.js"></script>
+<script src="./assets/js/upImg.js"></script>

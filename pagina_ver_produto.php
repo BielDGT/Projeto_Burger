@@ -1,5 +1,5 @@
 <?php include './includes/header.php' ?>
-<link rel="stylesheet" href="./Assets/css/pagina_ver_produto.css">
+<link rel="stylesheet" href="./assets/css/pagina_ver_produto.css">
 
 <?php
 
@@ -19,7 +19,7 @@ $dados = $banco->query($select)->fetch();
 
 <div class="container-ver-produto">
     
-    <img src="./Assets/Fotos/fotos_cards/<?php echo $dados['img']?>" alt="" class="foto-produto">
+    <img src="./assets/fotos/fotos_cards/<?php echo $dados['img']?>" alt="" class="foto-produto">
 
     <form action="">
 

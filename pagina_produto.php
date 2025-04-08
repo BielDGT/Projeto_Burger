@@ -1,7 +1,7 @@
 <?php include './includes/header.php' ?>
 
-<link rel="stylesheet" href="./Assets/css/pagina_produto.css">
-<link rel="stylesheet" href="./Assets/css/comidas_cards.css">
+<link rel="stylesheet" href="./assets/css/pagina_produto.css">
+<link rel="stylesheet" href="./assets/css/comidas_cards.css">
 
 <?php
 
@@ -20,7 +20,7 @@ $dados = $banco->query($script)->fetch();
 
 <section id="destaque">
     <div class="local-imagem">
-        <img src="./Assets/Fotos/fotos_cards/<?php echo $dados['img'] ?>" class="imagem-principal" alt="foto">
+        <img src="./assets/fotos/fotos_cards/<?php echo $dados['img'] ?>" class="imagem-principal" alt="foto">
     </div>
     <div class="content">
         <h2><?php echo $dados['nome'] ?></h2>

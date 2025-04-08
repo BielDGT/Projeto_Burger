@@ -1,7 +1,7 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 <?php include './includes/header.php' ?>
-<link rel="stylesheet" href="./Assets/css/pagina_user.css">
-<link rel="stylesheet" href="./Assets/css/footer.css">
+<link rel="stylesheet" href="./assets/css/pagina_user.css">
+<link rel="stylesheet" href="./assets/css/footer.css">
 
 </head>
 
@@ -32,7 +32,7 @@ $resultado = $banco->query($select)->fetch();
                     <input id="img-input" type="file" name="img" accept="image/*" value="<?php echo $resultado['img'] ?>" required>
 
                     <div class="foto_usuario">
-                <img id="preview" src="./Assets/Fotos/fotos_usuarios/<?php 
+                <img id="preview" src="./assets/fotos/fotos_usuarios/<?php 
                     // Verifica se o campo 'img' não está vazio
                     if (!empty($resultado['img'])) {
                         echo $resultado['img']; // Exibe a imagem do usuário se existir
@@ -63,5 +63,5 @@ $resultado = $banco->query($select)->fetch();
 </body>
 <?php include './includes/footer.php' ?>
 
-<script src="./Assets/js/upImg.js"></script>
+<script src="./assets/js/upImg.js"></script>
 </html>

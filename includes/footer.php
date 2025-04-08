@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="./Assets/css/footer.css">
+<link rel="stylesheet" href="./assets/css/footer.css">
 
 <footer>
     <section class="footer-container">
@@ -17,5 +17,5 @@
     </section>
 </footer>
 </body>
-<script src="./Assets/js/carrossel.js"></script>
+<script src="./assets/js/carrossel.js"></script>
 </html>

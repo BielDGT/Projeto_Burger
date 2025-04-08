@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="./Assets/css/comidas_cards.css">
+<link rel="stylesheet" href="./assets/css/comidas_cards.css">
 
 <?php
 require_once './classe/banco.php';
@@ -14,7 +14,7 @@ $resultado = $banco->query($select)->fetchAll();
             <div class="coluna" data-categoria="<?php echo $linha['categoria']; ?>">
 
                 <figure>
-                    <img src="./Assets/Fotos/fotos_cards/<?php echo $linha['img'] ?>" alt="hamburguer">
+                    <img src="./assets/fotos/fotos_cards/<?php echo $linha['img'] ?>" alt="hamburguer">
 
                     <figcaption>
                         <h3><?php echo $linha['nome']  ?></h3>

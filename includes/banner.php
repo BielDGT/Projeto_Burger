@@ -5,9 +5,9 @@
         <!-- id é um identificador unico, ao contrario dda classe que existe varias -->
         <main class="carrossel-container">
             <div class="carrossel">
-                <img src="./assets/Fotos/pagina_inicial/banner01.jpg" alt="Banner_00">
-                <img src="./assets/Fotos/pagina_inicial/banner02.jpg" alt="Banner_00">
-                <img src="./assets/Fotos/pagina_inicial/banner03.jpg" alt="Banner_00">
+                <img src="./assets/fotos/pagina_inicial/banner01.jpg" alt="Banner_00">
+                <img src="./assets/fotos/pagina_inicial/banner02.jpg" alt="Banner_00">
+                <img src="./assets/fotos/pagina_inicial/banner03.jpg" alt="Banner_00">
 
             </div>
             <!-- precisa colocar todas as imagens dentro de um identificador -->

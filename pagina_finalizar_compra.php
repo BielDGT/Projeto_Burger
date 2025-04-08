@@ -3,7 +3,7 @@ include './includes/header.php';
 ?>
 
 
-<link rel="stylesheet" href="./Assets/css/pagina_finalizar_compra.css">
+<link rel="stylesheet" href="./assets/css/pagina_finalizar_compra.css">
 
 <!-- <?php
 
@@ -50,7 +50,7 @@ include './includes/header.php';
                     <?php $dados['id_produtos'] ?>
 
                     <td>
-                        <img src="./Assets/Fotos/<?= ('fotos_cards/' . $dados['img']) ?>" alt="foto" class="foto ">
+                        <img src="./assets/fotos/<?= ('fotos_cards/' . $dados['img']) ?>" alt="foto" class="foto ">
                     </td>
                     <td>
                     <?php
@@ -89,13 +89,13 @@ include './includes/header.php';
 
         <div class="linha-formato-pagamento">
             <input type="checkbox" name="" id="">
-            <img src="./Assets/Fotos/pagina_finalizar_compra/visa.png" alt="">
+            <img src="./assets/fotos/pagina_finalizar_compra/visa.png" alt="">
 
             <input type="checkbox" name="" id="">
-            <img src="./Assets/Fotos/pagina_finalizar_compra/mastercard.png" alt="">
+            <img src="./assets/fotos/pagina_finalizar_compra/mastercard.png" alt="">
 
             <input type="checkbox" name="" id="">
-            <img src="./Assets/Fotos/pagina_finalizar_compra/elo.png" alt="">
+            <img src="./assets/fotos/pagina_finalizar_compra/elo.png" alt="">
         </div>
 
         <button class="btn btn-success">Finalizar compra</button>

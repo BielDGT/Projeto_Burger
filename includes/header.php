@@ -13,9 +13,9 @@
     <link rel="shortcut icon" href="./assets/fotos/logo_aba.png" type="image/x-icon">
     
     
-    <link rel="stylesheet" href="./Assets/css/header.css">
+    <link rel="stylesheet" href="./assets/css/header.css">
 
-    <link rel="stylesheet" href="./Assets/css/footer.css">
+    <link rel="stylesheet" href="./assets/css/footer.css">
     
 
 

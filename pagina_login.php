@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="./Assets/css/login.css">
+<link rel="stylesheet" href="./assets/css/login.css">
 
     <main class="login">
         <div class="login-container" id="login-container">
@@ -73,12 +73,12 @@
 
             <div class="overlay-container">
                 <div class="overlay">
-                    <img src="./Assets/Fotos/pagina_login/logo2.png" class="foto-logo" alt="logo">
+                    <img src="./assets/fotos/pagina_login/logo2.png" class="foto-logo" alt="logo">
                     <h2 class="form-title form-title-light">Já tem conta?</h2>
                     <button class="form-button form-button-light" id="open-login">Entrar</button>
                 </div>
                 <div class="overlay">
-                    <img src="./Assets/Fotos/pagina_login/logo2.png" class="foto-logo" alt="logo">
+                    <img src="./assets/fotos/pagina_login/logo2.png" class="foto-logo" alt="logo">
                     <h2 class="form-title form-title-light">Seja Bem Vindo!</h2>
                     <button class="form-button form-button-light" id="open-register">Cadastrar</button>
                 </div>
@@ -89,7 +89,7 @@
 
 </body>
 
-<script src="./Assets/js/pagina_login.js"></script>
-<script src="./Assets/js/validacao.js"></script>
+<script src="./assets/js/pagina_login.js"></script>
+<script src="./assets/js/validacao.js"></script>
 
 </html>
