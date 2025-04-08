@@ -9,8 +9,8 @@
                     <h2>🛒 Seu Carrinho</h2>
                 </td>
             </tr>
-
             <?php
+            
             // Verifica se o carrinho não está vazio
             if (!empty($_SESSION['cart']) && isset($_SESSION['cart'])) {
             ?>
@@ -63,10 +63,18 @@
 
             <td>
                 <?php if(empty($_SESSION['usuario']) && !isset($_SESSION['usuario']['status'])) { ?>
+
                 <button id="enviar" type="submit">Enviar Pedido </button>
+
                 <?php header('location:usuario-login.php'); ?>
+
+
                 <?php } else { ?>
-                        <button id="enviar" type="submit">Enviar Pedido </button>
+
+                    <form action="./teste.php" method="post">
+                        <button id="enviar" name="testeacao" type="submit">Enviar Pedido </button>
+                    </form>
+                    
                 <?php } ?>
             </td>
         </table>
