@@ -1,5 +1,11 @@
 <link rel="stylesheet" href="./assets/css/footer.css">
+<button class="btn btn-primary" onclick="goBack()">Voltar</button>
 
+<script>
+    function goBack() {
+        window.history.back(); // Retorna à página anterior
+    }
+</script>
 <footer>
     <section class="footer-container">
         <div class="footer-row">

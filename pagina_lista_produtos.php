@@ -1,6 +1,3 @@
-
-
-
 <?php include './includes/header.php' ?>
 
 <link rel="stylesheet" href="./assets/css/pagina_lista_produtos.css">
@@ -42,6 +39,8 @@
         <?php } ?>
     </table>
 </main>
+
+
 
 
 <?php include './includes/footer.php'?>

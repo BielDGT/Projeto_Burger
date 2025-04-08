@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 $editar_id = $_POST['id'];
 $nomeform = $_POST['nome'];
@@ -9,68 +9,75 @@ $valorform = $_POST['valor'];
 require './classe/banco.php';
 
 $filmes = new Banco();
-$banco = $filmes-> conexaoBanco();
+$banco = $filmes->conexaoBanco();
 
 try {
-    // Create a PDO connection
-    $banco->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION); // Enable error mode
+    // Cria a conexão PDO
+    $banco->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION); // Habilita o modo de erro
     
-    // Prepare the SQL query (without the 'img' field at this point)
-    $cadastro = 'UPDATE tb_produtos SET nome = :nome, descrição = :descricao, categoria = :categoria, valor = :valor, img = :img WHERE id_produtos = :id';
-    $box = $banco->prepare($cadastro);
+    // Primeiro, verifica se o produto já tem uma imagem no banco
+    $query = 'SELECT img FROM tb_produtos WHERE id_produtos = :id';
+    $stmt = $banco->prepare($query);
+    $stmt->execute([':id' => $editar_id]);
+    $produto = $stmt->fetch(PDO::FETCH_ASSOC);
+    
+    // Se não houver imagem atual, define como vazio
+    $imagemAtual = $produto['img'] ?? '';
 
-    // Bind the values and execute the statement, setting an empty string as 'img' if no file is uploaded
-    $box->execute([
-        ':id' => $editar_id,
-        ':nome' => htmlspecialchars($nomeform),
-        ':descricao' => htmlspecialchars($descform),
-        ':categoria' => htmlspecialchars($categoriaform),
-        ':valor' => htmlspecialchars($valorform),
-        ':img' => '' // Default to an empty string if no image is uploaded
-    ]);
-
-    // Check if the image file was uploaded
+    // Verifica se há uma imagem nova
     if (isset($_FILES['imagem']) && $_FILES['imagem']['error'] == UPLOAD_ERR_OK) {
-        // Define the allowed file extensions
+        // Define as extensões permitidas
         $allowed_extensions = ['jpg', 'jpeg', 'png', 'gif'];
         $upload_dir = './assets/fotos/fotos_cards/';
         $uploadfile = $upload_dir . basename($_FILES['imagem']['name']);
 
-        // Check file extension
+        // Verifica a extensão do arquivo
         $file_extension = strtolower(pathinfo($uploadfile, PATHINFO_EXTENSION));
         if (!in_array($file_extension, $allowed_extensions)) {
-            die('Invalid file type. Allowed types: JPG, JPEG, PNG, GIF.');
+            die('Tipo de arquivo inválido. Tipos permitidos: JPG, JPEG, PNG, GIF.');
         }
 
-        // Check file size (5MB limit)
+        // Verifica o tamanho do arquivo (limite de 5MB)
         if ($_FILES['imagem']['size'] > 5 * 1024 * 1024) {
-            die('File size exceeds the 5MB limit.');
+            die('O tamanho do arquivo excede o limite de 5MB.');
         }
 
-        // Move the uploaded file
+        // Move o arquivo para o diretório de destino
         if (move_uploaded_file($_FILES['imagem']['tmp_name'], $uploadfile)) {
             echo "Arquivo válido e enviado com sucesso.\n";
 
-            // Update the product record with the image path in the database
-            $image_path = basename($_FILES['imagem']['name']); // Store the full path
-            $updateQuery = 'UPDATE tb_produtos SET img = :img WHERE id_produtos = :id';
+            // Atualiza o caminho da imagem no banco de dados
+            $image_path = basename($_FILES['imagem']['name']); // Armazena o nome do arquivo
+            $updateQuery = 'UPDATE tb_produtos SET nome = :nome, descrição = :descricao, categoria = :categoria, valor = :valor, img = :img WHERE id_produtos = :id';
             $updateStmt = $banco->prepare($updateQuery);
             $updateStmt->execute([
                 ':id' => $editar_id,
-                ':img' => $image_path,
+                ':nome' => htmlspecialchars($nomeform),
+                ':descricao' => htmlspecialchars($descform),
+                ':categoria' => htmlspecialchars($categoriaform),
+                ':valor' => htmlspecialchars($valorform),
+                ':img' => $image_path, // A nova imagem
             ]);
-            header('location:pagina_lista_produtos.php');
-            
+            header('Location: pagina_lista_produtos.php');
         } else {
-            die('Possible file upload attack!');
+            die('Possível ataque de upload de arquivo!');
         }
     } else {
-        echo 'No file uploaded or error during upload.';
+        // Se o usuário não enviar uma nova imagem, mantém a imagem atual no banco
+        $updateQuery = 'UPDATE tb_produtos SET nome = :nome, descrição = :descricao, categoria = :categoria, valor = :valor, img = :img WHERE id_produtos = :id';
+        $updateStmt = $banco->prepare($updateQuery);
+        $updateStmt->execute([
+            ':id' => $editar_id,
+            ':nome' => htmlspecialchars($nomeform),
+            ':descricao' => htmlspecialchars($descform),
+            ':categoria' => htmlspecialchars($categoriaform),
+            ':valor' => htmlspecialchars($valorform),
+            ':img' => $imagemAtual, // Mantém a imagem atual
+        ]);
+        header('Location: pagina_lista_produtos.php');
     }
 
 } catch (PDOException $e) {
-    // If there’s an error with the database, catch and display the error
-    echo 'Error: ' . $e->getMessage();
-}   
-
-
+    // Se houver um erro com o banco de dados, exibe o erro
+    echo 'Erro: ' . $e->getMessage();
+}
