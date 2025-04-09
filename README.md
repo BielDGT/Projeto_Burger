@@ -4,8 +4,6 @@ O site marketplace Lanches Damaju é a ponte entre os clientes e o estabelecimen
 
 ## 🤝 Colaboradores
 
-Agradecemos às seguintes pessoas que contribuíram para este projeto:
-
 <table>
   <tr>
     <td align="center">
