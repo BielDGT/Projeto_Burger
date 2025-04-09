@@ -71,8 +71,8 @@
 
                 <?php } else { ?>
 
-                    <form action="./teste.php" method="post">
-                        <button id="enviar" name="testeacao" type="submit">Enviar Pedido </button>
+                    <form action="./limpeza_carrinho.php" method="post">
+                        <button id="enviar" name="limpeza" type="submit">Enviar Pedido </button>
                     </form>
                     
                 <?php } ?>

@@ -1,6 +1,58 @@
-# 📝 Documentação do site Damaju
+# 📝 Documentação do projeto site lanches Damaju
 
-# 1. Pagina login `usuario-login.php` 
+O site marketplace Lanches Damaju é a ponte entre os clientes e o estabelecimento lanches Damaju, fornecendo variedades de comidas e bebidas, disponivel quando sua barriga roncar!!!Faça o pedido agora.
+
+## 🤝 Colaboradores
+
+Agradecemos às seguintes pessoas que contribuíram para este projeto:
+
+<table>
+  <tr>
+    <td align="center">
+      <a href="#" title="defina o título do link">
+        <img src="" width="100px;" alt="Foto do David Gabriel Tarley"/><br>
+        <sub>
+          <b>David Gabriel Tarley</b>
+        </sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="#" title="defina o título do link">
+        <img src="" width="100px;" alt="Foto do Josue Orellana Montenegro"/><br>
+        <sub>
+          <b>Josue Orellana Montenegro</b>
+        </sub>
+      </a>
+    </td>
+        <td align="center">
+      <a href="#" title="defina o título do link">
+        <img src="" width="100px;" alt="Foto da Marcia Gisseli Mamani Condarco"/><br>
+        <sub>
+          <b>Marcia Gisseli Mamani Condarco</b>
+        </sub>
+      </a>
+    </td>
+  </tr>
+</table>
+
+# 1. Pagina Inicial `index.php` 
+- **HEADER -> um menu de navegação, com 3 botões: pesquisa(encaminha para pagina pesquisa), home que é a logo no (direciona para pagina inicial), carrinho de compras(encaminha para pagina Carrinho de compra) e pagina do usuario (guia para pagina usuario ou administrador, depende do usuario que for loga )** 
+- **banner com carrossel** 
+- **cards dos produtos que tem o botão VER MAIS que encaminha para pagina do produto** 
+- **FOOTER-> (que tem botões do instagram, facebook, e gmail)**
+
+#  2. Pagina produto `pagina_produto.php` 
+
+-**header** 
+- **foto de destaque do produto junto com a descrição dele** 
+- **valor** 
+- **botão de quantidade de vezes que deseja comprar o produto**
+- **2 botões de adicionar ao carrinho(direciona para Pagina Carrinho de compra) e comprar(Direciona para pagina finalizar compra)** - **Seguido de uma seção de cards representando recomendações de outros produtos** 
+- **footer**
+
+CASO NÃO ESTEJA LOGADO O USUARIO DIRECIONA PARA PAGINA LOGIN
+
+#  3. Pagina login `usuario-login.php` 
 
 página que o usuario vai fazer o login. 
 - **um formulario com campos tipo email e senha** 
@@ -28,7 +80,20 @@ página que o usuario vai fazer o login.
 ### Esqueci senha
 - **validar o usuario e senha já existente com o banco para realizar a troca de senha** 
 
-#  2. Pagina Cadastro `...` 
+#   4. Pagina carrinho `pagina_historico_compras.php`
+
+- **header padrão** 
+- **seção carrinho de compra anexado produtos já selecionados pelo usuario botões de comprar e remover produto** 
+- **footer padrão.**
+
+#  5. Pagina pesquisa `pagina_pesquisa.php`
+
+- **header padrão** 
+- **seção composto por opções de filtragem com checkbox(Hamburguer, Pizza, Bebida, Marmitas e todos)** 
+- **seção dos produtos pesquisados contido por cards com descrição básica e botão de ver mais(encaminha para pagina do produto).** 
+- **footer padrão.** 
+
+#  6. Pagina Cadastro `...` 
 
  página que o usuário vai efetuar o cadastro do site. 
  - **Um formulario com 4 campos para nome, email, senha e confirmar senha, um botão para cadastrar as informações inseridas nos campos.**
@@ -85,34 +150,6 @@ página que o usuario vai fazer o login.
 ### Nascimento
 - **não pode ser um ano do futuro**
 - **campo obrigatório**
-
-#  3. Pagina Inicial `index.php` 
-- **HEADER -> um menu de navegação, com 3 botões: pesquisa(encaminha para pagina pesquisa), home que é a logo no (direciona para pagina inicial), carrinho de compras(encaminha para pagina Carrinho de compra) e pagina do usuario (guia para pagina usuario ou administrador, depende do usuario que for loga )** 
-- **banner com carrossel** 
-- **cards dos produtos que tem o botão VER MAIS que encaminha para pagina do produto** 
-- **FOOTER-> (que tem botões do instagram, facebook, e gmail)**
-
-#   4. Pagina produto `pagina_produto.php` 
-
--**header** 
-- **foto de destaque do produto junto com a descrição dele** 
-- **valor** 
-- **botão de quantidade de vezes que deseja comprar o produto**
-- **2 botões de adicionar ao carrinho(direciona para Pagina Carrinho de compra) e comprar(Direciona para pagina finalizar compra)** - **Seguido de uma seção de cards representando recomendações de outros produtos** 
-- **footer**
-
-#  5. Pagina pesquisa `pagina_pesquisa.php`
-
-- **header padrão** 
-- **seção composto por opções de filtragem com checkbox(Hamburguer, Pizza, Bebida, Marmitas e todos)** 
-- **seção dos produtos pesquisados contido por cards com descrição básica e botão de ver mais(encaminha para pagina do produto).** 
-- **footer padrão.** 
-
-#  6. Pagina carrinho `pagina_historico_compras.php`
-
-- **header padrão** 
-- **seção carrinho de compra anexado produtos já selecionados pelo usuario botões de comprar e remover produto** 
-- **footer padrão.**
 
 #  7. Pagina usuário `pagina_usuario.php`
 
@@ -183,53 +220,28 @@ página que o usuario vai fazer o login.
 - **escolher arquivo tipo imagem** 
 - **botao de enviar.**
 
-
-
 # Documentação Csharp Damaju
  
-# 1. Tela login
  
+# 1. Tela menu principal
+
+botão "Gerenciar Produto": O usuário será direcionado para a tela de Gerenciamento de produtos.
  
-Campo "Usuário": O usuário deve inserir seu nome de usuário registrado no sistema.
+botão "Gerenciar Cliente": O usuário será direcionado para a tela de Gerenciamento de clientes.
  
-Campo "Senha": O usuário deve inserir a senha associada ao seu nome de usuário.
+
+# 4. Tela gerenciamento produtos
  
-Botão "Limpar": Limpa os campos de usuário e senha.
- 
-Botão "Mostrar Senha": Permite visualizar a senha inserida.
- 
-Botão "Entrar": Se as informações fornecidas nos campos estiverem corretas, o usuário será direcionado para a tela do menu principal
- 
-# 2. Tela menu principal
- 
-botão "Cadastro de Produto": O usuário será direcionado para a tela de Cadastro de produto.
- 
-botão "Gerenciamento": O usuário será direcionado para a tela de Gerenciamento.
- 
-botão "Fechar": Fecha a tela e volta para a tela de login.
- 
-# 3. Tela cadastro de produto
- 
-Campo "Nome Produto": Campo para o usuario inserir o nome do produto.
- 
-Campo "Valor": Campo para o usuario inserir o valor do produto.
- 
-Menu suspenso "Categoria": aqui o usuario vai escolher o tipo de produto.
- 
-Campo "Descrição": Campo para o usuario inserir a descrição do produto.
- 
-Botão "Cadastrar": vai registrar todas as informações dos campos e menu suspenso no banco de dados.
- 
-Botão "Fechar": vai fechar a tela e voltar para a tela menu principal.
- 
-# 4. Tela gerenciamento
- 
-Botão "Clientes": Exibe todos os clientes registrados no banco de dados no DataGridView (DGV).
- 
-Botão "Remover Cliente": Exclui o cliente selecionado do banco de dados.
- 
-Botão "Produto": Exibe todos os produtos registrados no banco de dados no DataGridView (DGV).
+Botão "Pesquisar Produto": Exibe todos os produtos registrados no banco de dados no DataGridView (DGV).
  
 Botão "Remover Produto": Exclui o produto selecionado do banco de dados.
  
-Botão "Fechar": vai fechar a tela e voltar para a tela menu principal.
+Botão "Voltar": vai fechar a tela e voltar para a tela menu principal.
+
+# 4. Tela gerenciamento clientes
+ 
+Botão "Pesquisar Clientes": Exibe todos os clientes registrados no banco de dados no DataGridView (DGV).
+ 
+Botão "Remover Cliente": Exclui o cliente selecionado do banco de dados.
+ 
+Botão "Voltar": vai fechar a tela e voltar para a tela menu principal.
