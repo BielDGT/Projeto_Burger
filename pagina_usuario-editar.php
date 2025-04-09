@@ -29,7 +29,7 @@ $resultado = $banco->query($select)->fetch();
             <div class="formulario">
                 <form action="./usuario-editar.php" method="POST" enctype="multipart/form-data">
 
-                    <input id="img-input" type="file" name="img" accept="image/*" value="<?php echo $resultado['img'] ?>" required>
+                    <input id="img-input" type="file" name="img" accept="image/*" value="<?php echo $resultado['img'] ?>" >
 
                     <div class="foto_usuario">
                 <img id="preview" src="./assets/fotos/fotos_usuarios/<?php 
