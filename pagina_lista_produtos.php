@@ -6,8 +6,8 @@
 <?php
     require './classe/banco.php';
 
-    $filmes = new Banco();
-    $banco = $filmes-> conexaoBanco();
+    $execute= new Banco();
+    $banco = $execute-> conexaoBanco();
 
     $select = "SELECT * FROM tb_produtos";
 
@@ -25,7 +25,7 @@
             <th> Nome </td>
             <th> Ação </td>
         </tr>
-        <?php foreach ($resultado as $linha) { ?>
+        <?php foreach ($resultado as $linha) { ?> <!--pr cd execute oq estiver dentro das chaves-->
             <tr>
                 <td> <?= $linha['id_produtos'] ?> </td>
                 
