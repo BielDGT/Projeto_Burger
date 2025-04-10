@@ -34,18 +34,20 @@ try {
         // Verifica a extensão do arquivo
         $file_extension = strtolower(pathinfo($uploadfile, PATHINFO_EXTENSION));
         if (!in_array($file_extension, $allowed_extensions)) {
-            die('Tipo de arquivo inválido. Tipos permitidos: JPG, JPEG, PNG, GIF.');
+            // Redireciona para a página de edição com mensagem de erro
+            header("Location: ./pagina_editar_produto.php?id_produto_editar=$editar_id&erro=tipo_invalido");
+            exit();
         }
 
         // Verifica o tamanho do arquivo (limite de 5MB)
         if ($_FILES['imagem']['size'] > 5 * 1024 * 1024) {
-            die('O tamanho do arquivo excede o limite de 5MB.');
+            // Redireciona para a página de edição com mensagem de erro
+            header("Location: ./pagina_editar_produto.php?id_produto_editar=$editar_id&erro=tamanho_excedido");
+            exit();
         }
 
         // Move o arquivo para o diretório de destino
         if (move_uploaded_file($_FILES['imagem']['tmp_name'], $uploadfile)) {
-            echo "Arquivo válido e enviado com sucesso.\n";
-
             // Atualiza o caminho da imagem no banco de dados
             $image_path = basename($_FILES['imagem']['name']); // Armazena o nome do arquivo
             $updateQuery = 'UPDATE tb_produtos SET nome = :nome, descrição = :descricao, categoria = :categoria, valor = :valor, img = :img WHERE id_produtos = :id';
@@ -59,8 +61,11 @@ try {
                 ':img' => $image_path, // A nova imagem
             ]);
             header('Location: pagina_lista_produtos.php');
+            exit();
         } else {
-            die('Possível ataque de upload de arquivo!');
+            // Redireciona para a página de edição com erro
+            header("Location: ./pagina_editar_produto.php?id_produto_editar=$editar_id&erro=upload_failed");
+            exit();
         }
     } else {
         // Se o usuário não enviar uma nova imagem, mantém a imagem atual no banco
@@ -75,6 +80,7 @@ try {
             ':img' => $imagemAtual, // Mantém a imagem atual
         ]);
         header('Location: pagina_lista_produtos.php');
+        exit();
     }
 
 } catch (PDOException $e) {

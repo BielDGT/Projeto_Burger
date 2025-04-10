@@ -1,5 +1,30 @@
 <link rel="stylesheet" href="./assets/css/pagina_cad_editar_produto.css">
-<?php include './includes/header.php' ?>
+<?php include './includes/header.php';
+
+if (isset($_GET['erro'])) {
+    $erro = $_GET['erro'];
+    $mensagem = ''; // Variável para a mensagem de erro
+
+    switch ($erro) {
+        case 'tipo_invalido':
+            $mensagem = 'Erro: Tipo de arquivo inválido. Tipos permitidos: JPG, JPEG, PNG, GIF.';
+            break;
+        case 'tamanho_excedido':
+            $mensagem = 'Erro: O tamanho do arquivo excede o limite de 5MB.';
+            break;
+        case 'upload_failed':
+            $mensagem = 'Erro: Falha ao realizar o upload da imagem.';
+            break;
+    }
+
+    // Se houver mensagem de erro, executa o script para mostrar o popup
+    if ($mensagem) {
+        echo "<script type='text/javascript'>
+                alert('$mensagem');
+              </script>";
+    }
+}
+?>
 
 
 

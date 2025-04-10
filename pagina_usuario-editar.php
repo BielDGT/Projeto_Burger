@@ -19,6 +19,32 @@ $select = "SELECT * FROM tb_pessoa INNER JOIN tb_usuario ON tb_pessoa.id = tb_us
 
 $resultado = $banco->query($select)->fetch();
 
+
+
+if (isset($_GET['erro'])) {
+    $erro = $_GET['erro'];
+    $mensagem = ''; // Variável para a mensagem de erro
+
+    switch ($erro) {
+        case 'tipo_invalido':
+            $mensagem = 'Erro: Tipo de arquivo inválido. Tipos permitidos: JPG, JPEG, PNG, GIF.';
+            break;
+        case 'tamanho_excedido':
+            $mensagem = 'Erro: O tamanho do arquivo excede o limite de 5MB.';
+            break;
+        case 'upload_failed':
+            $mensagem = 'Erro: Falha ao realizar o upload da imagem.';
+            break;
+    }
+
+    // Se houver mensagem de erro, executa o script para mostrar o popup
+    if ($mensagem) {
+        echo "<script type='text/javascript'>
+                alert('$mensagem');
+              </script>";
+    }
+}
+
 ?>
 
 <body>
@@ -29,7 +55,7 @@ $resultado = $banco->query($select)->fetch();
             <div class="formulario">
                 <form action="./usuario-editar.php" method="POST" enctype="multipart/form-data">
 
-                    <input id="img-input" type="file" name="img" accept="image/*" value="<?php echo $resultado['img'] ?>" >
+                    <input id="img-input" type="file" name="img" accept="image/*" value="<?php echo $resultado['img'] ?>">
 
                     <div class="foto_usuario">
                 <img id="preview" src="./assets/fotos/fotos_usuarios/<?php 
@@ -41,17 +67,17 @@ $resultado = $banco->query($select)->fetch();
                     }
                 ?>" alt="icone do usuário" class="foto-usuario">
             </div>
-                    <input type="hidden" class="formulario-campo" placeholder="id" name="id" value="<?php echo $resultado['id'] ?>"><br>
-                    <input type="text" class="formulario-campo" placeholder="usuario" name="usuario" value="<?php echo $resultado['usuario'] ?>"><br>
-                    <input type="text" class="formulario-campo" placeholder="Senha" name="senha" value="<?php echo $resultado['senha'] ?>"><br>
+                    <input type="hidden" class="formulario-campo" placeholder="id" name="id" value="<?php echo $resultado['id'] ?>" required ><br>
+                    <input type="text" class="formulario-campo" placeholder="usuario" name="usuario" value="<?php echo $resultado['usuario'] ?>" required ><br>
+                    <input type="text" class="formulario-campo" placeholder="Senha" name="senha" value="<?php echo $resultado['senha'] ?>" required ><br>
 
 
-                    <input type="text" class="formulario-campo" placeholder="Nome" name="nome" value="<?php echo $resultado['nome'] ?>"><br>
-                    <input type="text" class="formulario-campo" placeholder="Email" name="email" value="<?php echo $resultado['email'] ?>"><br>
-                    <input type="text" class="formulario-campo" placeholder="CPF" name="cpf" value="<?php echo $resultado['cpf'] ?>"><br>
-                    <input type="text" class="formulario-campo" placeholder="Endereço" name="cep" value="<?php echo $resultado['cep'] ?>"><br>
-                    <input type="date" class="formulario-campo" placeholder="nascimento" name="nascimento" value="<?php echo $resultado['nascimento'] ?>"><br>
-                    <input type="text" class="formulario-campo" placeholder="telefone" name="tel" value="<?php echo $resultado['telefone'] ?>"><br>
+                    <input type="text" class="formulario-campo" placeholder="Nome" name="nome" value="<?php echo $resultado['nome'] ?>" required ><br>
+                    <input type="text" class="formulario-campo" placeholder="Email" name="email" value="<?php echo $resultado['email'] ?>" required ><br>
+                    <input type="text" class="formulario-campo" placeholder="CPF" name="cpf" value="<?php echo $resultado['cpf'] ?>" required ><br>
+                    <input type="text" class="formulario-campo" placeholder="Endereço" name="cep" value="<?php echo $resultado['cep'] ?>" required ><br>
+                    <input type="date" class="formulario-campo" placeholder="nascimento" name="nascimento" value="<?php echo $resultado['nascimento'] ?>" required ><br>
+                    <input type="text" class="formulario-campo" placeholder="telefone" name="tel" value="<?php echo $resultado['telefone'] ?>" required ><br>
 
                     <input type="submit">
                 </form>
