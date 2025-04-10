@@ -68,18 +68,34 @@ if (isset($_GET['erro'])) {
                 ?>" alt="icone do usuário" class="foto-usuario">
             </div>
                     <input type="hidden" class="formulario-campo" placeholder="id" name="id" value="<?php echo $resultado['id'] ?>" required ><br>
-                    <input type="text" class="formulario-campo" placeholder="usuario" name="usuario" value="<?php echo $resultado['usuario'] ?>" required ><br>
-                    <input type="text" class="formulario-campo" placeholder="Senha" name="senha" value="<?php echo $resultado['senha'] ?>" required ><br>
+
+                    <input type="text" class="formulario-campo" placeholder="usuario" name="usuario" value="<?php echo $resultado['usuario'] ?>" 
+                    id="user" minlength="3" maxlength="100" onblur="verificarUsuario()" required>
+                        <span id="mensagem-erro-usuario"></span><br> 
+                    <input type="text" class="formulario-campo" placeholder="Senha" name="senha" value="<?php echo $resultado['senha'] ?>" id="senha" onblur="validaSenha()" required>
+                    <span id="erro-senha"></span><br>
+                    <input type="text" class="formulario-campo" placeholder="Confirmar Senha" name="confirmar_senha" value="<?php echo $resultado['senha'] ?>" id="confirmar_senha" onblur="confirmarSenha()" required>
+                    <span id="mensagem-erro-confirmar-senha"></span><br>
 
 
-                    <input type="text" class="formulario-campo" placeholder="Nome" name="nome" value="<?php echo $resultado['nome'] ?>" required ><br>
-                    <input type="text" class="formulario-campo" placeholder="Email" name="email" value="<?php echo $resultado['email'] ?>" required ><br>
-                    <input type="text" class="formulario-campo" placeholder="CPF" name="cpf" value="<?php echo $resultado['cpf'] ?>" required ><br>
-                    <input type="text" class="formulario-campo" placeholder="Endereço" name="cep" value="<?php echo $resultado['cep'] ?>" required ><br>
-                    <input type="date" class="formulario-campo" placeholder="nascimento" name="nascimento" value="<?php echo $resultado['nascimento'] ?>" required ><br>
-                    <input type="text" class="formulario-campo" placeholder="telefone" name="tel" value="<?php echo $resultado['telefone'] ?>" required ><br>
 
-                    <input type="submit">
+                    <input type="text" class="formulario-campo" placeholder="Nome" name="nome" value="<?php echo $resultado['nome'] ?>" id="nome" minlength="3" maxlength="100" onblur="verificarNome()" required>
+                    <span id="mensagem-erro-nome"></span><br>
+                    <input type="text" class="formulario-campo" placeholder="Email" name="email" value="<?php echo $resultado['email'] ?>" id="email" onblur="verificarEmail()" required>
+                    <span id="mensagem-erro-email"></span><br>
+                    <input type="text" class="formulario-campo" placeholder="CPF" name="cpf" value="<?php echo $resultado['cpf'] ?>" required
+                        id="cpf" onblur="validacpf()" oninput="aplicarMascaraCPF(event)" maxlength="14">
+                        <span id="mensagem-cpf"></span><br>
+                    <input type="text" class="formulario-campo" placeholder="CEP" name="cep" value="<?php echo $resultado['cep'] ?>" required
+                        id="cep" onblur="validacep()" oninput="aplicarMascaraCEP(event)" maxlength="9">
+                        <span id="mensagem-cep"></span><br>
+                    <input type="date" class="formulario-campo" placeholder="nascimento" name="nascimento" value="<?php echo $resultado['nascimento'] ?>" id="nasc" onblur="validanasc()" required>
+                    <span id="mensagem-nasc"></span><br>
+                    <input type="text" class="formulario-campo" placeholder="telefone" name="tel" value="<?php echo $resultado['telefone'] ?>" id="telefone"
+                        oninput="aplicarMascaraTelefone(event)" onblur="validatelefone()" required maxlength="14">
+                        <span id="mensagem-erro-telefone"></span><br>
+
+                    <input type="submit" class="form-button" value="Editar" onclick="return validarFormulario()">
                 </form>
             </div>
         </section>
@@ -90,4 +106,5 @@ if (isset($_GET['erro'])) {
 <?php include './includes/footer.php' ?>
 
 <script src="./assets/js/upImg.js"></script>
+<script src="./assets/js/validacao.js"></script>
 </html>
