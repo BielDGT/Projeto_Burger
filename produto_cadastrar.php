@@ -32,12 +32,12 @@ try {
         // Define the allowed file extensions
         $allowed_extensions = ['jpg', 'jpeg', 'png', 'gif'];
         $upload_dir = './assets/fotos/fotos_cards/';
-        $uploadfile = $upload_dir . basename($_FILES['imagem']['name']);
+        $uploadfile = $upload_dir . basename($_FILES['imagem']['name']); 
 
         // Check file extension
         $file_extension = strtolower(pathinfo($uploadfile, PATHINFO_EXTENSION));
         if (!in_array($file_extension, $allowed_extensions)) {
-            die('Invalid file type. Allowed types: JPG, JPEG, PNG, GIF.');
+            die('Invalid file type. Allowed types: JPG, JPEG, PNG, GIF.'); //evite erros de extensao m.
         }
 
         // Check file size (5MB limit)
@@ -54,7 +54,7 @@ try {
             $updateQuery = 'UPDATE tb_produtos SET img = :img WHERE nome = :nome';
             $updateStmt = $banco->prepare($updateQuery);
             $updateStmt->execute([
-                ':img' => $image_path,
+                ':img' => $image_path, //vai fazer o up da imagem no banco.
                 ':nome' => $nomeform
             ]);
             header('location:status.php');

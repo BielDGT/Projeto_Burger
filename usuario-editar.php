@@ -38,7 +38,7 @@ try {
 
         // Verifica a extensão do arquivo
         $file_extension = strtolower(pathinfo($uploadfile, PATHINFO_EXTENSION));
-        if (!in_array($file_extension, $allowed_extensions)) {
+        if (!in_array($file_extension, $allowed_extensions)) { //verifica se o valor da extensao nao esta dentro da lista de exten.
             die('Tipo de arquivo inválido. Tipos permitidos: JPG, JPEG, PNG, GIF.');
         }
 
@@ -48,11 +48,11 @@ try {
         }
 
         // Move o arquivo para o diretório de upload
-        if (move_uploaded_file($img['tmp_name'], $uploadfile)) {
+        if (move_uploaded_file($img['tmp_name'], $uploadfile)) {//move para o diretiorio.
             echo "Arquivo válido e enviado com sucesso.\n";
 
             // Atualiza o caminho da imagem no banco de dados
-            $image_path = basename($img['name']);
+            $image_path = basename($img['name']); //pega só  o nome da imagem
             $updateQuery = 'UPDATE tb_pessoa SET img = :img WHERE id = :id';
             $updateStmt = $banco->prepare($updateQuery);
             $updateStmt->execute([
